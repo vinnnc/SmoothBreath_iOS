@@ -11,9 +11,13 @@
 		9B2A6013231FD91600CF6ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6011231FD91600CF6ED1 /* Main.storyboard */; };
 		9B2A6018231FD91800CF6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */; };
 		9B634627232214A40052CB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B634626232214A40052CB4D /* Assets.xcassets */; };
+		9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */; };
+		9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */; };
+		9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */; };
+		9BA9CEC52324F3DF001D5132 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEC42324F3DE001D5132 /* Record.swift */; };
 		9BAB737E231FDD9500554374 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB737D231FDD9400554374 /* CounterViewController.swift */; };
 		9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB737F231FDD9F00554374 /* MapViewController.swift */; };
-		9BF6F424231FF2DC0019D546 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6F423231FF2DC0019D546 /* HomeViewController.swift */; };
+		9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +27,13 @@
 		9B2A6017231FD91800CF6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B2A6019231FD91800CF6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B634626232214A40052CB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
+		9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailViewController.swift; sourceTree = "<group>"; };
+		9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
+		9BA9CEC42324F3DE001D5132 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		9BAB737D231FDD9400554374 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		9BAB737F231FDD9F00554374 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9BF6F423231FF2DC0019D546 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +71,13 @@
 				9B2A6011231FD91600CF6ED1 /* Main.storyboard */,
 				9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */,
 				9B2A6019231FD91800CF6ED1 /* Info.plist */,
-				9BF6F423231FF2DC0019D546 /* HomeViewController.swift */,
+				9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */,
+				9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */,
+				9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */,
 				9BAB737D231FDD9400554374 /* CounterViewController.swift */,
 				9BAB737F231FDD9F00554374 /* MapViewController.swift */,
+				9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */,
+				9BA9CEC42324F3DE001D5132 /* Record.swift */,
 			);
 			path = SmoothBreath_iOS;
 			sourceTree = "<group>";
@@ -141,10 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */,
+				9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */,
+				9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */,
 				9B2A600E231FD91600CF6ED1 /* AppDelegate.swift in Sources */,
 				9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */,
+				9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */,
+				9BA9CEC52324F3DF001D5132 /* Record.swift in Sources */,
 				9BAB737E231FDD9500554374 /* CounterViewController.swift in Sources */,
-				9BF6F424231FF2DC0019D546 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
