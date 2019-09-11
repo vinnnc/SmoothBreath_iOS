@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CounterViewController: UIViewController {
     
@@ -16,10 +17,8 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var inhalerProgressView: UIProgressView!
     @IBOutlet weak var percentageRemainingLabel: UILabel!
     @IBOutlet weak var totalUsageTextField: UITextField!
-    
-    var remainingUsage = 175
-    var totalUsage = 200
-    
+    var counters = [Counter]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +26,8 @@ class CounterViewController: UIViewController {
         registerKeyboardNotifications()
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
+        
+        loadData()
         updateView()
     }
     
@@ -55,8 +56,14 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func addUsage(_ sender: Any) {
+        var remainingUsage = Int(counters.first!.remainingUsage!)!
         if remainingUsage > 0 {
             remainingUsage -= 1
+            counters.first?.setValue(String(remainingUsage), forKey: "remainingUsage")
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            appDelegate.saveContext()
             updateView()
         } else {
             displayMessage(title: "Inhaler Empty", message: "Please reset a new inhaler.")
@@ -64,8 +71,15 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func removeUsage(_ sender: Any) {
+        let totalUsage = Int(counters.first!.totalUsage!)!
+        var remainingUsage = Int(counters.first!.remainingUsage!)!
         if remainingUsage < totalUsage {
             remainingUsage += 1
+            counters.first?.setValue(String(remainingUsage), forKey: "remainingUsage")
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            appDelegate.saveContext()
             updateView()
         } else {
             displayMessage(title: "Cannot Remove Usage", message: "Remaining usage is already same with total usage.")
@@ -73,6 +87,8 @@ class CounterViewController: UIViewController {
     }
     
     func updateView() {
+        let totalUsage = Int(counters.first!.totalUsage!)!
+        let remainingUsage = Int(counters.first!.remainingUsage!)!
         let percentage = Float(remainingUsage) / Float(totalUsage)
         remainingUsageLabel.text = String(remainingUsage)
         totalUsageLabel.text = "/\(totalUsage)"
@@ -86,8 +102,12 @@ class CounterViewController: UIViewController {
                 displayMessage(title: "Invalid Total Usage", message: "Please enter a number.")
                 return
             }
-            totalUsage = number
-            remainingUsage = number
+            counters.first?.setValue(String(number), forKey: "totalUsage")
+            counters.first?.setValue(String(number), forKey: "remainingUsage")
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            appDelegate.saveContext()
             updateView()
         } else {
             displayMessage(title: "Empty Total Usage", message: "Please enter total usage number.")
@@ -98,5 +118,35 @@ class CounterViewController: UIViewController {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func loadData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let context = appDelegate.persistentContainer.viewContext
+        
+        do {
+            try counters = context.fetch(Counter.fetchRequest()) as! [Counter]
+        } catch {
+            print("Failed to fetch counter data.")
+        }
+        
+        if counters.count == 0 {
+            print("Adding Counter")
+            
+            let counter = NSEntityDescription.insertNewObject(forEntityName: "Counter", into: context) as! Counter
+            
+            counter.totalUsage = "200"
+            counter.remainingUsage = "175"
+            
+            appDelegate.saveContext()
+            
+            do {
+                try counters = context.fetch(Counter.fetchRequest()) as! [Counter]
+            } catch {
+                print("Failed to add initial records")
+            }
+        }
     }
 }

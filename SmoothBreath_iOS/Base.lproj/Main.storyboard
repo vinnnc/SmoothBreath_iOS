@@ -19,25 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoD-qv-wW2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="873"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="829"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRZ-ey-oIz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="871"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhaler Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKc-vw-AWD">
-                                                <rect key="frame" x="32" y="16" width="217" height="36"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter_inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="LNP-C9-wg1">
-                                                <rect key="frame" x="16" y="68" width="382" height="255.5"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="255.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="255.5" id="BrZ-zR-SnY"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="175" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb4-lT-r4O">
-                                                <rect key="frame" x="147" y="339.5" width="80" height="48"/>
+                                                <rect key="frame" x="147" y="287.5" width="80" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="MgL-tK-l48"/>
                                                 </constraints>
@@ -46,28 +40,28 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efH-9j-z8Y">
-                                                <rect key="frame" x="227" y="366.5" width="36" height="21"/>
+                                                <rect key="frame" x="227" y="314.5" width="36" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining Usage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t72-Hv-MvR">
-                                                <rect key="frame" x="16" y="403.5" width="382" height="21"/>
+                                                <rect key="frame" x="16" y="351.5" width="382" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.875" translatesAutoresizingMaskIntoConstraints="NO" id="06B-N3-L2X">
-                                                <rect key="frame" x="36" y="456.5" width="342" height="2"/>
+                                                <rect key="frame" x="36" y="404.5" width="342" height="2"/>
                                             </progressView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87.5% Remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfG-AG-6CB">
-                                                <rect key="frame" x="16" y="474.5" width="382" height="21"/>
+                                                <rect key="frame" x="16" y="422.5" width="382" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKc-oc-kwD">
-                                                <rect key="frame" x="135" y="527.5" width="144" height="48"/>
+                                                <rect key="frame" x="135" y="475.5" width="144" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Add Usage"/>
                                                 <connections>
@@ -75,32 +69,32 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-n9-Tpt">
-                                                <rect key="frame" x="155.5" y="607.5" width="103" height="30"/>
+                                                <rect key="frame" x="155.5" y="555.5" width="103" height="30"/>
                                                 <state key="normal" title="Remove Usage"/>
                                                 <connections>
                                                     <action selector="removeUsage:" destination="Hh7-lX-vTI" eventType="touchUpInside" id="VCw-iD-yoo"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Inhaler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYm-zh-eyi">
-                                                <rect key="frame" x="32" y="669.5" width="184" height="36"/>
+                                                <rect key="frame" x="32" y="617.5" width="184" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Usage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed0-Ub-cpu">
-                                                <rect key="frame" x="16" y="721.5" width="382" height="21"/>
+                                                <rect key="frame" x="16" y="669.5" width="382" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gum-c4-FxH">
-                                                <rect key="frame" x="16" y="758.5" width="382" height="30"/>
+                                                <rect key="frame" x="16" y="706.5" width="382" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-GK-vbk">
-                                                <rect key="frame" x="187.5" y="820.5" width="39" height="30"/>
+                                                <rect key="frame" x="187.5" y="768.5" width="39" height="30"/>
                                                 <state key="normal" title="Reset"/>
                                                 <connections>
                                                     <action selector="reset:" destination="Hh7-lX-vTI" eventType="touchUpInside" id="qri-IA-jdF"/>
@@ -128,10 +122,8 @@
                                             <constraint firstAttribute="trailing" secondItem="LNP-C9-wg1" secondAttribute="trailing" constant="16" id="TNr-tM-bBa"/>
                                             <constraint firstItem="efH-9j-z8Y" firstAttribute="leading" secondItem="Tb4-lT-r4O" secondAttribute="trailing" id="Z1w-JP-R92"/>
                                             <constraint firstItem="Tb4-lT-r4O" firstAttribute="centerX" secondItem="lRZ-ey-oIz" secondAttribute="centerX" constant="-20" id="bGo-dE-WTT"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aKc-vw-AWD" secondAttribute="trailing" constant="20" symbolic="YES" id="ban-aR-cbR"/>
-                                            <constraint firstItem="aKc-vw-AWD" firstAttribute="top" secondItem="lRZ-ey-oIz" secondAttribute="top" constant="16" id="ci0-ht-zrb"/>
+                                            <constraint firstItem="LNP-C9-wg1" firstAttribute="top" secondItem="lRZ-ey-oIz" secondAttribute="top" constant="16" id="c3p-PE-td5"/>
                                             <constraint firstItem="LNP-C9-wg1" firstAttribute="leading" secondItem="lRZ-ey-oIz" secondAttribute="leading" constant="16" id="e3S-c5-BXp"/>
-                                            <constraint firstItem="LNP-C9-wg1" firstAttribute="top" secondItem="aKc-vw-AWD" secondAttribute="bottom" constant="16" id="hMT-fc-NoK"/>
                                             <constraint firstItem="Oj7-GK-vbk" firstAttribute="centerX" secondItem="lRZ-ey-oIz" secondAttribute="centerX" id="hSk-tK-goA"/>
                                             <constraint firstItem="gum-c4-FxH" firstAttribute="top" secondItem="Ed0-Ub-cpu" secondAttribute="bottom" constant="16" id="iBe-j3-yGo"/>
                                             <constraint firstItem="t72-Hv-MvR" firstAttribute="top" secondItem="Tb4-lT-r4O" secondAttribute="bottom" constant="16" id="iff-Bb-zPM"/>
@@ -143,7 +135,6 @@
                                             <constraint firstItem="Tb4-lT-r4O" firstAttribute="top" secondItem="LNP-C9-wg1" secondAttribute="bottom" constant="16" id="rDf-MY-w9e"/>
                                             <constraint firstAttribute="trailing" secondItem="06B-N3-L2X" secondAttribute="trailing" constant="36" id="sY6-L9-fRe"/>
                                             <constraint firstAttribute="height" constant="871" id="tVt-dV-Mi7"/>
-                                            <constraint firstItem="aKc-vw-AWD" firstAttribute="leading" secondItem="lRZ-ey-oIz" secondAttribute="leading" constant="32" id="xJa-Im-yZd"/>
                                             <constraint firstItem="Ed0-Ub-cpu" firstAttribute="leading" secondItem="lRZ-ey-oIz" secondAttribute="leading" constant="16" id="yeK-TV-Ll5"/>
                                         </constraints>
                                     </view>
@@ -167,7 +158,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="alm-WP-EiB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Counter" image="barIcon_counter" id="6Cv-gB-kn2"/>
                     <navigationItem key="navigationItem" title="Inhaler Counter" id="zkD-Pu-PKw"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
@@ -181,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ni-7P-ifc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1704.3478260869567" y="594.64285714285711"/>
+            <point key="canvasLocation" x="-1690" y="1338"/>
         </scene>
         <!--All Records-->
         <scene sceneID="pku-sV-reD">
@@ -243,7 +233,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="All Records" id="7ZG-af-uNM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2zw-Ws-Izr">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="2zw-Ws-Izr">
                             <connections>
                                 <segue destination="XdJ-8b-nN6" kind="show" identifier="newRecordSegue" id="aCl-vF-8XP"/>
                             </connections>
@@ -252,7 +242,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TR-yb-0wm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1006" y="1305"/>
+            <point key="canvasLocation" x="-1006" y="1304"/>
         </scene>
         <!--New Record-->
         <scene sceneID="Qkh-oA-NCc">
@@ -280,7 +270,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="wcQ-Nk-lj3">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wcQ-Nk-lj3">
                                                 <rect key="frame" x="16" y="89" width="382" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="gCY-B2-cCz"/>
@@ -538,7 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ObH-OW-mZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1007" y="2103"/>
+            <point key="canvasLocation" x="-877" y="2103"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YKP-0x-snh">
@@ -549,7 +539,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Hh7-lX-vTI" kind="relationship" relationship="viewControllers" id="U7k-Hg-ELA"/>
+                        <segue destination="ZY2-Dk-GL4" kind="relationship" relationship="viewControllers" id="U7k-Hg-ELA"/>
                         <segue destination="MZi-x5-LcQ" kind="relationship" relationship="viewControllers" id="FkH-9z-OOI"/>
                         <segue destination="ToK-ss-OPD" kind="relationship" relationship="viewControllers" id="hFF-GP-RGU"/>
                     </connections>
@@ -586,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bU-me-824" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-326" y="1305"/>
+            <point key="canvasLocation" x="-326" y="1304"/>
         </scene>
         <!--Record-->
         <scene sceneID="43D-Ck-P7w">
@@ -771,6 +761,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLr-xX-oTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-326.08695652173918" y="2035.7142857142856"/>
+        </scene>
+        <!--Counter-->
+        <scene sceneID="mFe-Ms-Msv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZY2-Dk-GL4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Counter" image="barIcon_counter" id="6Cv-gB-kn2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qjQ-20-IRa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hh7-lX-vTI" kind="relationship" relationship="rootViewController" id="Q3v-Za-xzn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJ7-Ao-5B4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1691" y="560"/>
         </scene>
     </scenes>
     <resources>

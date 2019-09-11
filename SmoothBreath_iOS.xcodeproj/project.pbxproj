@@ -14,9 +14,13 @@
 		9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */; };
 		9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */; };
 		9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */; };
-		9BA9CEC52324F3DF001D5132 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEC42324F3DE001D5132 /* Record.swift */; };
 		9BAB737E231FDD9500554374 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB737D231FDD9400554374 /* CounterViewController.swift */; };
 		9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB737F231FDD9F00554374 /* MapViewController.swift */; };
+		9BB4AD8723291C2600712F65 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4AD8323291C2600712F65 /* Record+CoreDataClass.swift */; };
+		9BB4AD8823291C2600712F65 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4AD8423291C2600712F65 /* Record+CoreDataProperties.swift */; };
+		9BB4AD8923291C2600712F65 /* Counter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4AD8523291C2600712F65 /* Counter+CoreDataClass.swift */; };
+		9BB4AD8A23291C2600712F65 /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4AD8623291C2600712F65 /* Counter+CoreDataProperties.swift */; };
+		9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BCAF6AE2329070D00BFC423 /* SmoothBreath.xcdatamodeld */; };
 		9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +34,13 @@
 		9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
 		9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailViewController.swift; sourceTree = "<group>"; };
 		9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
-		9BA9CEC42324F3DE001D5132 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		9BAB737D231FDD9400554374 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		9BAB737F231FDD9F00554374 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9BB4AD8323291C2600712F65 /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9BB4AD8423291C2600712F65 /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9BB4AD8523291C2600712F65 /* Counter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9BB4AD8623291C2600712F65 /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9BCAF6AF2329070D00BFC423 /* SmoothBreath.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmoothBreath.xcdatamodel; sourceTree = "<group>"; };
 		9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +74,7 @@
 		9B2A600C231FD91600CF6ED1 /* SmoothBreath_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9BCAF69A2329034600BFC423 /* DataModel */,
 				9B634626232214A40052CB4D /* Assets.xcassets */,
 				9B2A600D231FD91600CF6ED1 /* AppDelegate.swift */,
 				9B2A6011231FD91600CF6ED1 /* Main.storyboard */,
@@ -77,9 +86,20 @@
 				9BAB737D231FDD9400554374 /* CounterViewController.swift */,
 				9BAB737F231FDD9F00554374 /* MapViewController.swift */,
 				9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */,
-				9BA9CEC42324F3DE001D5132 /* Record.swift */,
 			);
 			path = SmoothBreath_iOS;
+			sourceTree = "<group>";
+		};
+		9BCAF69A2329034600BFC423 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9BB4AD8323291C2600712F65 /* Record+CoreDataClass.swift */,
+				9BB4AD8423291C2600712F65 /* Record+CoreDataProperties.swift */,
+				9BB4AD8523291C2600712F65 /* Counter+CoreDataClass.swift */,
+				9BB4AD8623291C2600712F65 /* Counter+CoreDataProperties.swift */,
+				9BCAF6AE2329070D00BFC423 /* SmoothBreath.xcdatamodeld */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,13 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB4AD8A23291C2600712F65 /* Counter+CoreDataProperties.swift in Sources */,
+				9BB4AD8823291C2600712F65 /* Record+CoreDataProperties.swift in Sources */,
 				9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */,
 				9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */,
 				9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */,
+				9BB4AD8723291C2600712F65 /* Record+CoreDataClass.swift in Sources */,
 				9B2A600E231FD91600CF6ED1 /* AppDelegate.swift in Sources */,
+				9BB4AD8923291C2600712F65 /* Counter+CoreDataClass.swift in Sources */,
+				9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */,
 				9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */,
 				9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */,
-				9BA9CEC52324F3DF001D5132 /* Record.swift in Sources */,
 				9BAB737E231FDD9500554374 /* CounterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BCAF6AE2329070D00BFC423 /* SmoothBreath.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BCAF6AF2329070D00BFC423 /* SmoothBreath.xcdatamodel */,
+			);
+			currentVersion = 9BCAF6AF2329070D00BFC423 /* SmoothBreath.xcdatamodel */;
+			path = SmoothBreath.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9B2A6002231FD91600CF6ED1 /* Project object */;
 }

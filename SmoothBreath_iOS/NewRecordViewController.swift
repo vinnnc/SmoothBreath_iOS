@@ -9,7 +9,7 @@
 import UIKit
 
 protocol addRecordDelegate: AnyObject {
-    func addRecord(record: Record) -> Bool
+    func addRecord(attackDate: String, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool
 }
 
 class NewRecordViewController: UIViewController {
@@ -35,39 +35,41 @@ class NewRecordViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-        let dateAndTime = dateAndTimeDatePicker.date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy hh:mm a"
+        let dateAndTime = dateFormatter.string(from: dateAndTimeDatePicker.date)
         
         var attackLevel = ""
-        if attackLevelSlider.value < 25 {
+        if attackLevelSlider.value < 0.25 {
             attackLevel = "Slight"
-        } else if attackLevelSlider.value >= 25 && attackLevelSlider.value < 50 {
-            attackLevel = "Medium"
-        } else if attackLevelSlider.value >= 50 && attackLevelSlider.value < 75 {
+        } else if attackLevelSlider.value >= 0.25 && attackLevelSlider.value < 0.50 {
+            attackLevel = "Moderate"
+        } else if attackLevelSlider.value >= 0.50 && attackLevelSlider.value < 0.75 {
             attackLevel = "High"
         } else {
-            attackLevel = "Serious"
+            attackLevel = "Severe"
         }
         
         var stress = ""
-        if stressSlider.value < 25 {
+        if stressSlider.value < 0.25 {
             stress = "Slight"
-        } else if stressSlider.value >= 25 && stressSlider.value < 50 {
-            stress = "Medium"
-        } else if stressSlider.value >= 50 && stressSlider.value < 75 {
+        } else if stressSlider.value >= 0.25 && stressSlider.value < 0.50 {
+            stress = "Moderate"
+        } else if stressSlider.value >= 0.50 && stressSlider.value < 0.75 {
             stress = "High"
         } else {
-            stress = "Serious"
+            stress = "Severe"
         }
         
         var exercise = ""
-        if exerciseSlider.value < 25 {
+        if exerciseSlider.value < 0.25 {
             exercise = "Slight"
-        } else if exerciseSlider.value >= 25 && exerciseSlider.value < 50 {
-            exercise = "Medium"
-        } else if exerciseSlider.value >= 50 && exerciseSlider.value < 75 {
+        } else if exerciseSlider.value >= 0.25 && exerciseSlider.value < 0.50 {
+            exercise = "Moderate"
+        } else if exerciseSlider.value >= 0.50 && exerciseSlider.value < 0.75 {
             exercise = "High"
         } else {
-            exercise = "Serious"
+            exercise = "Severe"
         }
         
         var nearby = ""
@@ -93,21 +95,17 @@ class NewRecordViewController: UIViewController {
             nearby = "None"
         }
         
-        let record = Record(dateAndTime: dateAndTime, attackLevel: attackLevel, stress: stress, exercise: exercise, nearby: nearby)
-        
-        if (delegate?.addRecord(record: record))! {
+        if ((delegate?.addRecord(attackDate: dateAndTime, attackLevel: attackLevel, exercise: exercise, stress: stress, nearby: nearby))!) {
             navigationController?.popViewController(animated: true)
+        } else {
+            displayMessage(title: "Time Duplicate", message: "Attack Date and time have alreay exist in database.")
         }
+
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func displayMessage(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
-    */
-
 }

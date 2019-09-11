@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Counter" representedClassName="Counter" syncable="YES">
+        <attribute name="remainingUsage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalUsage" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Record" representedClassName="Record" syncable="YES">
+        <attribute name="attackDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attackLevel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exercise" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nearby" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stress" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Record" positionX="-54" positionY="-9" width="128" height="120"/>
+        <element name="Counter" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>

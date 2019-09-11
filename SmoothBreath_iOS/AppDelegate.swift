@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let uiNavbarProxy = UINavigationBar.appearance()
+        uiNavbarProxy.barTintColor = UIColor(red: 0.27, green: 0.2, blue: 0.31, alpha: 1.0)
+        uiNavbarProxy.tintColor = UIColor.white
+        uiNavbarProxy.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
         return true
     }
 
@@ -41,6 +48,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "SmoothBreath")
+        container.loadPersistentStores(completionHandler: {
+            (storeDescription, error) in
+            
+            if let error = error as NSError? {
+                fatalError("Failed to load Core Data: \(error)")
+            }
+        })
+        
+        return container
+    }()
+    
+    func saveContext() {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                fatalError("Failed to save context.")
+            }
+        }
+    }
 }
 

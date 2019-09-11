@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class RecordTableViewController: UITableViewController, addRecordDelegate {
     
@@ -15,7 +16,7 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
     let CELL_COUNT = "countCell"
     let CELL_RECORD = "recordCell"
     
-    var allRecords: [Record] = []
+    var allRecords = [Record]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,7 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        initalisation()
+        loadData()
     }
 
     // MARK: - Table view data source
@@ -54,9 +55,7 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         }
         let recordCell = tableView.dequeueReusableCell(withIdentifier: CELL_RECORD, for: indexPath) as! RecordTableViewCell
         let record = allRecords[indexPath.row]
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-YYYY HH:MM a"
-        recordCell.dateAndTimeLabel.text = dateFormatter.string(from: record.dateAndTime!)
+        recordCell.dateAndTimeLabel.text = record.attackDate
         recordCell.attackLevelLabel.text = record.attackLevel
         
         return recordCell
@@ -82,21 +81,48 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete && indexPath.section == SECTION_RECORD {
             // Delete the row from the data source
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            let context = appDelegate.persistentContainer.viewContext
+            context.delete(allRecords[indexPath.row])
             allRecords.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadSections([SECTION_COUNT], with: .automatic)
         }
     }
     
-    func addRecord(record: Record) -> Bool {
+    func addRecord(attackDate: String, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool {
+        for record in allRecords {
+            if record.attackDate == attackDate {
+                return false
+            }
+        }
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return false
+        }
+        
+        let context = appDelegate.persistentContainer.viewContext
+        let record = NSEntityDescription.insertNewObject(forEntityName: "Record", into: context) as! Record
+        
+        record.attackDate = attackDate
+        record.attackLevel = attackLevel
+        record.exercise = exercise
+        record.stress = stress
+        record.nearby = nearby
+        
+        appDelegate.saveContext()
+        
         allRecords.append(record)
         tableView.beginUpdates()
         tableView.insertRows(at: [IndexPath(row: allRecords.count - 1, section: SECTION_RECORD)], with: .automatic)
         tableView.endUpdates()
         tableView.reloadSections([SECTION_COUNT], with: .automatic)
+        
         return true
     }
-
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -113,7 +139,83 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         }
     }
 
-    func initalisation() {
+    func loadData() {
+        let newRecords = [
+            [
+                "attackDate": "01-09-2019 08:14 AM",
+                "attackLevel": "Slight",
+                "exercise": "Slight",
+                "stress": "Moderate",
+                "nearby": "None"
+            ],
+            [
+                "attackDate": "03-09-2019 08:23 AM",
+                "attackLevel": "Slight",
+                "exercise": "Moderate",
+                "stress": "Slight",
+                "nearby": "Pollen Source, Dust"
+            ],
+            [
+                "attackDate": "06-09-2019 09:09 AM",
+                "attackLevel": "Moderate",
+                "exercise": "Slight",
+                "stress": "Slight",
+                "nearby": "Animal, Heavy Wind"
+            ],
+            [
+                "attackDate": "08-09-2019 08:06 AM",
+                "attackLevel": "Slight",
+                "exercise": "Slight",
+                "stress": "Slight",
+                "nearby": "Animal, Heavy Wind, Pollen Source, Dust"
+            ],
+            [
+                "attackDate": "09-09-2019 09:16 AM",
+                "attackLevel": "Slight",
+                "exercise": "Slight",
+                "stress": "Moderate",
+                "nearby": "None"
+            ],
+            [
+                "attackDate": "11-09-2019 04:16 PM",
+                "attackLevel": "Moderate",
+                "exercise": "Slight",
+                "stress": "Serious",
+                "nearby": "Animal"
+            ]
+        ]
+    
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let context = appDelegate.persistentContainer.viewContext
         
+        do {
+            try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
+        } catch {
+            print("Failed to fetch record data.")
+        }
+        
+        if allRecords.count == 0 {
+            print("Adding Records")
+            
+            for recordObj in newRecords {
+                let record = NSEntityDescription.insertNewObject(forEntityName: "Record", into: context) as! Record
+                    
+                record.attackDate = recordObj["attackDate"]
+                record.attackLevel = recordObj["attackLevel"]
+                record.exercise = recordObj["exercise"]
+                record.stress = recordObj["stress"]
+                record.nearby = recordObj["nearby"]
+            }
+            
+            appDelegate.saveContext()
+            
+            do {
+                try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
+            } catch {
+                print("Failed to add initial records")
+            }
+        }
     }
 }
