@@ -40,36 +40,34 @@ class NewRecordViewController: UIViewController {
         let dateAndTime = dateFormatter.string(from: dateAndTimeDatePicker.date)
         
         var attackLevel = ""
-        if attackLevelSlider.value < 0.25 {
-            attackLevel = "Slight"
-        } else if attackLevelSlider.value >= 0.25 && attackLevelSlider.value < 0.50 {
+        if attackLevelSlider.value <= 0.33 {
+            attackLevel = "Mild"
+        } else if attackLevelSlider.value > 0.33 && attackLevelSlider.value <= 0.66 {
             attackLevel = "Moderate"
-        } else if attackLevelSlider.value >= 0.50 && attackLevelSlider.value < 0.75 {
-            attackLevel = "High"
         } else {
             attackLevel = "Severe"
         }
         
         var stress = ""
         if stressSlider.value < 0.25 {
-            stress = "Slight"
+            stress = "Low"
         } else if stressSlider.value >= 0.25 && stressSlider.value < 0.50 {
-            stress = "Moderate"
+            stress = "Middle"
         } else if stressSlider.value >= 0.50 && stressSlider.value < 0.75 {
             stress = "High"
         } else {
-            stress = "Severe"
+            stress = "Extreme"
         }
         
         var exercise = ""
         if exerciseSlider.value < 0.25 {
-            exercise = "Slight"
+            exercise = "Low"
         } else if exerciseSlider.value >= 0.25 && exerciseSlider.value < 0.50 {
-            exercise = "Moderate"
+            exercise = "Middle"
         } else if exerciseSlider.value >= 0.50 && exerciseSlider.value < 0.75 {
-            exercise = "High"
+            exercise = "Hight"
         } else {
-            exercise = "Severe"
+            exercise = "Extreme"
         }
         
         var nearby = ""

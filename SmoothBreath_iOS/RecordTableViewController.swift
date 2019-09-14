@@ -137,50 +137,54 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
             let destination = segue.destination as! NewRecordViewController
             destination.delegate = self
         }
+        if segue.identifier == "reportSegue" {
+            let destination = segue.destination as! ReportViewController
+            destination.allRecords = allRecords
+        }
     }
 
     func loadData() {
         let newRecords = [
             [
                 "attackDate": "01-09-2019 08:14 AM",
-                "attackLevel": "Slight",
-                "exercise": "Slight",
-                "stress": "Moderate",
+                "attackLevel": "Mild",
+                "exercise": "Low",
+                "stress": "Middle",
                 "nearby": "None"
             ],
             [
                 "attackDate": "03-09-2019 08:23 AM",
-                "attackLevel": "Slight",
-                "exercise": "Moderate",
-                "stress": "Slight",
+                "attackLevel": "Mild",
+                "exercise": "Middle",
+                "stress": "Low",
                 "nearby": "Pollen Source, Dust"
             ],
             [
                 "attackDate": "06-09-2019 09:09 AM",
                 "attackLevel": "Moderate",
-                "exercise": "Slight",
-                "stress": "Slight",
+                "exercise": "Low",
+                "stress": "Low",
                 "nearby": "Animal, Heavy Wind"
             ],
             [
                 "attackDate": "08-09-2019 08:06 AM",
-                "attackLevel": "Slight",
-                "exercise": "Slight",
-                "stress": "Slight",
+                "attackLevel": "Mild",
+                "exercise": "Low",
+                "stress": "Low",
                 "nearby": "Animal, Heavy Wind, Pollen Source, Dust"
             ],
             [
                 "attackDate": "09-09-2019 09:16 AM",
-                "attackLevel": "Slight",
-                "exercise": "Slight",
-                "stress": "Moderate",
+                "attackLevel": "Severe",
+                "exercise": "Low",
+                "stress": "Middle",
                 "nearby": "None"
             ],
             [
                 "attackDate": "11-09-2019 04:16 PM",
                 "attackLevel": "Moderate",
-                "exercise": "Slight",
-                "stress": "Serious",
+                "exercise": "Low",
+                "stress": "Extreme",
                 "nearby": "Animal"
             ]
         ]
