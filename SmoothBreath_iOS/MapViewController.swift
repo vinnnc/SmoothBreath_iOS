@@ -30,7 +30,7 @@ class MapViewController: UIViewController {
         super.viewWillAppear(animated)
         //Zoom to user location
         if let userLocation = locationManager.location?.coordinate {
-            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 3000, longitudinalMeters: 3000)
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 5000, longitudinalMeters: 5000)
             mapView.setRegion(viewRegion, animated: false)
         }
     }
