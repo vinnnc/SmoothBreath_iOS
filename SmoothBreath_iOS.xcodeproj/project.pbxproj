@@ -10,7 +10,7 @@
 		9B2A600E231FD91600CF6ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2A600D231FD91600CF6ED1 /* AppDelegate.swift */; };
 		9B2A6013231FD91600CF6ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6011231FD91600CF6ED1 /* Main.storyboard */; };
 		9B2A6018231FD91800CF6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */; };
-		9B617D36232CB10700CB52DA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B617D35232CB10700CB52DA /* ReportViewController.swift */; };
+		9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B617D35232CB10700CB52DA /* StatisticViewController.swift */; };
 		9B634627232214A40052CB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B634626232214A40052CB4D /* Assets.xcassets */; };
 		9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */; };
 		9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */; };
@@ -31,7 +31,7 @@
 		9B2A6012231FD91600CF6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B2A6017231FD91800CF6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B2A6019231FD91800CF6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B617D35232CB10700CB52DA /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		9B617D35232CB10700CB52DA /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		9B634626232214A40052CB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
 		9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				9B634626232214A40052CB4D /* Assets.xcassets */,
 				9B2A600D231FD91600CF6ED1 /* AppDelegate.swift */,
 				9B2A6011231FD91600CF6ED1 /* Main.storyboard */,
-				9B617D35232CB10700CB52DA /* ReportViewController.swift */,
+				9B617D35232CB10700CB52DA /* StatisticViewController.swift */,
 				9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */,
 				9B2A6019231FD91800CF6ED1 /* Info.plist */,
 				9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */,
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB4AD8A23291C2600712F65 /* Counter+CoreDataProperties.swift in Sources */,
-				9B617D36232CB10700CB52DA /* ReportViewController.swift in Sources */,
+				9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */,
 				9BB4AD8823291C2600712F65 /* Record+CoreDataProperties.swift in Sources */,
 				9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */,
 				9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */,

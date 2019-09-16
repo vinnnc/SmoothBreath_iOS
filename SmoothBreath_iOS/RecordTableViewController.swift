@@ -119,7 +119,7 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         tableView.insertRows(at: [IndexPath(row: allRecords.count - 1, section: SECTION_RECORD)], with: .automatic)
         tableView.endUpdates()
         tableView.reloadSections([SECTION_COUNT], with: .automatic)
-        
+        allRecords.sort(by: {$0.attackDate! > $1.attackDate!})
         return true
     }
     
@@ -137,8 +137,8 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
             let destination = segue.destination as! NewRecordViewController
             destination.delegate = self
         }
-        if segue.identifier == "reportSegue" {
-            let destination = segue.destination as! ReportViewController
+        if segue.identifier == "statisticSegue" {
+            let destination = segue.destination as! StatisticViewController
             destination.allRecords = allRecords
         }
     }
@@ -221,5 +221,7 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
                 print("Failed to add initial records")
             }
         }
+        
+        allRecords.sort(by: {$0.attackDate! > $1.attackDate!})
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReportViewController: UIViewController {
+class StatisticViewController: UIViewController {
     
     @IBOutlet weak var severeNumberLabel: UILabel!
     @IBOutlet weak var moderateNumberLabel: UILabel!
