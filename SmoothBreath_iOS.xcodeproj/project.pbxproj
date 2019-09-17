@@ -11,7 +11,6 @@
 		9B2A6013231FD91600CF6ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6011231FD91600CF6ED1 /* Main.storyboard */; };
 		9B2A6018231FD91800CF6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */; };
 		9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B617D35232CB10700CB52DA /* StatisticViewController.swift */; };
-		9B634627232214A40052CB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B634626232214A40052CB4D /* Assets.xcassets */; };
 		9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */; };
 		9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */; };
 		9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */; };
@@ -21,6 +20,7 @@
 		9BCA32242330C27500F91088 /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA32202330C27500F91088 /* Counter+CoreDataProperties.swift */; };
 		9BCA32252330C27500F91088 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA32212330C27500F91088 /* Record+CoreDataClass.swift */; };
 		9BCA32262330C27500F91088 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA32222330C27500F91088 /* Record+CoreDataProperties.swift */; };
+		9BCA32282330C88600F91088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA32272330C88500F91088 /* Assets.xcassets */; };
 		9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BCAF6AE2329070D00BFC423 /* SmoothBreath.xcdatamodeld */; };
 		9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,6 @@
 		9B2A6017231FD91800CF6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B2A6019231FD91800CF6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B617D35232CB10700CB52DA /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
-		9B634626232214A40052CB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
 		9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailViewController.swift; sourceTree = "<group>"; };
 		9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		9BCA32202330C27500F91088 /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9BCA32212330C27500F91088 /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9BCA32222330C27500F91088 /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9BCA32272330C88500F91088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BCAF6AF2329070D00BFC423 /* SmoothBreath.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmoothBreath.xcdatamodel; sourceTree = "<group>"; };
 		9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,8 +76,8 @@
 		9B2A600C231FD91600CF6ED1 /* SmoothBreath_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9BCA32272330C88500F91088 /* Assets.xcassets */,
 				9BCAF69A2329034600BFC423 /* DataModel */,
-				9B634626232214A40052CB4D /* Assets.xcassets */,
 				9B2A600D231FD91600CF6ED1 /* AppDelegate.swift */,
 				9B2A6011231FD91600CF6ED1 /* Main.storyboard */,
 				9B617D35232CB10700CB52DA /* StatisticViewController.swift */,
@@ -164,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2A6018231FD91800CF6ED1 /* LaunchScreen.storyboard in Resources */,
-				9B634627232214A40052CB4D /* Assets.xcassets in Resources */,
+				9BCA32282330C88600F91088 /* Assets.xcassets in Resources */,
 				9B2A6013231FD91600CF6ED1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
