@@ -115,7 +115,7 @@ class CounterViewController: UIViewController {
         let duration = calendar.dateComponents([.day], from: lastChangedDate, to: currentDate).day! + 1
         let dailyUsage = Float(totalUsage - remainingUsage) / Float(duration)
         if dailyUsage == 0 {
-            leftDayLabel.text = "New inhaler, will be show after usage"
+            leftDayLabel.text = "Left day will be shown after the usage"
             expectedDateLabel.text = "New inhaler"
             return
         }
