@@ -799,7 +799,6 @@
                     <connections>
                         <segue destination="ZY2-Dk-GL4" kind="relationship" relationship="viewControllers" id="U7k-Hg-ELA"/>
                         <segue destination="MZi-x5-LcQ" kind="relationship" relationship="viewControllers" id="FkH-9z-OOI"/>
-                        <segue destination="ToK-ss-OPD" kind="relationship" relationship="viewControllers" id="SU9-Bv-6tw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRV-Jf-ewJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -815,7 +814,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vi6-dU-D3H">
-                                <rect key="frame" x="-44" y="0.0" width="502" height="813"/>
+                                <rect key="frame" x="-44" y="0.0" width="502" height="862"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

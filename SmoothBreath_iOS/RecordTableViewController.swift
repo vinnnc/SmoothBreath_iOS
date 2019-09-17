@@ -48,7 +48,11 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == SECTION_COUNT {
             let countCell = tableView.dequeueReusableCell(withIdentifier: CELL_COUNT, for: indexPath)
-            countCell.textLabel?.text = "\(allRecords.count) records in database"
+            if allRecords.count < 2 {
+                countCell.textLabel?.text = "\(allRecords.count) record in database"
+            } else {
+                countCell.textLabel?.text = "\(allRecords.count) records in database"
+            }
             
             countCell.selectionStyle = .none
             return countCell
