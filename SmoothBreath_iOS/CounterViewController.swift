@@ -15,9 +15,11 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var remainingUsageLabel: UILabel!
     @IBOutlet weak var totalUsageLabel: UILabel!
     @IBOutlet weak var inhalerProgressView: UIProgressView!
-    @IBOutlet weak var percentageRemainingLabel: UILabel!
+    @IBOutlet weak var leftDayLabel: UILabel!
+    @IBOutlet weak var lastDateLabel: UILabel!
+    @IBOutlet weak var expectedDateLabel: UILabel!
     @IBOutlet weak var totalUsageTextField: UITextField!
-    var counters = [Counter]()
+    var counter: Counter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,13 +62,15 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func addUsage(_ sender: Any) {
-        var remainingUsage = Int(counters.first!.remainingUsage!)!
+        var remainingUsage = Int(counter!.remainingUsage!)!
+        
         if remainingUsage > 0 {
             remainingUsage -= 1
-            counters.first?.setValue(String(remainingUsage), forKey: "remainingUsage")
+            counter!.setValue(String(remainingUsage), forKey: "remainingUsage")
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
+            
             appDelegate.saveContext()
             updateView()
         } else {
@@ -75,14 +79,16 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func removeUsage(_ sender: Any) {
-        let totalUsage = Int(counters.first!.totalUsage!)!
-        var remainingUsage = Int(counters.first!.remainingUsage!)!
+        let totalUsage = Int(counter!.totalUsage!)!
+        var remainingUsage = Int(counter!.remainingUsage!)!
+        
         if remainingUsage < totalUsage {
             remainingUsage += 1
-            counters.first?.setValue(String(remainingUsage), forKey: "remainingUsage")
+            counter!.setValue(String(remainingUsage), forKey: "remainingUsage")
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
+            
             appDelegate.saveContext()
             updateView()
         } else {
@@ -91,13 +97,39 @@ class CounterViewController: UIViewController {
     }
     
     func updateView() {
-        let totalUsage = Int(counters.first!.totalUsage!)!
-        let remainingUsage = Int(counters.first!.remainingUsage!)!
+        let totalUsage = Int(counter!.totalUsage!)!
+        let remainingUsage = Int(counter!.remainingUsage!)!
         let percentage = Float(remainingUsage) / Float(totalUsage)
+        
         remainingUsageLabel.text = String(remainingUsage)
         totalUsageLabel.text = "/\(totalUsage)"
         inhalerProgressView.progress = percentage
-        percentageRemainingLabel.text = "\(percentage * 100)% Remaining"
+        lastDateLabel.text = counter!.lastChangedDate
+        
+        let df = DateFormatter()
+        df.dateFormat = "dd-MM-yyyy"
+        
+        let calendar = Calendar.current
+        let currentDate = calendar.startOfDay(for: Date())
+        let lastChangedDate = calendar.startOfDay(for: df.date(from: counter!.lastChangedDate!)!)
+        let duration = calendar.dateComponents([.day], from: lastChangedDate, to: currentDate).day! + 1
+        let dailyUsage = Float(totalUsage - remainingUsage) / Float(duration)
+        if dailyUsage == 0 {
+            leftDayLabel.text = "New inhaler, will be show after usage"
+            expectedDateLabel.text = "New inhaler"
+            return
+        }
+        
+        let expectedLeftDay = Int(Float(remainingUsage) / dailyUsage)
+        
+        if expectedLeftDay <= 1 {
+            leftDayLabel.text = "About \(expectedLeftDay) day left to the end"
+        } else {
+            leftDayLabel.text = "About \(expectedLeftDay) days left to the end"
+        }
+        
+        let expectedDate = df.string(from: Calendar.current.date(byAdding: .day, value: expectedLeftDay, to: Date())!)
+        expectedDateLabel.text = expectedDate
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -106,11 +138,18 @@ class CounterViewController: UIViewController {
                 displayMessage(title: "Invalid Total Usage", message: "Please enter a number.")
                 return
             }
-            counters.first?.setValue(String(number), forKey: "totalUsage")
-            counters.first?.setValue(String(number), forKey: "remainingUsage")
+            
+            counter!.setValue(String(number), forKey: "totalUsage")
+            counter!.setValue(String(number), forKey: "remainingUsage")
+            
+            let df = DateFormatter()
+            df.dateFormat = "dd-MM-yyyy"
+            let currentDate = Date()
+            counter!.setValue(df.string(from: currentDate), forKey: "lastChangedDate")
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
+            
             appDelegate.saveContext()
             updateView()
         } else {
@@ -128,28 +167,30 @@ class CounterViewController: UIViewController {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
+        
         let context = appDelegate.persistentContainer.viewContext
         
         do {
-            try counters = context.fetch(Counter.fetchRequest()) as! [Counter]
+            try counter = context.fetch(Counter.fetchRequest()).first as? Counter
         } catch {
             print("Failed to fetch counter data.")
         }
         
-        if counters.count == 0 {
+        if counter == nil {
             print("Adding Counter")
             
-            let counter = NSEntityDescription.insertNewObject(forEntityName: "Counter", into: context) as! Counter
+            let newCounter = NSEntityDescription.insertNewObject(forEntityName: "Counter", into: context) as! Counter
             
-            counter.totalUsage = "200"
-            counter.remainingUsage = "175"
+            newCounter.totalUsage = "200"
+            newCounter.remainingUsage = "175"
+            newCounter.lastChangedDate = "02-09-2019"
             
             appDelegate.saveContext()
             
             do {
-                try counters = context.fetch(Counter.fetchRequest()) as! [Counter]
+                try counter = (context.fetch(Counter.fetchRequest()).first as? Counter)!
             } catch {
-                print("Failed to add initial records")
+                print("Failed to initial counter.")
             }
         }
     }
