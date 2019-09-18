@@ -155,6 +155,9 @@ class CounterViewController: UIViewController {
         } else {
             displayMessage(title: "Empty Total Usage", message: "Please enter total usage number.")
         }
+        
+        view.endEditing(true)
+        displayMessage(title: "Reset Successfully", message: "The inhaler is updated.")
     }
     
     func displayMessage(title: String, message: String) {
