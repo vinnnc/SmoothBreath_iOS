@@ -23,7 +23,7 @@ class RecordDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm a"
+        dateFormatter.dateFormat = "dd-MM-yyyy hh:mm a"
         dateAndTimeLabel.text = dateFormatter.string(from: (record?.attackDate! as Date?)!)
         attackLevelLabel.text = record?.attackLevel
         stressLabel.text = record?.stress
