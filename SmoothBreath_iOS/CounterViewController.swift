@@ -185,8 +185,10 @@ class CounterViewController: UIViewController {
             let newCounter = NSEntityDescription.insertNewObject(forEntityName: "Counter", into: context) as! Counter
             
             newCounter.totalUsage = "200"
-            newCounter.remainingUsage = "175"
-            newCounter.lastChangedDate = "02-09-2019"
+            newCounter.remainingUsage = "200"
+            let df = DateFormatter()
+            df.dateFormat = "dd-MM-yyyy"
+            newCounter.lastChangedDate = df.string(from: Date())
             
             appDelegate.saveContext()
             
