@@ -9,7 +9,7 @@
 import UIKit
 
 protocol addRecordDelegate: AnyObject {
-    func addRecord(attackDate: String, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool
+    func addRecord(attackDate: NSDate, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool
 }
 
 class NewRecordViewController: UIViewController {
@@ -35,9 +35,7 @@ class NewRecordViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy hh:mm a"
-        let dateAndTime = dateFormatter.string(from: dateAndTimeDatePicker.date)
+        let dateAndTime = dateAndTimeDatePicker.date as NSDate
         
         var attackLevel = ""
         if attackLevelSlider.value <= 0.33 {

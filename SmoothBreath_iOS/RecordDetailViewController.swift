@@ -22,22 +22,12 @@ class RecordDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        dateAndTimeLabel.text = record?.attackDate
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy hh:mm a"
+        dateAndTimeLabel.text = dateFormatter.string(from: (record?.attackDate! as Date?)!)
         attackLevelLabel.text = record?.attackLevel
         stressLabel.text = record?.stress
         exerciseLabel.text = record?.exercise
         nearbyLabel.text = record?.nearby
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -6,7 +6,7 @@
         <attribute name="totalUsage" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Record" representedClassName="Record" syncable="YES">
-        <attribute name="attackDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attackDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="attackLevel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="exercise" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nearby" optional="YES" attributeType="String" syncable="YES"/>

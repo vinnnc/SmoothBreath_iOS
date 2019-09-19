@@ -2,7 +2,7 @@
 //  Record+CoreDataClass.swift
 //  SmoothBreath_iOS
 //
-//  Created by Wenchu Du on 2019/9/17.
+//  Created by Wenchu Du on 2019/9/18.
 //  Copyright © 2019 Wenchu Du. All rights reserved.
 //
 //

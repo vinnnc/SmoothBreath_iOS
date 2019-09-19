@@ -59,7 +59,10 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         }
         let recordCell = tableView.dequeueReusableCell(withIdentifier: CELL_RECORD, for: indexPath) as! RecordTableViewCell
         let record = allRecords[indexPath.row]
-        recordCell.dateAndTimeLabel.text = record.attackDate
+        
+        let df = DateFormatter()
+        df.dateFormat = "dd/MM/yyyy HH:mm a"
+        recordCell.dateAndTimeLabel.text = df.string(from: record.attackDate! as Date)
         recordCell.attackLevelLabel.text = record.attackLevel
         
         return recordCell
@@ -96,7 +99,7 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         }
     }
     
-    func addRecord(attackDate: String, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool {
+    func addRecord(attackDate: NSDate, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool {
         for record in allRecords {
             if record.attackDate == attackDate {
                 return false
@@ -119,11 +122,9 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         appDelegate.saveContext()
         
         allRecords.append(record)
-        tableView.beginUpdates()
-        tableView.insertRows(at: [IndexPath(row: allRecords.count - 1, section: SECTION_RECORD)], with: .automatic)
-        tableView.endUpdates()
+        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedAscending })
+        tableView.reloadSections([SECTION_RECORD], with: .automatic)
         tableView.reloadSections([SECTION_COUNT], with: .automatic)
-        allRecords.sort(by: {$0.attackDate! > $1.attackDate!})
         return true
     }
     
@@ -209,8 +210,10 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
             
             for recordObj in newRecords {
                 let record = NSEntityDescription.insertNewObject(forEntityName: "Record", into: context) as! Record
-                    
-                record.attackDate = recordObj["attackDate"]
+                
+                let df = DateFormatter()
+                df.dateFormat = "dd/MM/yyyy HH:mm a"
+                record.attackDate = df.date(from: recordObj["attackDate"]!) as NSDate?
                 record.attackLevel = recordObj["attackLevel"]
                 record.exercise = recordObj["exercise"]
                 record.stress = recordObj["stress"]
@@ -226,6 +229,6 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
             }
         }
         
-        allRecords.sort(by: {$0.attackDate! > $1.attackDate!})
+        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedAscending })
     }
 }
