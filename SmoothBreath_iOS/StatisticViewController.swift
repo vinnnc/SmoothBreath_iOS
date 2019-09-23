@@ -53,7 +53,7 @@ class StatisticViewController: UIViewController {
     
     func generateTriggerRanking() {
         var report: [String: Int] = [:]
-        var labels = [firstNameLabel, firstNumberLabel, secondNameLabel, secondNumberLabel, thirdNameLabel, thirdNumberLabel, fourthNameLabel, fourthNumberLabel, fifthNameLabel, fifthNumberLabel, sixthNameLabel, sixthNumberLabel, seventhNameLabel, seventhNumberLabel]
+        let labels = [firstNameLabel, firstNumberLabel, secondNameLabel, secondNumberLabel, thirdNameLabel, thirdNumberLabel, fourthNameLabel, fourthNumberLabel, fifthNameLabel, fifthNumberLabel, sixthNameLabel, sixthNumberLabel, seventhNameLabel, seventhNumberLabel]
         
         if allRecords?.count == 0 {
             report["There is no record in database."] = 0

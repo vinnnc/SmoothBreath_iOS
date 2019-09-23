@@ -23,6 +23,7 @@
 		9BCA32282330C88600F91088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA32272330C88500F91088 /* Assets.xcassets */; };
 		9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BCAF6AE2329070D00BFC423 /* SmoothBreath.xcdatamodeld */; };
 		9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */; };
+		C9A4FD0E75FF2DBE145FDE1A /* Pods_SmoothBreath_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FFF4324231B91F97B19E55 /* Pods_SmoothBreath_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,9 @@
 		9BCA32272330C88500F91088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BCAF6AF2329070D00BFC423 /* SmoothBreath.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmoothBreath.xcdatamodel; sourceTree = "<group>"; };
 		9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		B032257BE329DA2A838826B9 /* Pods-SmoothBreath_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.debug.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B549821AD4C8036C23B74CE4 /* Pods-SmoothBreath_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.release.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C3FFF4324231B91F97B19E55 /* Pods_SmoothBreath_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothBreath_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +55,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A4FD0E75FF2DBE145FDE1A /* Pods_SmoothBreath_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C436115FF4974C2DA457A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B032257BE329DA2A838826B9 /* Pods-SmoothBreath_iOS.debug.xcconfig */,
+				B549821AD4C8036C23B74CE4 /* Pods-SmoothBreath_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		342065A02F1E8D27971C0DEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3FFF4324231B91F97B19E55 /* Pods_SmoothBreath_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B2A6001231FD91600CF6ED1 = {
 			isa = PBXGroup;
 			children = (
 				9B2A600C231FD91600CF6ED1 /* SmoothBreath_iOS */,
 				9B2A600B231FD91600CF6ED1 /* Products */,
+				09C436115FF4974C2DA457A9 /* Pods */,
+				342065A02F1E8D27971C0DEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B2A601C231FD91800CF6ED1 /* Build configuration list for PBXNativeTarget "SmoothBreath_iOS" */;
 			buildPhases = (
+				E00323388777425BDBD74DA1 /* [CP] Check Pods Manifest.lock */,
 				9B2A6006231FD91600CF6ED1 /* Sources */,
 				9B2A6007231FD91600CF6ED1 /* Frameworks */,
 				9B2A6008231FD91600CF6ED1 /* Resources */,
+				10D8E16B6795CD4A6A7B760A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10D8E16B6795CD4A6A7B760A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E00323388777425BDBD74DA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoothBreath_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B2A6006231FD91600CF6ED1 /* Sources */ = {
@@ -332,11 +401,13 @@
 		};
 		9B2A601D231FD91800CF6ED1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B032257BE329DA2A838826B9 /* Pods-SmoothBreath_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D4E88Q87ES;
+				DEVELOPMENT_TEAM = BA543NG78K;
 				INFOPLIST_FILE = SmoothBreath_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,11 +421,13 @@
 		};
 		9B2A601E231FD91800CF6ED1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B549821AD4C8036C23B74CE4 /* Pods-SmoothBreath_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D4E88Q87ES;
+				DEVELOPMENT_TEAM = BA543NG78K;
 				INFOPLIST_FILE = SmoothBreath_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
