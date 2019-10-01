@@ -9,7 +9,7 @@
 import UIKit
 
 protocol addRecordDelegate: AnyObject {
-    func addRecord(attackDate: NSDate, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool
+    func addRecord(attackDate: Date, attackLevel: Int, exercise: Int, stress: Int, nearby: String) -> Bool
 }
 
 class NewRecordViewController: UIViewController {
@@ -35,39 +35,6 @@ class NewRecordViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-        let dateAndTime = dateAndTimeDatePicker.date as NSDate
-        
-        var attackLevel = ""
-        if attackLevelSlider.value <= 0.33 {
-            attackLevel = "Mild"
-        } else if attackLevelSlider.value > 0.33 && attackLevelSlider.value <= 0.66 {
-            attackLevel = "Moderate"
-        } else {
-            attackLevel = "Severe"
-        }
-        
-        var stress = ""
-        if stressSlider.value < 0.25 {
-            stress = "Low"
-        } else if stressSlider.value >= 0.25 && stressSlider.value < 0.50 {
-            stress = "Middle"
-        } else if stressSlider.value >= 0.50 && stressSlider.value < 0.75 {
-            stress = "High"
-        } else {
-            stress = "Extreme"
-        }
-        
-        var exercise = ""
-        if exerciseSlider.value < 0.25 {
-            exercise = "Low"
-        } else if exerciseSlider.value >= 0.25 && exerciseSlider.value < 0.50 {
-            exercise = "Middle"
-        } else if exerciseSlider.value >= 0.50 && exerciseSlider.value < 0.75 {
-            exercise = "Hight"
-        } else {
-            exercise = "Extreme"
-        }
-        
         var nearby = ""
         if fireSwitch.isOn {
             nearby += "Fire, "
@@ -91,10 +58,10 @@ class NewRecordViewController: UIViewController {
             nearby = "None"
         }
         
-        if ((delegate?.addRecord(attackDate: dateAndTime, attackLevel: attackLevel, exercise: exercise, stress: stress, nearby: nearby))!) {
+        if ((delegate?.addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby))!) {
             navigationController?.popViewController(animated: true)
         } else {
-            displayMessage(title: "Time Duplicate", message: "Attack Date and time have alreay exist in database.")
+            displayMessage(title: "Save Failed", message: "Attack Date and time have alreay exist in database.")
         }
 
     }

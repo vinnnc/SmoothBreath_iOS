@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let uiNavbarProxy = UINavigationBar.appearance()
-        uiNavbarProxy.barTintColor = UIColor(red: 0.27, green: 0.2, blue: 0.31, alpha: 1.0)
+        uiNavbarProxy.barTintColor = UIColor(red: 72.0 / 255.0, green: 189.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0)
         uiNavbarProxy.tintColor = UIColor.white
         uiNavbarProxy.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         

@@ -62,11 +62,11 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func addUsage(_ sender: Any) {
-        var remainingUsage = Int(counter!.remainingUsage!)!
+        var remainingUsage = Int(counter!.remainingUsage)
         
         if remainingUsage > 0 {
             remainingUsage -= 1
-            counter!.setValue(String(remainingUsage), forKey: "remainingUsage")
+            counter!.setValue(Int32(remainingUsage), forKey: "remainingUsage")
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
@@ -79,12 +79,12 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func removeUsage(_ sender: Any) {
-        let totalUsage = Int(counter!.totalUsage!)!
-        var remainingUsage = Int(counter!.remainingUsage!)!
+        let totalUsage = Int(counter!.totalUsage)
+        var remainingUsage = Int(counter!.remainingUsage)
         
         if remainingUsage < totalUsage {
             remainingUsage += 1
-            counter!.setValue(String(remainingUsage), forKey: "remainingUsage")
+            counter!.setValue(Int32(remainingUsage), forKey: "remainingUsage")
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
@@ -97,21 +97,21 @@ class CounterViewController: UIViewController {
     }
     
     func updateView() {
-        let totalUsage = Int(counter!.totalUsage!)!
-        let remainingUsage = Int(counter!.remainingUsage!)!
+        let totalUsage = Int(counter!.totalUsage)
+        let remainingUsage = Int(counter!.remainingUsage)
         let percentage = Float(remainingUsage) / Float(totalUsage)
         
         remainingUsageLabel.text = String(remainingUsage)
         totalUsageLabel.text = "/\(totalUsage)"
         inhalerProgressView.progress = percentage
-        lastDateLabel.text = counter!.lastChangedDate
         
         let df = DateFormatter()
         df.dateFormat = "dd-MM-yyyy"
+        lastDateLabel.text = df.string(from: counter!.lastChangedDate!)
         
         let calendar = Calendar.current
         let currentDate = calendar.startOfDay(for: Date())
-        let lastChangedDate = calendar.startOfDay(for: df.date(from: counter!.lastChangedDate!)!)
+        let lastChangedDate = calendar.startOfDay(for: counter!.lastChangedDate!)
         let duration = calendar.dateComponents([.day], from: lastChangedDate, to: currentDate).day! + 1
         let dailyUsage = Float(totalUsage - remainingUsage) / Float(duration)
         if dailyUsage == 0 {
@@ -184,9 +184,11 @@ class CounterViewController: UIViewController {
             
             let newCounter = NSEntityDescription.insertNewObject(forEntityName: "Counter", into: context) as! Counter
             
-            newCounter.totalUsage = "200"
-            newCounter.remainingUsage = "175"
-            newCounter.lastChangedDate = "02-09-2019"
+            newCounter.totalUsage = 200
+            newCounter.remainingUsage = 175
+            let df = DateFormatter()
+            df.dateFormat = "dd-MM-yyyy"
+            newCounter.lastChangedDate = df.date(from: "02-09-2019")
             
             appDelegate.saveContext()
             

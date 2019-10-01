@@ -9,10 +9,7 @@
 import UIKit
 
 class StatisticViewController: UIViewController {
-    
-    @IBOutlet weak var severeNumberLabel: UILabel!
-    @IBOutlet weak var moderateNumberLabel: UILabel!
-    @IBOutlet weak var mildNumberLabel: UILabel!
+
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var firstNumberLabel: UILabel!
     @IBOutlet weak var secondNameLabel: UILabel!
@@ -34,21 +31,7 @@ class StatisticViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        generateAttackStatus()
         generateTriggerRanking()
-    }
-    
-    func generateAttackStatus() {
-        var status = ["Severe": 0, "Moderate": 0, "Mild": 0]
-        if allRecords?.count != 0 {
-            for record in allRecords! {
-                let attackLevel = record.attackLevel
-                status.updateValue(status[attackLevel!]! + 1, forKey: attackLevel!)
-            }
-        }
-        severeNumberLabel.text = "\(status["Severe"] ?? 0)"
-        moderateNumberLabel.text = "\(status["Moderate"] ?? 0)"
-        mildNumberLabel.text = "\(status["Mild"] ?? 0)"
     }
     
     func generateTriggerRanking() {
@@ -59,7 +42,7 @@ class StatisticViewController: UIViewController {
             report["There is no record in database."] = 0
         } else {
             for record in allRecords! {
-                if record.stress != "Low" {
+                if record.stress > 50 {
                     if report["Stress"] != nil {
                         report.updateValue(report["Stress"]! + 1, forKey: "Stress")
                     } else {
@@ -67,7 +50,7 @@ class StatisticViewController: UIViewController {
                     }
                 }
                 
-                if record.exercise != "Low" {
+                if record.exercise > 50 {
                     if report["Exercise"] != nil {
                         report.updateValue(report["Exercise"]! + 1, forKey: "Exercise")
                     } else {

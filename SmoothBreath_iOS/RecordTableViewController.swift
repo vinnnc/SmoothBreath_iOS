@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class RecordTableViewController: UITableViewController, addRecordDelegate {
-    
+
     let SECTION_COUNT = 1
     let SECTION_RECORD = 0
     let CELL_COUNT = "countCell"
@@ -62,8 +62,16 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         
         let df = DateFormatter()
         df.dateFormat = "dd/MM/yyyy HH:mm a"
-        recordCell.dateAndTimeLabel.text = df.string(from: record.attackDate! as Date)
-        recordCell.attackLevelLabel.text = record.attackLevel
+        recordCell.dateAndTimeLabel.text = df.string(from: record.attackDate!)
+        
+        let attackLevel = Int(record.attackLevel)
+        if attackLevel <= 33{
+            recordCell.attackLevelLabel.text = "Mild"
+        } else if attackLevel > 33 && attackLevel <= 66 {
+            recordCell.attackLevelLabel.text = "Moderate"
+        } else {
+            recordCell.attackLevelLabel.text = "Severe"
+        }
         
         return recordCell
     }
@@ -99,7 +107,7 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         }
     }
     
-    func addRecord(attackDate: NSDate, attackLevel: String, exercise: String, stress: String, nearby: String) -> Bool {
+    func addRecord(attackDate: Date, attackLevel: Int, exercise: Int, stress: Int, nearby: String) -> Bool {
         for record in allRecords {
             if record.attackDate == attackDate {
                 return false
@@ -114,9 +122,9 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         let record = NSEntityDescription.insertNewObject(forEntityName: "Record", into: context) as! Record
         
         record.attackDate = attackDate
-        record.attackLevel = attackLevel
-        record.exercise = exercise
-        record.stress = stress
+        record.attackLevel = Int32(attackLevel)
+        record.exercise = Int32(exercise)
+        record.stress = Int32(stress)
         record.nearby = nearby
         
         appDelegate.saveContext()
@@ -149,51 +157,6 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
     }
 
     func loadData() {
-        let newRecords = [
-            [
-                "attackDate": "01-09-2019 08:14 AM",
-                "attackLevel": "Mild",
-                "exercise": "Low",
-                "stress": "Middle",
-                "nearby": "None"
-            ],
-            [
-                "attackDate": "03-09-2019 08:23 AM",
-                "attackLevel": "Mild",
-                "exercise": "Middle",
-                "stress": "Low",
-                "nearby": "Pollen Source, Dust"
-            ],
-            [
-                "attackDate": "06-09-2019 09:09 AM",
-                "attackLevel": "Moderate",
-                "exercise": "Low",
-                "stress": "Low",
-                "nearby": "Animal, Heavy Wind"
-            ],
-            [
-                "attackDate": "08-09-2019 08:06 AM",
-                "attackLevel": "Mild",
-                "exercise": "Low",
-                "stress": "Low",
-                "nearby": "Animal, Heavy Wind, Pollen Source, Dust"
-            ],
-            [
-                "attackDate": "09-09-2019 09:16 AM",
-                "attackLevel": "Severe",
-                "exercise": "Low",
-                "stress": "Middle",
-                "nearby": "None"
-            ],
-            [
-                "attackDate": "11-09-2019 04:16 PM",
-                "attackLevel": "Moderate",
-                "exercise": "Low",
-                "stress": "Extreme",
-                "nearby": "Animal"
-            ]
-        ]
-    
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
@@ -203,30 +166,6 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
             try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
         } catch {
             print("Failed to fetch record data.")
-        }
-        
-        if allRecords.count == 0 {
-            print("Adding Records")
-            
-            for recordObj in newRecords {
-                let record = NSEntityDescription.insertNewObject(forEntityName: "Record", into: context) as! Record
-                
-                let df = DateFormatter()
-                df.dateFormat = "dd/MM/yyyy HH:mm a"
-                record.attackDate = df.date(from: recordObj["attackDate"]!) as NSDate?
-                record.attackLevel = recordObj["attackLevel"]
-                record.exercise = recordObj["exercise"]
-                record.stress = recordObj["stress"]
-                record.nearby = recordObj["nearby"]
-            }
-            
-            appDelegate.saveContext()
-            
-            do {
-                try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
-            } catch {
-                print("Failed to add initial records")
-            }
         }
         
         allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedAscending })

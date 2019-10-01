@@ -2,7 +2,7 @@
 //  Counter+CoreDataProperties.swift
 //  SmoothBreath_iOS
 //
-//  Created by Wenchu Du on 2019/9/18.
+//  Created by Wenchu Du on 2019/10/1.
 //  Copyright © 2019 Wenchu Du. All rights reserved.
 //
 //
@@ -17,8 +17,8 @@ extension Counter {
         return NSFetchRequest<Counter>(entityName: "Counter")
     }
 
-    @NSManaged public var lastChangedDate: String?
-    @NSManaged public var remainingUsage: String?
-    @NSManaged public var totalUsage: String?
+    @NSManaged public var lastChangedDate: Date?
+    @NSManaged public var remainingUsage: Int32
+    @NSManaged public var totalUsage: Int32
 
 }

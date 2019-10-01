@@ -2,7 +2,7 @@
 //  Record+CoreDataProperties.swift
 //  SmoothBreath_iOS
 //
-//  Created by Wenchu Du on 2019/9/18.
+//  Created by Wenchu Du on 2019/10/1.
 //  Copyright © 2019 Wenchu Du. All rights reserved.
 //
 //
@@ -17,10 +17,12 @@ extension Record {
         return NSFetchRequest<Record>(entityName: "Record")
     }
 
-    @NSManaged public var attackDate: NSDate?
-    @NSManaged public var attackLevel: String?
-    @NSManaged public var exercise: String?
+    @NSManaged public var attackDate: Date?
+    @NSManaged public var attackLevel: Int32
+    @NSManaged public var exercise: Int32
     @NSManaged public var nearby: String?
-    @NSManaged public var stress: String?
+    @NSManaged public var stress: Int32
+    @NSManaged public var longitude: Float
+    @NSManaged public var latitude: Float
 
 }
