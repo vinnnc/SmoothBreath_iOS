@@ -55,7 +55,7 @@ class NewRecordViewController: UIViewController {
         if nearby.count > 2 {
             nearby = String(nearby.dropLast(2))
         } else {
-            nearby = "None"
+            nearby = "There is no other triggers nearby."
         }
         
         if ((delegate?.addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby))!) {

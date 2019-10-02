@@ -21,11 +21,6 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         loadData()
     }
 
@@ -66,12 +61,36 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         
         let attackLevel = Int(record.attackLevel)
         if attackLevel <= 33{
-            recordCell.attackLevelLabel.text = "Mild"
+            recordCell.attackLevelLabel.text = "Attack Level: Mild"
         } else if attackLevel > 33 && attackLevel <= 66 {
-            recordCell.attackLevelLabel.text = "Moderate"
+            recordCell.attackLevelLabel.text = "Attack Level: Moderate"
         } else {
-            recordCell.attackLevelLabel.text = "Severe"
+            recordCell.attackLevelLabel.text = "Attack Level: Severe"
         }
+        
+        let stress = Int(record.stress)
+        if stress <= 25{
+            recordCell.stressLabel.text = "Stress: Slight"
+        } else if stress > 25 && stress <= 50 {
+            recordCell.stressLabel.text = "Stress: Middle"
+        } else if stress > 50 && stress <= 75 {
+            recordCell.stressLabel.text = "Stress: High"
+        } else {
+            recordCell.stressLabel.text = "Stress: Extreme"
+        }
+        
+        let exercise = Int(record.exercise)
+        if exercise <= 25{
+            recordCell.exerciseLabel.text = "Exercise: Slight"
+        } else if exercise > 25 && exercise <= 50 {
+            recordCell.exerciseLabel.text = "Exercise: Middle"
+        } else if exercise > 50 && exercise <= 75 {
+            recordCell.exerciseLabel.text = "Exercise: High"
+        } else {
+            recordCell.exerciseLabel.text = "Exercise: Extreme"
+        }
+        
+        recordCell.nearbyLabel.text = "Nearby: \(record.nearby ?? "")"
         
         return recordCell
     }
@@ -90,6 +109,13 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
             let record = allRecords[indexPath.row]
             performSegue(withIdentifier: "recordDetailSegue", sender: record)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == SECTION_RECORD {
+            return 120
+        }
+        return 44
     }
 
     // Override to support editing the table view.

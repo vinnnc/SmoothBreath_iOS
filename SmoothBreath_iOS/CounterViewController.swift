@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CounterViewController: UIViewController {
+class CounterViewController: UIViewController, ResetInhalerDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var remainingUsageLabel: UILabel!
@@ -18,8 +18,10 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var leftDayLabel: UILabel!
     @IBOutlet weak var lastDateLabel: UILabel!
     @IBOutlet weak var expectedDateLabel: UILabel!
-    @IBOutlet weak var totalUsageTextField: UITextField!
+    @IBOutlet weak var changeUsageStepper: UIStepper!
+    
     var counter: Counter?
+    var previousValue: Double = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,42 +62,47 @@ class CounterViewController: UIViewController {
         scrollView.contentInset = .zero
         scrollView.scrollIndicatorInsets = .zero
     }
+
+    @IBAction func stepperChangeUsage(_ sender: UIStepper) {
+        if sender.value < previousValue {
+            addUsage()
+        } else {
+            removeUsage()
+        }
+        previousValue = sender.value
+    }
     
-    @IBAction func addUsage(_ sender: Any) {
+    func addUsage() {
         var remainingUsage = Int(counter!.remainingUsage)
-        
+
         if remainingUsage > 0 {
             remainingUsage -= 1
             counter!.setValue(Int32(remainingUsage), forKey: "remainingUsage")
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
-            
+
             appDelegate.saveContext()
             updateView()
-        } else {
-            displayMessage(title: "Inhaler Empty", message: "Please reset a new inhaler.")
         }
     }
-    
-    @IBAction func removeUsage(_ sender: Any) {
+
+    func removeUsage() {
         let totalUsage = Int(counter!.totalUsage)
         var remainingUsage = Int(counter!.remainingUsage)
-        
+
         if remainingUsage < totalUsage {
             remainingUsage += 1
             counter!.setValue(Int32(remainingUsage), forKey: "remainingUsage")
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
-            
+
             appDelegate.saveContext()
             updateView()
-        } else {
-            displayMessage(title: "Cannot Remove Usage", message: "Remaining usage is already same with total usage.")
         }
     }
-    
+
     func updateView() {
         let totalUsage = Int(counter!.totalUsage)
         let remainingUsage = Int(counter!.remainingUsage)
@@ -132,38 +139,20 @@ class CounterViewController: UIViewController {
         expectedDateLabel.text = expectedDate
     }
     
-    @IBAction func reset(_ sender: Any) {
-        if totalUsageTextField.text != "" {
-            guard let number = Int(totalUsageTextField.text!) else {
-                displayMessage(title: "Invalid Total Usage", message: "Please enter a number.")
-                return
-            }
-            
-            counter!.setValue(String(number), forKey: "totalUsage")
-            counter!.setValue(String(number), forKey: "remainingUsage")
-            
-            let df = DateFormatter()
-            df.dateFormat = "dd-MM-yyyy"
-            let currentDate = Date()
-            counter!.setValue(df.string(from: currentDate), forKey: "lastChangedDate")
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return
-            }
-            
-            appDelegate.saveContext()
-            updateView()
-        } else {
-            displayMessage(title: "Empty Total Usage", message: "Please enter total usage number.")
-        }
+    func resetInhaler(totalUsage: Int) -> Bool {
+        counter!.setValue(Int32(totalUsage), forKey: "totalUsage")
+        counter!.setValue(Int32(totalUsage), forKey: "remainingUsage")
+        changeUsageStepper.maximumValue = Double(totalUsage)
+        changeUsageStepper.value = Double(totalUsage)
         
-        view.endEditing(true)
-        displayMessage(title: "Reset Successfully", message: "The inhaler is updated.")
-    }
-    
-    func displayMessage(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return false
+        }
+
+        appDelegate.saveContext()
+        updateView()
+        
+        return true
     }
     
     func loadData() {
@@ -185,10 +174,8 @@ class CounterViewController: UIViewController {
             let newCounter = NSEntityDescription.insertNewObject(forEntityName: "Counter", into: context) as! Counter
             
             newCounter.totalUsage = 200
-            newCounter.remainingUsage = 175
-            let df = DateFormatter()
-            df.dateFormat = "dd-MM-yyyy"
-            newCounter.lastChangedDate = df.date(from: "02-09-2019")
+            newCounter.remainingUsage = 200
+            newCounter.lastChangedDate = Date()
             
             appDelegate.saveContext()
             
@@ -197,6 +184,18 @@ class CounterViewController: UIViewController {
             } catch {
                 print("Failed to initial counter.")
             }
+        }
+        
+        changeUsageStepper.maximumValue = Double(counter!.totalUsage)
+        changeUsageStepper.minimumValue = 0
+        changeUsageStepper.value = Double(counter!.remainingUsage)
+        previousValue = Double(counter!.remainingUsage)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "resetInhalerSegue" {
+            let destination = segue.destination as! ResetInhalerViewController
+            destination.delegate = self
         }
     }
 }

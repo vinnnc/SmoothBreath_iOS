@@ -12,6 +12,9 @@ class RecordTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dateAndTimeLabel: UILabel!
     @IBOutlet weak var attackLevelLabel: UILabel!
+    @IBOutlet weak var stressLabel: UILabel!
+    @IBOutlet weak var exerciseLabel: UILabel!
+    @IBOutlet weak var nearbyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
