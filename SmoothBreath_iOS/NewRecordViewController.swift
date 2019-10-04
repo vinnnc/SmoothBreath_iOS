@@ -7,15 +7,14 @@
 //
 
 import UIKit
+import CoreData
+import MapKit
 
-protocol addRecordDelegate: AnyObject {
-    func addRecord(attackDate: Date, attackLevel: Int, exercise: Int, stress: Int, nearby: String) -> Bool
-}
-
-class NewRecordViewController: UIViewController {
+class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var dateAndTimeDatePicker: UIDatePicker!
     @IBOutlet weak var attackLevelSlider: UISlider!
+    @IBOutlet weak var currentLocationSwitch: UISwitch!
     @IBOutlet weak var stressSlider: UISlider!
     @IBOutlet weak var exerciseSlider: UISlider!
     @IBOutlet weak var fireSwitch: UISwitch!
@@ -23,15 +22,44 @@ class NewRecordViewController: UIViewController {
     @IBOutlet weak var heavyWindSwitch: UISwitch!
     @IBOutlet weak var pollenSourceSwitch: UISwitch!
     @IBOutlet weak var dustSwitch: UISwitch!
+
+    var locationManager: CLLocationManager = CLLocationManager()
+    var currentLocation: CLLocationCoordinate2D?
     
-    var delegate: RecordTableViewController?
+    var allRecords: [Record] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        initialistaion()
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.distanceFilter = 10
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        initialistaion()
+        locationManager.startUpdatingLocation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        locationManager.stopUpdatingLocation()
+    }
+    
+    func initialistaion() {
         let calandar = Calendar(identifier: .gregorian)
         dateAndTimeDatePicker.maximumDate = calandar.date(byAdding: DateComponents(), to: Date())
+        loadData()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last!
+        currentLocation = location.coordinate
     }
     
     @IBAction func save(_ sender: Any) {
@@ -55,20 +83,76 @@ class NewRecordViewController: UIViewController {
         if nearby.count > 2 {
             nearby = String(nearby.dropLast(2))
         } else {
-            nearby = "There is no other triggers nearby."
+            nearby = "There is no other trigger nearby."
         }
         
-        if ((delegate?.addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby))!) {
-            navigationController?.popViewController(animated: true)
+        if currentLocationSwitch.isOn {
+            if currentLocation != nil {
+                if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby, longitude: Float(currentLocation!.longitude), latitude: Float(currentLocation!.latitude)) {
+                    displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
+                    return
+                } else {
+                    displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
+                    return
+                }
+            }
+            else {
+                displayMessage(title: "Location Not Found", message: "The location has not yet been determined.")
+                return
+            }
         } else {
-            displayMessage(title: "Save Failed", message: "Attack Date and time have alreay exist in database.")
+            if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby, longitude: Float.zero, latitude: Float.zero) {
+                displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
+            } else {
+                displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
+            }
         }
-
+    }
+    
+    func addRecord(attackDate: Date, attackLevel: Int, exercise: Int, stress: Int, nearby: String, longitude: Float, latitude: Float) -> Bool {
+        for record in allRecords {
+            if record.attackDate == attackDate {
+                return false
+            }
+        }
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return false
+        }
+        
+        let context = appDelegate.persistentContainer.viewContext
+        let record = NSEntityDescription.insertNewObject(forEntityName: "Record", into: context) as! Record
+        
+        record.attackDate = attackDate
+        record.attackLevel = Int32(attackLevel)
+        record.exercise = Int32(exercise)
+        record.stress = Int32(stress)
+        record.nearby = nearby
+        record.latitude = latitude
+        record.longitude = longitude
+        
+        appDelegate.saveContext()
+        
+        allRecords.append(record)
+        return true
     }
     
     func displayMessage(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func loadData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let context = appDelegate.persistentContainer.viewContext
+        
+        do {
+            try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
+        } catch {
+            print("Failed to fetch record data.")
+        }
     }
 }

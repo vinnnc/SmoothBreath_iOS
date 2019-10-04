@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class RecordTableViewController: UITableViewController, addRecordDelegate {
+class RecordTableViewController: UITableViewController {
 
     let SECTION_COUNT = 1
     let SECTION_RECORD = 0
@@ -20,7 +20,6 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         loadData()
     }
 
@@ -133,35 +132,6 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         }
     }
     
-    func addRecord(attackDate: Date, attackLevel: Int, exercise: Int, stress: Int, nearby: String) -> Bool {
-        for record in allRecords {
-            if record.attackDate == attackDate {
-                return false
-            }
-        }
-        
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return false
-        }
-        
-        let context = appDelegate.persistentContainer.viewContext
-        let record = NSEntityDescription.insertNewObject(forEntityName: "Record", into: context) as! Record
-        
-        record.attackDate = attackDate
-        record.attackLevel = Int32(attackLevel)
-        record.exercise = Int32(exercise)
-        record.stress = Int32(stress)
-        record.nearby = nearby
-        
-        appDelegate.saveContext()
-        
-        allRecords.append(record)
-        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedAscending })
-        tableView.reloadSections([SECTION_RECORD], with: .automatic)
-        tableView.reloadSections([SECTION_COUNT], with: .automatic)
-        return true
-    }
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -171,14 +141,6 @@ class RecordTableViewController: UITableViewController, addRecordDelegate {
         if segue.identifier == "recordDetailSegue" {
             let destination = segue.destination as! RecordDetailViewController
             destination.record = sender as? Record
-        }
-        if segue.identifier == "newRecordSegue" {
-            let destination = segue.destination as! NewRecordViewController
-            destination.delegate = self
-        }
-        if segue.identifier == "statisticSegue" {
-            let destination = segue.destination as! StatisticViewController
-            destination.allRecords = allRecords
         }
     }
 

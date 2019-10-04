@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RecordDetailViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class RecordDetailViewController: UIViewController {
     @IBOutlet weak var stressLabel: UILabel!
     @IBOutlet weak var exerciseLabel: UILabel!
     @IBOutlet weak var nearbyLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     
     var record: Record?
 
@@ -58,5 +60,17 @@ class RecordDetailViewController: UIViewController {
         }
         
         nearbyLabel.text = record?.nearby
+        
+        if !(record?.latitude.isZero)! && !(record?.longitude.isZero)! {
+            let annotation = Annotation(newTitle: "", newSubtitle: "", lat: Double(record!.latitude), long: Double(record!.longitude))
+            mapView.addAnnotation(annotation)
+            focusOn(annotation: annotation)
+        }
+    }
+    
+    func focusOn(annotation: MKAnnotation) {
+        let zoomRegion = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000,
+        longitudinalMeters: 1000)
+        mapView.setRegion(mapView.regionThatFits(zoomRegion), animated: true)
     }
 }

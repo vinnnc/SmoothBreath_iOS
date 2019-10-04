@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Charts
 
 class StatisticViewController: UIViewController {
 
+    @IBOutlet weak var monthDistributionLineChartView: LineChartView!
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var firstNumberLabel: UILabel!
     @IBOutlet weak var secondNameLabel: UILabel!
@@ -25,23 +27,32 @@ class StatisticViewController: UIViewController {
     @IBOutlet weak var seventhNameLabel: UILabel!
     @IBOutlet weak var seventhNumberLabel: UILabel!
     
-    var allRecords: [Record]?
+    var allRecords: [Record] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loadData()
         generateTriggerRanking()
+        generateMonthDistributionChart()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadData()
+        generateTriggerRanking()
+        generateMonthDistributionChart()
     }
     
     func generateTriggerRanking() {
         var report: [String: Int] = [:]
         let labels = [firstNameLabel, firstNumberLabel, secondNameLabel, secondNumberLabel, thirdNameLabel, thirdNumberLabel, fourthNameLabel, fourthNumberLabel, fifthNameLabel, fifthNumberLabel, sixthNameLabel, sixthNumberLabel, seventhNameLabel, seventhNumberLabel]
         
-        if allRecords?.count == 0 {
-            report["There is no record in database."] = 0
+        if allRecords.count == 0 {
+            report["There is no record in the database."] = 0
         } else {
-            for record in allRecords! {
+            for record in allRecords {
                 if record.stress > 50 {
                     if report["Stress"] != nil {
                         report.updateValue(report["Stress"]! + 1, forKey: "Stress")
@@ -58,7 +69,7 @@ class StatisticViewController: UIViewController {
                     }
                 }
                 
-                if record.nearby != "None" {
+                if record.nearby != "There is no other trigger nearby." {
                     guard let nearbys = record.nearby?.components(separatedBy: ", ") else { return  }
                     for nearby in nearbys {
                         if report[nearby] != nil {
@@ -88,5 +99,67 @@ class StatisticViewController: UIViewController {
                 labels[index]?.text = ""
             }
         }
+    }
+    
+    func loadData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let context = appDelegate.persistentContainer.viewContext
+        
+        do {
+            try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
+        } catch {
+            print("Failed to fetch record data.")
+        }
+        
+        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedAscending })
+    }
+    
+    func generateMonthDistributionChart() {
+        
+        var values = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        
+        for record in allRecords {
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.month], from: record.attackDate!)
+            let month = components.month
+            values[month! - 1] += 1
+        }
+        
+        var dataEntries: [ChartDataEntry] = []
+        
+        for i in 0...values.count - 1{
+            let dataEntry = ChartDataEntry(x: Double(i), y: values[i])
+            dataEntries.append(dataEntry)
+        }
+        
+        let lineChartDataSet = LineChartDataSet(entries: dataEntries, label: "Asthma Attack Amount")
+        let lineChartData = LineChartData(dataSet: lineChartDataSet)
+        lineChartDataSet.drawCirclesEnabled = false
+        lineChartDataSet.lineWidth = 3.0
+        lineChartDataSet.setColor(UIColor.orange)
+        lineChartDataSet.mode = .cubicBezier
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.generatesDecimalNumbers = false
+        lineChartDataSet.valueFormatter = DefaultValueFormatter(formatter: numberFormatter)
+        lineChartDataSet.valueFont = .systemFont(ofSize: 12)
+        
+        monthDistributionLineChartView.data = lineChartData
+        monthDistributionLineChartView.doubleTapToZoomEnabled = false
+        monthDistributionLineChartView.rightAxis.drawGridLinesEnabled = false
+        monthDistributionLineChartView.rightAxis.drawLabelsEnabled = false
+        monthDistributionLineChartView.rightAxis.drawAxisLineEnabled = false
+        monthDistributionLineChartView.leftAxis.drawGridLinesEnabled = false
+        monthDistributionLineChartView.leftAxis.drawLabelsEnabled = false
+        monthDistributionLineChartView.leftAxis.drawAxisLineEnabled = false
+        monthDistributionLineChartView.xAxis.drawGridLinesEnabled = false
+        monthDistributionLineChartView.xAxis.labelPosition = .bottom
+        let xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        monthDistributionLineChartView.xAxis.setLabelCount(12, force: true)
+        monthDistributionLineChartView.xAxis.labelFont = .systemFont(ofSize: 12)
+        monthDistributionLineChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: xValues)
+        monthDistributionLineChartView.backgroundColor = UIColor(ciColor: .white)
     }
 }

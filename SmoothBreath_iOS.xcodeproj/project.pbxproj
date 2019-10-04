@@ -12,6 +12,7 @@
 		9B2A6018231FD91800CF6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */; };
 		9B3555722344B243002FD855 /* ResetInhalerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3555712344B243002FD855 /* ResetInhalerViewController.swift */; };
 		9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B617D35232CB10700CB52DA /* StatisticViewController.swift */; };
+		9B61B655234738A500151E34 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B654234738A500151E34 /* Annotation.swift */; };
 		9B737BCB23436A86005305CF /* Counter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B737BC723436A86005305CF /* Counter+CoreDataClass.swift */; };
 		9B737BCC23436A86005305CF /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B737BC823436A86005305CF /* Counter+CoreDataProperties.swift */; };
 		9B737BCD23436A86005305CF /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B737BC923436A86005305CF /* Record+CoreDataClass.swift */; };
@@ -35,6 +36,7 @@
 		9B2A6019231FD91800CF6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B3555712344B243002FD855 /* ResetInhalerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetInhalerViewController.swift; sourceTree = "<group>"; };
 		9B617D35232CB10700CB52DA /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		9B61B654234738A500151E34 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		9B737BC723436A86005305CF /* Counter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9B737BC823436A86005305CF /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B737BC923436A86005305CF /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */,
 				9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */,
 				9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */,
+				9B61B654234738A500151E34 /* Annotation.swift */,
 				9B617D35232CB10700CB52DA /* StatisticViewController.swift */,
 				9BCA32272330C88500F91088 /* Assets.xcassets */,
 				9BCAF69A2329034600BFC423 /* DataModel */,
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B737BCD23436A86005305CF /* Record+CoreDataClass.swift in Sources */,
+				9B61B655234738A500151E34 /* Annotation.swift in Sources */,
 				9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */,
 				9B3555722344B243002FD855 /* ResetInhalerViewController.swift in Sources */,
 				9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */,
