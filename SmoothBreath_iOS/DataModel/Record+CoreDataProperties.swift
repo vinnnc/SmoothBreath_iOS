@@ -2,7 +2,7 @@
 //  Record+CoreDataProperties.swift
 //  SmoothBreath_iOS
 //
-//  Created by Wenchu Du on 2019/10/1.
+//  Created by Wenchu Du on 2019/10/5.
 //  Copyright © 2019 Wenchu Du. All rights reserved.
 //
 //
@@ -20,9 +20,9 @@ extension Record {
     @NSManaged public var attackDate: Date?
     @NSManaged public var attackLevel: Int32
     @NSManaged public var exercise: Int32
+    @NSManaged public var latitude: Float
+    @NSManaged public var longitude: Float
     @NSManaged public var nearby: String?
     @NSManaged public var stress: Int32
-    @NSManaged public var longitude: Float
-    @NSManaged public var latitude: Float
 
 }

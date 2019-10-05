@@ -69,7 +69,7 @@ class StatisticViewController: UIViewController {
         lineChartDataSet.drawCirclesEnabled = false
         lineChartDataSet.lineWidth = 3.0
         lineChartDataSet.setColor(UIColor.orange)
-        lineChartDataSet.mode = .cubicBezier
+        lineChartDataSet.mode = .horizontalBezier
         
         let numberFormatter = NumberFormatter()
         numberFormatter.generatesDecimalNumbers = false
