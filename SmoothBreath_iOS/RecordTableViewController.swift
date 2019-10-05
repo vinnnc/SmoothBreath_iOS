@@ -59,31 +59,31 @@ class RecordTableViewController: UITableViewController {
         recordCell.dateAndTimeLabel.text = df.string(from: record.attackDate!)
         
         let attackLevel = Int(record.attackLevel)
-        if attackLevel <= 33{
+        if attackLevel == 0 {
             recordCell.attackLevelLabel.text = "Attack Level: Mild"
-        } else if attackLevel > 33 && attackLevel <= 66 {
+        } else if attackLevel == 1 {
             recordCell.attackLevelLabel.text = "Attack Level: Moderate"
         } else {
             recordCell.attackLevelLabel.text = "Attack Level: Severe"
         }
         
         let stress = Int(record.stress)
-        if stress <= 25{
+        if stress == 0 {
             recordCell.stressLabel.text = "Stress: Slight"
-        } else if stress > 25 && stress <= 50 {
+        } else if stress == 1 {
             recordCell.stressLabel.text = "Stress: Middle"
-        } else if stress > 50 && stress <= 75 {
+        } else if stress == 2 {
             recordCell.stressLabel.text = "Stress: High"
         } else {
             recordCell.stressLabel.text = "Stress: Extreme"
         }
         
         let exercise = Int(record.exercise)
-        if exercise <= 25{
+        if exercise == 0 {
             recordCell.exerciseLabel.text = "Exercise: Slight"
-        } else if exercise > 25 && exercise <= 50 {
+        } else if exercise == 1 {
             recordCell.exerciseLabel.text = "Exercise: Middle"
-        } else if exercise > 50 && exercise <= 75 {
+        } else if exercise == 2 {
             recordCell.exerciseLabel.text = "Exercise: High"
         } else {
             recordCell.exerciseLabel.text = "Exercise: Extreme"

@@ -25,7 +25,6 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
 
     var locationManager: CLLocationManager = CLLocationManager()
     var currentLocation: CLLocationCoordinate2D?
-    
     var allRecords: [Record] = []
     
     override func viewDidLoad() {
@@ -61,6 +60,17 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         let location = locations.last!
         currentLocation = location.coordinate
     }
+    @IBAction func attackLevelSliderConfig(_ sender: UISlider) {
+        sender.value = roundf(sender.value)
+    }
+    
+    @IBAction func stressSliderConfig(_ sender: UISlider) {
+        sender.value = roundf(sender.value)
+    }
+    
+    @IBAction func exerciseSliderConfig(_ sender: UISlider) {
+        sender.value = roundf(sender.value)
+    }
     
     @IBAction func save(_ sender: Any) {
         var nearby = ""
@@ -90,6 +100,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
             if currentLocation != nil {
                 if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby, longitude: Float(currentLocation!.longitude), latitude: Float(currentLocation!.latitude)) {
                     displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
+                    tabBarController?.selectedIndex = 2
                     return
                 } else {
                     displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
@@ -102,7 +113,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
             }
         } else {
             if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby, longitude: Float.zero, latitude: Float.zero) {
-                displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
+                displayMessage(title: "Save Successfully", message: "New record has been saved in the database.")
             } else {
                 displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
             }

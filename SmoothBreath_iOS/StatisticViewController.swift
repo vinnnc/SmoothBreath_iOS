@@ -12,20 +12,8 @@ import Charts
 class StatisticViewController: UIViewController {
 
     @IBOutlet weak var monthDistributionLineChartView: LineChartView!
-    @IBOutlet weak var firstNameLabel: UILabel!
-    @IBOutlet weak var firstNumberLabel: UILabel!
-    @IBOutlet weak var secondNameLabel: UILabel!
-    @IBOutlet weak var secondNumberLabel: UILabel!
-    @IBOutlet weak var thirdNameLabel: UILabel!
-    @IBOutlet weak var thirdNumberLabel: UILabel!
-    @IBOutlet weak var fourthNameLabel: UILabel!
-    @IBOutlet weak var fourthNumberLabel: UILabel!
-    @IBOutlet weak var fifthNameLabel: UILabel!
-    @IBOutlet weak var fifthNumberLabel: UILabel!
-    @IBOutlet weak var sixthNameLabel: UILabel!
-    @IBOutlet weak var sixthNumberLabel: UILabel!
-    @IBOutlet weak var seventhNameLabel: UILabel!
-    @IBOutlet weak var seventhNumberLabel: UILabel!
+    @IBOutlet weak var triggerRankingBarChartView: HorizontalBarChartView!
+
     
     var allRecords: [Record] = []
     
@@ -34,71 +22,15 @@ class StatisticViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         loadData()
-        generateTriggerRanking()
         generateMonthDistributionChart()
+        generateTriggerRankingBarChart()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadData()
-        generateTriggerRanking()
         generateMonthDistributionChart()
-    }
-    
-    func generateTriggerRanking() {
-        var report: [String: Int] = [:]
-        let labels = [firstNameLabel, firstNumberLabel, secondNameLabel, secondNumberLabel, thirdNameLabel, thirdNumberLabel, fourthNameLabel, fourthNumberLabel, fifthNameLabel, fifthNumberLabel, sixthNameLabel, sixthNumberLabel, seventhNameLabel, seventhNumberLabel]
-        
-        if allRecords.count == 0 {
-            report["There is no record in the database."] = 0
-        } else {
-            for record in allRecords {
-                if record.stress > 50 {
-                    if report["Stress"] != nil {
-                        report.updateValue(report["Stress"]! + 1, forKey: "Stress")
-                    } else {
-                        report["Stress"] = 1
-                    }
-                }
-                
-                if record.exercise > 50 {
-                    if report["Exercise"] != nil {
-                        report.updateValue(report["Exercise"]! + 1, forKey: "Exercise")
-                    } else {
-                        report["Exercise"] = 1
-                    }
-                }
-                
-                if record.nearby != "There is no other trigger nearby." {
-                    guard let nearbys = record.nearby?.components(separatedBy: ", ") else { return  }
-                    for nearby in nearbys {
-                        if report[nearby] != nil {
-                            report.updateValue(report[nearby]! + 1, forKey: nearby)
-                        } else {
-                            report[nearby] = 1
-                        }
-                    }
-                }
-            }
-        }
-        
-        let sortedReport = report.sorted(by: { $0.value > $1.value })
-        var labelIndex = 0
-        for trigger in sortedReport {
-            labels[labelIndex]?.text = trigger.key
-            if trigger.value == 0 {
-                labels[labelIndex + 1]?.text = ""
-            } else {
-                labels[labelIndex + 1]?.text = String(trigger.value)
-            }
-            labelIndex += 2
-        }
-        
-        if labelIndex < labels.count {
-            for index in labelIndex...labels.count - 1 {
-                labels[index]?.text = ""
-            }
-        }
+        generateTriggerRankingBarChart()
     }
     
     func loadData() {
@@ -112,8 +44,6 @@ class StatisticViewController: UIViewController {
         } catch {
             print("Failed to fetch record data.")
         }
-        
-        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedAscending })
     }
     
     func generateMonthDistributionChart() {
@@ -144,22 +74,81 @@ class StatisticViewController: UIViewController {
         let numberFormatter = NumberFormatter()
         numberFormatter.generatesDecimalNumbers = false
         lineChartDataSet.valueFormatter = DefaultValueFormatter(formatter: numberFormatter)
-        lineChartDataSet.valueFont = .systemFont(ofSize: 12)
+        lineChartDataSet.valueFont = .systemFont(ofSize: 13)
         
         monthDistributionLineChartView.data = lineChartData
         monthDistributionLineChartView.doubleTapToZoomEnabled = false
-        monthDistributionLineChartView.rightAxis.drawGridLinesEnabled = false
-        monthDistributionLineChartView.rightAxis.drawLabelsEnabled = false
-        monthDistributionLineChartView.rightAxis.drawAxisLineEnabled = false
-        monthDistributionLineChartView.leftAxis.drawGridLinesEnabled = false
-        monthDistributionLineChartView.leftAxis.drawLabelsEnabled = false
-        monthDistributionLineChartView.leftAxis.drawAxisLineEnabled = false
-        monthDistributionLineChartView.xAxis.drawGridLinesEnabled = false
-        monthDistributionLineChartView.xAxis.labelPosition = .bottom
+        monthDistributionLineChartView.rightAxis.enabled = false
+        monthDistributionLineChartView.leftAxis.enabled = false
+        
+        let xAxis = monthDistributionLineChartView.xAxis
+        xAxis.labelPosition = .bottom
         let xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        monthDistributionLineChartView.xAxis.setLabelCount(12, force: true)
-        monthDistributionLineChartView.xAxis.labelFont = .systemFont(ofSize: 12)
-        monthDistributionLineChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: xValues)
+        xAxis.setLabelCount(12, force: true)
+        xAxis.labelFont = .systemFont(ofSize: 13)
+        xAxis.valueFormatter = IndexAxisValueFormatter(values: xValues)
+        xAxis.drawGridLinesEnabled = false
+        xAxis.drawAxisLineEnabled = false
+        
         monthDistributionLineChartView.backgroundColor = UIColor(ciColor: .white)
+    }
+    
+    func generateTriggerRankingBarChart() {
+        var report = ["Exercise": 0.0, "Fire": 0, "Pollen Source": 0, "Stress": 0, "Animal": 0, "Heavy Wind": 0, "Dust": 0] as Dictionary
+        
+        for record in allRecords {
+            if record.stress >= 2 {
+                report.updateValue(report["Stress"]! + 1, forKey: "Stress")
+            }
+            
+            if record.exercise >= 2 {
+                report.updateValue(report["Exercise"]! + 1, forKey: "Exercise")
+            }
+            
+            if record.nearby != "There is no other trigger nearby." {
+                guard let nearbys = record.nearby?.components(separatedBy: ", ") else { return  }
+                for nearby in nearbys {
+                    report.updateValue(report[nearby]! + 1, forKey: nearby)
+                }
+            }
+        }
+        
+        let sortedReport = report.sorted(by: { $0.value < $1.value })
+        
+        var dataEntries: [BarChartDataEntry] = []
+        
+        for i in 0...sortedReport.count - 1{
+            let dataEntry = BarChartDataEntry(x: Double(i), yValues: [sortedReport[i].value])
+            dataEntries.append(dataEntry)
+        }
+        
+        let barChartDataSet = BarChartDataSet(entries: dataEntries, label: "Tigger occur times")
+        let barChartData = BarChartData(dataSet: barChartDataSet)
+        barChartDataSet.setColor(UIColor.orange)
+        
+        triggerRankingBarChartView.data = barChartData
+        triggerRankingBarChartView.drawValueAboveBarEnabled = true
+        triggerRankingBarChartView.backgroundColor = UIColor(ciColor: .white)
+        triggerRankingBarChartView.doubleTapToZoomEnabled = false
+        triggerRankingBarChartView.rightAxis.enabled = false
+        triggerRankingBarChartView.leftAxis.enabled = false
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.generatesDecimalNumbers = false
+        barChartDataSet.valueFormatter = DefaultValueFormatter(formatter: numberFormatter)
+        barChartDataSet.valueFont = .systemFont(ofSize: 13)
+        
+        var xValues = [String]()
+        for trigger in sortedReport {
+            xValues.append(trigger.key)
+        }
+
+        let xAxis = triggerRankingBarChartView.xAxis
+        xAxis.valueFormatter = IndexAxisValueFormatter(values: xValues)
+        xAxis.setLabelCount(7, force: false)
+        xAxis.labelFont = .systemFont(ofSize: 13)
+        xAxis.labelPosition = .bottom
+        xAxis.drawGridLinesEnabled = false
+        xAxis.drawAxisLineEnabled = false
     }
 }

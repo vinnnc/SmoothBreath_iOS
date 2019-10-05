@@ -29,31 +29,31 @@ class RecordDetailViewController: UIViewController {
         dateAndTimeLabel.text = dateFormatter.string(from: record!.attackDate!)
         
         let attackLevel = Int(record!.attackLevel)
-        if attackLevel <= 33{
+        if attackLevel == 0 {
             attackLevelLabel.text = "Mild"
-        } else if attackLevel > 33 && attackLevel <= 66 {
+        } else if attackLevel == 1 {
             attackLevelLabel.text = "Moderate"
         } else {
             attackLevelLabel.text = "Severe"
         }
         
         let stress = Int(record!.stress)
-        if stress <= 25{
+        if stress == 0 {
             stressLabel.text = "Slight"
-        } else if stress > 25 && stress <= 50 {
+        } else if stress == 1 {
             stressLabel.text = "Middle"
-        } else if stress > 50 && stress <= 75 {
+        } else if stress == 2 {
             stressLabel.text = "High"
         } else {
             stressLabel.text = "Extreme"
         }
         
         let exercise = Int(record!.exercise)
-        if exercise <= 25{
+        if exercise == 0 {
             exerciseLabel.text = "Slight"
-        } else if exercise > 25 && exercise <= 50 {
+        } else if exercise == 1 {
             exerciseLabel.text = "Middle"
-        } else if exercise > 50 && exercise <= 75 {
+        } else if exercise == 2 {
             exerciseLabel.text = "High"
         } else {
             exerciseLabel.text = "Extreme"

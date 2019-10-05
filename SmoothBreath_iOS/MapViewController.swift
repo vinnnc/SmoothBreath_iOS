@@ -22,12 +22,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate{
 
         // Do any additional setup after loading the view.
         locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.distanceFilter = kCLDistanceFilterNone
-        locationManager.startUpdatingLocation()
-        mapView.showsUserLocation = true
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.distanceFilter = 10
+        locationManager.startUpdatingLocation()
         locationManager.delegate = self
         addAnnotations()
     }
@@ -71,9 +68,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate{
                 
                 let attackLevel = Int(record.attackLevel)
                 var attackLevelStr = ""
-                if attackLevel <= 33{
+                if attackLevel == 0 {
                     attackLevelStr = "Attack Level: Mild"
-                } else if attackLevel > 33 && attackLevel <= 66 {
+                } else if attackLevel == 1 {
                     attackLevelStr = "Attack Level: Moderate"
                 } else {
                     attackLevelStr = "Attack Level: Severe"
