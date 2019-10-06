@@ -94,7 +94,7 @@ class StatisticViewController: UIViewController {
     }
     
     func generateTriggerRankingBarChart() {
-        var report = ["Exercise": 0.0, "Fire": 0, "Pollen Source": 0, "Stress": 0, "Animal": 0, "Heavy Wind": 0, "Dust": 0] as Dictionary
+        var report = ["Exercise": 0.0, "Fire": 0, "Pollen Source": 0, "Stress": 0, "Animal": 0, "Heavy Wind": 0, "Dust": 0, "Hormone": 0] as Dictionary
         
         for record in allRecords {
             if record.stress >= 2 {
@@ -110,6 +110,10 @@ class StatisticViewController: UIViewController {
                 for nearby in nearbys {
                     report.updateValue(report[nearby]! + 1, forKey: nearby)
                 }
+            }
+            
+            if record.period {
+                report.updateValue(report["Hormone"]! + 1, forKey: "Hormone")
             }
         }
         
@@ -145,7 +149,7 @@ class StatisticViewController: UIViewController {
 
         let xAxis = triggerRankingBarChartView.xAxis
         xAxis.valueFormatter = IndexAxisValueFormatter(values: xValues)
-        xAxis.setLabelCount(7, force: false)
+        xAxis.setLabelCount(8, force: false)
         xAxis.labelFont = .systemFont(ofSize: 13)
         xAxis.labelPosition = .bottom
         xAxis.drawGridLinesEnabled = false

@@ -156,6 +156,6 @@ class RecordTableViewController: UITableViewController {
             print("Failed to fetch record data.")
         }
         
-        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedAscending })
+        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedDescending })
     }
 }
