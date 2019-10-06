@@ -17,6 +17,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var currentLocationSwitch: UISwitch!
     @IBOutlet weak var stressSlider: UISlider!
     @IBOutlet weak var exerciseSlider: UISlider!
+    @IBOutlet weak var periodSwitch: UISwitch!
     @IBOutlet weak var fireSwitch: UISwitch!
     @IBOutlet weak var animalSwitch: UISwitch!
     @IBOutlet weak var heavyWindSwitch: UISwitch!
@@ -98,7 +99,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         
         if currentLocationSwitch.isOn {
             if currentLocation != nil {
-                if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby, longitude: Float(currentLocation!.longitude), latitude: Float(currentLocation!.latitude)) {
+                if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), period: periodSwitch.isOn, nearby: nearby, longitude: Float(currentLocation!.longitude), latitude: Float(currentLocation!.latitude)) {
                     displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
                     tabBarController?.selectedIndex = 2
                     return
@@ -112,7 +113,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
                 return
             }
         } else {
-            if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), nearby: nearby, longitude: Float.zero, latitude: Float.zero) {
+            if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), period: periodSwitch.isOn, nearby: nearby, longitude: Float.zero, latitude: Float.zero) {
                 displayMessage(title: "Save Successfully", message: "New record has been saved in the database.")
             } else {
                 displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
@@ -120,7 +121,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    func addRecord(attackDate: Date, attackLevel: Int, exercise: Int, stress: Int, nearby: String, longitude: Float, latitude: Float) -> Bool {
+    func addRecord(attackDate: Date, attackLevel: Int, exercise: Int, stress: Int, period: Bool, nearby: String, longitude: Float, latitude: Float) -> Bool {
         for record in allRecords {
             if record.attackDate == attackDate {
                 return false
@@ -138,6 +139,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         record.attackLevel = Int32(attackLevel)
         record.exercise = Int32(exercise)
         record.stress = Int32(stress)
+        record.period = period
         record.nearby = nearby
         record.latitude = latitude
         record.longitude = longitude

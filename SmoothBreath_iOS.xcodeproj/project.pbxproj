@@ -11,10 +11,6 @@
 		9B2A6013231FD91600CF6ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6011231FD91600CF6ED1 /* Main.storyboard */; };
 		9B2A6018231FD91800CF6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */; };
 		9B3555722344B243002FD855 /* ResetInhalerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3555712344B243002FD855 /* ResetInhalerViewController.swift */; };
-		9B5D7CBC234883BD00ED7DF6 /* Counter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D7CB8234883BD00ED7DF6 /* Counter+CoreDataClass.swift */; };
-		9B5D7CBD234883BD00ED7DF6 /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D7CB9234883BD00ED7DF6 /* Counter+CoreDataProperties.swift */; };
-		9B5D7CBE234883BD00ED7DF6 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D7CBA234883BD00ED7DF6 /* Record+CoreDataClass.swift */; };
-		9B5D7CBF234883BD00ED7DF6 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D7CBB234883BD00ED7DF6 /* Record+CoreDataProperties.swift */; };
 		9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B617D35232CB10700CB52DA /* StatisticViewController.swift */; };
 		9B61B655234738A500151E34 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B654234738A500151E34 /* Annotation.swift */; };
 		9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */; };
@@ -24,6 +20,10 @@
 		9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB737F231FDD9F00554374 /* MapViewController.swift */; };
 		9BCA32282330C88600F91088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA32272330C88500F91088 /* Assets.xcassets */; };
 		9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BCAF6AE2329070D00BFC423 /* SmoothBreath.xcdatamodeld */; };
+		9BE09FEE234AAD20006B9EDB /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FEA234AAD20006B9EDB /* Record+CoreDataClass.swift */; };
+		9BE09FEF234AAD20006B9EDB /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FEB234AAD20006B9EDB /* Record+CoreDataProperties.swift */; };
+		9BE09FF0234AAD20006B9EDB /* Counter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FEC234AAD20006B9EDB /* Counter+CoreDataClass.swift */; };
+		9BE09FF1234AAD20006B9EDB /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FED234AAD20006B9EDB /* Counter+CoreDataProperties.swift */; };
 		9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */; };
 		C9A4FD0E75FF2DBE145FDE1A /* Pods_SmoothBreath_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FFF4324231B91F97B19E55 /* Pods_SmoothBreath_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -35,10 +35,6 @@
 		9B2A6017231FD91800CF6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B2A6019231FD91800CF6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B3555712344B243002FD855 /* ResetInhalerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetInhalerViewController.swift; sourceTree = "<group>"; };
-		9B5D7CB8234883BD00ED7DF6 /* Counter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9B5D7CB9234883BD00ED7DF6 /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9B5D7CBA234883BD00ED7DF6 /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9B5D7CBB234883BD00ED7DF6 /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B617D35232CB10700CB52DA /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		9B61B654234738A500151E34 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +44,10 @@
 		9BAB737F231FDD9F00554374 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9BCA32272330C88500F91088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BCAF6AF2329070D00BFC423 /* SmoothBreath.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmoothBreath.xcdatamodel; sourceTree = "<group>"; };
+		9BE09FEA234AAD20006B9EDB /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9BE09FEB234AAD20006B9EDB /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9BE09FEC234AAD20006B9EDB /* Counter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9BE09FED234AAD20006B9EDB /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		B032257BE329DA2A838826B9 /* Pods-SmoothBreath_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.debug.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B549821AD4C8036C23B74CE4 /* Pods-SmoothBreath_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.release.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,10 +126,10 @@
 		9BCAF69A2329034600BFC423 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				9B5D7CB8234883BD00ED7DF6 /* Counter+CoreDataClass.swift */,
-				9B5D7CB9234883BD00ED7DF6 /* Counter+CoreDataProperties.swift */,
-				9B5D7CBA234883BD00ED7DF6 /* Record+CoreDataClass.swift */,
-				9B5D7CBB234883BD00ED7DF6 /* Record+CoreDataProperties.swift */,
+				9BE09FEA234AAD20006B9EDB /* Record+CoreDataClass.swift */,
+				9BE09FEB234AAD20006B9EDB /* Record+CoreDataProperties.swift */,
+				9BE09FEC234AAD20006B9EDB /* Counter+CoreDataClass.swift */,
+				9BE09FED234AAD20006B9EDB /* Counter+CoreDataProperties.swift */,
 				9BCAF6AE2329070D00BFC423 /* SmoothBreath.xcdatamodeld */,
 			);
 			path = DataModel;
@@ -250,20 +250,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE09FF0234AAD20006B9EDB /* Counter+CoreDataClass.swift in Sources */,
+				9BE09FEE234AAD20006B9EDB /* Record+CoreDataClass.swift in Sources */,
 				9B61B655234738A500151E34 /* Annotation.swift in Sources */,
 				9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */,
 				9B3555722344B243002FD855 /* ResetInhalerViewController.swift in Sources */,
 				9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */,
+				9BE09FF1234AAD20006B9EDB /* Counter+CoreDataProperties.swift in Sources */,
 				9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */,
 				9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */,
 				9B2A600E231FD91600CF6ED1 /* AppDelegate.swift in Sources */,
+				9BE09FEF234AAD20006B9EDB /* Record+CoreDataProperties.swift in Sources */,
 				9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */,
 				9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */,
-				9B5D7CBD234883BD00ED7DF6 /* Counter+CoreDataProperties.swift in Sources */,
-				9B5D7CBF234883BD00ED7DF6 /* Record+CoreDataProperties.swift in Sources */,
-				9B5D7CBE234883BD00ED7DF6 /* Record+CoreDataClass.swift in Sources */,
 				9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */,
-				9B5D7CBC234883BD00ED7DF6 /* Counter+CoreDataClass.swift in Sources */,
 				9BAB737E231FDD9500554374 /* CounterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

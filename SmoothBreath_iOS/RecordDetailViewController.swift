@@ -15,6 +15,7 @@ class RecordDetailViewController: UIViewController {
     @IBOutlet weak var attackLevelLabel: UILabel!
     @IBOutlet weak var stressLabel: UILabel!
     @IBOutlet weak var exerciseLabel: UILabel!
+    @IBOutlet weak var periodLabel: UILabel!
     @IBOutlet weak var nearbyLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     
@@ -57,6 +58,12 @@ class RecordDetailViewController: UIViewController {
             exerciseLabel.text = "High"
         } else {
             exerciseLabel.text = "Extreme"
+        }
+        
+        if record!.period {
+            periodLabel.text = "Yes"
+        } else {
+            periodLabel.text = "No"
         }
         
         nearbyLabel.text = record?.nearby

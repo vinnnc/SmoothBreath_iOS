@@ -12,10 +12,11 @@
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="nearby" optional="YES" attributeType="String"/>
+        <attribute name="period" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="stress" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <elements>
         <element name="Counter" positionX="-63" positionY="-18" width="128" height="88"/>
-        <element name="Record" positionX="-54" positionY="-9" width="128" height="148"/>
+        <element name="Record" positionX="-54" positionY="-9" width="128" height="163"/>
     </elements>
 </model>
