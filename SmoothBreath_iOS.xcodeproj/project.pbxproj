@@ -11,6 +11,11 @@
 		9B2A6013231FD91600CF6ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6011231FD91600CF6ED1 /* Main.storyboard */; };
 		9B2A6018231FD91800CF6ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */; };
 		9B3555722344B243002FD855 /* ResetInhalerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3555712344B243002FD855 /* ResetInhalerViewController.swift */; };
+		9B41B5BC234C91FE007DD715 /* CUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41B5BB234C91FE007DD715 /* CUIView.swift */; };
+		9B41B5BE234CADA4007DD715 /* CounterIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41B5BD234CADA4007DD715 /* CounterIntroViewController.swift */; };
+		9B41B5C0234CAEE6007DD715 /* RecordIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41B5BF234CAEE6007DD715 /* RecordIntroViewController.swift */; };
+		9B41B5C2234CAFD4007DD715 /* StatisticIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41B5C1234CAFD4007DD715 /* StatisticIntroViewController.swift */; };
+		9B41B5C4234CB225007DD715 /* MapIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41B5C3234CB225007DD715 /* MapIntroViewController.swift */; };
 		9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B617D35232CB10700CB52DA /* StatisticViewController.swift */; };
 		9B61B655234738A500151E34 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B654234738A500151E34 /* Annotation.swift */; };
 		9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */; };
@@ -36,6 +41,11 @@
 		9B2A6017231FD91800CF6ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B2A6019231FD91800CF6ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B3555712344B243002FD855 /* ResetInhalerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetInhalerViewController.swift; sourceTree = "<group>"; };
+		9B41B5BB234C91FE007DD715 /* CUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUIView.swift; sourceTree = "<group>"; };
+		9B41B5BD234CADA4007DD715 /* CounterIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterIntroViewController.swift; sourceTree = "<group>"; };
+		9B41B5BF234CAEE6007DD715 /* RecordIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordIntroViewController.swift; sourceTree = "<group>"; };
+		9B41B5C1234CAFD4007DD715 /* StatisticIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticIntroViewController.swift; sourceTree = "<group>"; };
+		9B41B5C3234CB225007DD715 /* MapIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIntroViewController.swift; sourceTree = "<group>"; };
 		9B617D35232CB10700CB52DA /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		9B61B654234738A500151E34 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +116,7 @@
 		9B2A600C231FD91600CF6ED1 /* SmoothBreath_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9B41B5BB234C91FE007DD715 /* CUIView.swift */,
 				9B2A6019231FD91800CF6ED1 /* Info.plist */,
 				9B2A600D231FD91600CF6ED1 /* AppDelegate.swift */,
 				9BAB737D231FDD9400554374 /* CounterViewController.swift */,
@@ -114,6 +125,7 @@
 				9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */,
 				9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */,
 				9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */,
+				9B41B5BD234CADA4007DD715 /* CounterIntroViewController.swift */,
 				9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */,
 				9B61B654234738A500151E34 /* Annotation.swift */,
 				9B617D35232CB10700CB52DA /* StatisticViewController.swift */,
@@ -122,6 +134,9 @@
 				9BCAF69A2329034600BFC423 /* DataModel */,
 				9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */,
 				9B2A6011231FD91600CF6ED1 /* Main.storyboard */,
+				9B41B5BF234CAEE6007DD715 /* RecordIntroViewController.swift */,
+				9B41B5C1234CAFD4007DD715 /* StatisticIntroViewController.swift */,
+				9B41B5C3234CB225007DD715 /* MapIntroViewController.swift */,
 			);
 			path = SmoothBreath_iOS;
 			sourceTree = "<group>";
@@ -254,18 +269,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE09FF0234AAD20006B9EDB /* Counter+CoreDataClass.swift in Sources */,
+				9B41B5BC234C91FE007DD715 /* CUIView.swift in Sources */,
 				9BE09FEE234AAD20006B9EDB /* Record+CoreDataClass.swift in Sources */,
+				9B41B5C4234CB225007DD715 /* MapIntroViewController.swift in Sources */,
 				9B61B655234738A500151E34 /* Annotation.swift in Sources */,
 				9B617D36232CB10700CB52DA /* StatisticViewController.swift in Sources */,
 				9B3555722344B243002FD855 /* ResetInhalerViewController.swift in Sources */,
 				9BA9CEC32324E388001D5132 /* RecordTableViewController.swift in Sources */,
 				9BE09FF1234AAD20006B9EDB /* Counter+CoreDataProperties.swift in Sources */,
+				9B41B5BE234CADA4007DD715 /* CounterIntroViewController.swift in Sources */,
 				9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */,
 				9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */,
+				9B41B5C0234CAEE6007DD715 /* RecordIntroViewController.swift in Sources */,
 				9B2A600E231FD91600CF6ED1 /* AppDelegate.swift in Sources */,
 				9BE09FF5234AB447006B9EDB /* FilterViewController.swift in Sources */,
 				9BE09FEF234AAD20006B9EDB /* Record+CoreDataProperties.swift in Sources */,
 				9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */,
+				9B41B5C2234CAFD4007DD715 /* StatisticIntroViewController.swift in Sources */,
 				9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */,
 				9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */,
 				9BAB737E231FDD9500554374 /* CounterViewController.swift in Sources */,
@@ -345,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -400,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -2,22 +2,22 @@ PODS:
   - Charts (3.3.0):
     - Charts/Core (= 3.3.0)
   - Charts/Core (3.3.0)
-  - SSCustomTabbar (2.0.1)
+  - PTCardTabBar (1.0.1)
 
 DEPENDENCIES:
   - Charts
-  - SSCustomTabbar
+  - PTCardTabBar
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Charts
   trunk:
-    - SSCustomTabbar
+    - PTCardTabBar
 
 SPEC CHECKSUMS:
   Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
-  SSCustomTabbar: 4ec050d50ada582ba6adf0ac5e086e5ac141df5a
+  PTCardTabBar: 9112a6d4eb2b73da9cf4e7f3aefe04504479cf98
 
-PODFILE CHECKSUM: a7b16b814ac55dec6f9cf00fad73a0eaadd6f108
+PODFILE CHECKSUM: 4620323ae32b7e7bb6b39165f7192985e294359e
 
 COCOAPODS: 1.8.3

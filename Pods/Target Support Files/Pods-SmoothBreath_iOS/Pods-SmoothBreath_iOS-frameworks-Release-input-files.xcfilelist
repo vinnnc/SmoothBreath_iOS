@@ -1,3 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
-${BUILT_PRODUCTS_DIR}/SSCustomTabbar/SSCustomTabbar.framework
+${BUILT_PRODUCTS_DIR}/PTCardTabBar/PTCardTabBar.framework

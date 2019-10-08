@@ -207,9 +207,9 @@ Apache License
 
 
 
-## SSCustomTabbar
+## PTCardTabBar
 
-Copyright (c) 2019 simformsolutions <sumit.g@simformsolutions.com>
+Copyright (c) 2019 hussc <hus.sc@aol.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

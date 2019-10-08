@@ -7,5 +7,5 @@ target 'SmoothBreath_iOS' do
 
   # Pods for SmoothBreath_iOS
     pod 'Charts'
-    pod 'SSCustomTabbar'
+    pod 'PTCardTabBar'
 end
