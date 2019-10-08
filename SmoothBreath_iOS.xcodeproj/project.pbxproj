@@ -24,6 +24,7 @@
 		9BE09FEF234AAD20006B9EDB /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FEB234AAD20006B9EDB /* Record+CoreDataProperties.swift */; };
 		9BE09FF0234AAD20006B9EDB /* Counter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FEC234AAD20006B9EDB /* Counter+CoreDataClass.swift */; };
 		9BE09FF1234AAD20006B9EDB /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FED234AAD20006B9EDB /* Counter+CoreDataProperties.swift */; };
+		9BE09FF5234AB447006B9EDB /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FF4234AB447006B9EDB /* FilterViewController.swift */; };
 		9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */; };
 		C9A4FD0E75FF2DBE145FDE1A /* Pods_SmoothBreath_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FFF4324231B91F97B19E55 /* Pods_SmoothBreath_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		9BE09FEB234AAD20006B9EDB /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9BE09FEC234AAD20006B9EDB /* Counter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9BE09FED234AAD20006B9EDB /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9BE09FF4234AB447006B9EDB /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		B032257BE329DA2A838826B9 /* Pods-SmoothBreath_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.debug.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B549821AD4C8036C23B74CE4 /* Pods-SmoothBreath_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.release.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */,
 				9B61B654234738A500151E34 /* Annotation.swift */,
 				9B617D35232CB10700CB52DA /* StatisticViewController.swift */,
+				9BE09FF4234AB447006B9EDB /* FilterViewController.swift */,
 				9BCA32272330C88500F91088 /* Assets.xcassets */,
 				9BCAF69A2329034600BFC423 /* DataModel */,
 				9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 				9BA9CEBD2324E29A001D5132 /* RecordDetailViewController.swift in Sources */,
 				9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */,
 				9B2A600E231FD91600CF6ED1 /* AppDelegate.swift in Sources */,
+				9BE09FF5234AB447006B9EDB /* FilterViewController.swift in Sources */,
 				9BE09FEF234AAD20006B9EDB /* Record+CoreDataProperties.swift in Sources */,
 				9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */,
 				9BAB7380231FDD9F00554374 /* MapViewController.swift in Sources */,
@@ -422,7 +426,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "road2help.SmoothBreath-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "road2help.SmoothBreath-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -14,21 +14,38 @@ class StatisticViewController: UIViewController {
     @IBOutlet weak var monthDistributionLineChartView: LineChartView!
     @IBOutlet weak var triggerRankingBarChartView: HorizontalBarChartView!
 
-    
     var allRecords: [Record] = []
+    var filteredRecords: [Record] = []
+    var fromDate: Date?
+    var toDate: Date?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        loadData()
-        generateMonthDistributionChart()
-        generateTriggerRankingBarChart()
-    }
-    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//        loadData()
+//
+//        if (fromDate != nil) && (toDate != nil) {
+//            filteredData()
+//        } else {
+//            filteredRecords = allRecords
+//        }
+//
+//        generateMonthDistributionChart()
+//        generateTriggerRankingBarChart()
+//    }
+//
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
         loadData()
+
+        if (fromDate != nil) && (toDate != nil) {
+            filteredData()
+        } else {
+            filteredRecords = allRecords
+        }
+
         generateMonthDistributionChart()
         generateTriggerRankingBarChart()
     }
@@ -46,11 +63,21 @@ class StatisticViewController: UIViewController {
         }
     }
     
+    func filteredData() {
+        filteredRecords = []
+        for record in allRecords {
+            let attackDate = record.attackDate!
+            if fromDate!.compare(attackDate).rawValue * attackDate.compare(toDate!).rawValue >= 0 {
+                filteredRecords.append(record)
+            }
+        }
+    }
+    
     func generateMonthDistributionChart() {
         
         var values = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         
-        for record in allRecords {
+        for record in filteredRecords {
             let calendar = Calendar.current
             let components = calendar.dateComponents([.month], from: record.attackDate!)
             let month = components.month
@@ -96,7 +123,7 @@ class StatisticViewController: UIViewController {
     func generateTriggerRankingBarChart() {
         var report = ["Exercise": 0.0, "Fire": 0, "Pollen Source": 0, "Stress": 0, "Animal": 0, "Heavy Wind": 0, "Dust": 0, "Hormone": 0] as Dictionary
         
-        for record in allRecords {
+        for record in filteredRecords {
             if record.stress >= 2 {
                 report.updateValue(report["Stress"]! + 1, forKey: "Stress")
             }
@@ -154,5 +181,12 @@ class StatisticViewController: UIViewController {
         xAxis.labelPosition = .bottom
         xAxis.drawGridLinesEnabled = false
         xAxis.drawAxisLineEnabled = false
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "filterSegue" {
+            let destination = segue.destination as! FilterViewController
+            destination.delegate = self
+        }
     }
 }

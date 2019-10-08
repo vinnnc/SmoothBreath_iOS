@@ -32,7 +32,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        initialistaion()
+        initialisation()
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.distanceFilter = 10
         locationManager.delegate = self
@@ -42,7 +42,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        initialistaion()
+        initialisation()
         locationManager.startUpdatingLocation()
     }
     
@@ -51,7 +51,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
     }
     
-    func initialistaion() {
+    func initialisation() {
         let calandar = Calendar(identifier: .gregorian)
         dateAndTimeDatePicker.maximumDate = calandar.date(byAdding: DateComponents(), to: Date())
         loadData()

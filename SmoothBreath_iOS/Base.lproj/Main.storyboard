@@ -154,7 +154,7 @@
                         <viewLayoutGuide key="safeArea" id="alm-WP-EiB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Inhaler Counter" largeTitleDisplayMode="always" id="zkD-Pu-PKw">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="DKG-RG-J2c">
+                        <barButtonItem key="leftBarButtonItem" title="Info" image="icon_info" id="DKG-RG-J2c">
                             <connections>
                                 <segue destination="7f9-xt-g2y" kind="showDetail" id="gTa-yc-fQq"/>
                             </connections>
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ni-7P-ifc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2215" y="1294"/>
+            <point key="canvasLocation" x="-2439" y="1294"/>
         </scene>
         <!--New Inhaler-->
         <scene sceneID="0d6-Fb-Mv2">
@@ -224,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Epj-UQ-Lwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2215" y="2011"/>
+            <point key="canvasLocation" x="-2041" y="2036"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dyf-f6-eCz">
@@ -234,9 +234,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Record your each asthma attack and get the report for your next diagnosis." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
                                 <rect key="frame" x="16" y="16" width="343" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Record your each asthma attack and get the report for your next diagnosis. 
+1. It has asthma attack date and time. 
+2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
+3. The current location will be recorded in the location bar in the buttom.
+</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -254,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UmF-q5-oLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1319" y="2011"/>
+            <point key="canvasLocation" x="-1266" y="2036"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kqr-cf-t4L">
@@ -264,9 +269,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The inhaler counter tracks the remaining, and the estimated remaining day will be shown on the dashboard" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-IL-Ca7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-IL-Ca7">
                                 <rect key="frame" x="16" y="16" width="343" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The inhaler counter tracks the remaining, and the estimated remaining day will be shown on the dashboard 
+1. The plus and minus button are used for adding and reducing the dose 
+2. The process bar provides the percentage of the remaining inhaler 
+3. The last day for changing to this inhaler can be found here 
+4. The expected expire day provides the approximately plan for you</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -284,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNo-Pa-WLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2215.1999999999998" y="2718.4729064039411"/>
+            <point key="canvasLocation" x="-2818" y="2036"/>
         </scene>
         <!--All Records-->
         <scene sceneID="pku-sV-reD">
@@ -380,7 +390,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TR-yb-0wm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="2011"/>
+            <point key="canvasLocation" x="1103" y="2036"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xnX-9i-MmY">
@@ -390,9 +400,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Each asthma attack locations are pinned in the map. This map can help you to find out where is the most asthma attack location." translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
                                 <rect key="frame" x="16" y="16" width="343" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Each asthma attack locations are pinned in the map. This map can help you to find out where is the most asthma attack location. 
+1. Each pinned point is the asthma attack location. 
+2. With more records, you might find out which place has the high possibility to have asthma attack and you might give the insight from these location. 
+3. Each location point was recorded and generated based on each record "current location". 
+4. All the information is stored on the app, other people cannot access the collecting data.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -410,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPn-OC-U6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="2011"/>
+            <point key="canvasLocation" x="1902" y="2036"/>
         </scene>
         <!--Statistic-->
         <scene sceneID="miM-0C-X0H">
@@ -492,11 +507,18 @@
                         <viewLayoutGuide key="safeArea" id="90O-rn-aWf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Statistic" id="xly-sP-R8z">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="Gnh-WM-Fb9">
-                            <connections>
-                                <segue destination="ICo-JF-LBU" kind="showDetail" id="hWP-j3-ycU"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem image="icon_info" id="Gnh-WM-Fb9">
+                                <connections>
+                                    <segue destination="ICo-JF-LBU" kind="showDetail" id="hWP-j3-ycU"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Filter" id="PpI-CK-eQL">
+                                <connections>
+                                    <segue destination="aPy-qp-wZF" kind="show" identifier="filterSegue" id="cOL-Rx-Hia"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" title="Records" id="cTq-zq-xKx">
                             <connections>
                                 <segue destination="G9i-Xk-kXV" kind="showDetail" id="ecU-vG-KEX"/>
@@ -510,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3q-uK-NzC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="1293.8423645320197"/>
+            <point key="canvasLocation" x="297" y="1294"/>
         </scene>
         <!--New Record-->
         <scene sceneID="Qkh-oA-NCc">
@@ -810,6 +832,7 @@
                                             <constraint firstItem="1PV-f1-EYK" firstAttribute="leading" secondItem="ZSN-Do-KW5" secondAttribute="leading" constant="32" id="nMH-WC-IXJ"/>
                                             <constraint firstItem="wcQ-Nk-lj3" firstAttribute="top" secondItem="wbB-cu-ZUQ" secondAttribute="bottom" id="nMi-LB-Ezi"/>
                                             <constraint firstAttribute="trailing" secondItem="5l1-vF-9Tc" secondAttribute="trailing" constant="16" id="nQb-eV-ZEG"/>
+                                            <constraint firstItem="mbu-Kl-7aU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qRm-6R-BCy" secondAttribute="trailing" constant="8" symbolic="YES" id="nhF-xH-YCR"/>
                                             <constraint firstItem="WKv-gJ-xN9" firstAttribute="leading" secondItem="ZSN-Do-KW5" secondAttribute="leading" constant="32" id="nhs-RU-W7g"/>
                                             <constraint firstItem="w7h-Ir-4Zx" firstAttribute="top" secondItem="q9M-Ad-Lpc" secondAttribute="bottom" id="no4-IZ-RPs"/>
                                             <constraint firstItem="wcQ-Nk-lj3" firstAttribute="leading" secondItem="ZSN-Do-KW5" secondAttribute="leading" constant="16" id="ox4-mL-5QH"/>
@@ -860,7 +883,7 @@
                         <viewLayoutGuide key="safeArea" id="yWI-p5-vjC"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Record" id="v4Q-VX-1at">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="s2h-rq-Lui">
+                        <barButtonItem key="leftBarButtonItem" title="Info" image="icon_info" id="s2h-rq-Lui">
                             <connections>
                                 <segue destination="sB3-0i-gTL" kind="showDetail" id="JIb-dS-UkQ"/>
                             </connections>
@@ -887,15 +910,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ObH-OW-mZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1319.2" y="1293.8423645320197"/>
+            <point key="canvasLocation" x="-1266" y="1294"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar View Controller-->
         <scene sceneID="YKP-0x-snh">
             <objects>
-                <tabBarController id="stC-p1-S2u" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MBo-FM-vX7">
+                <tabBarController id="stC-p1-S2u" customClass="SSCustomTabBarViewController" customModule="SSCustomTabbar" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MBo-FM-vX7" customClass="SSCustomTabBar" customModule="SSCustomTabbar">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.10000000000000001"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layerFillColor">
+                                <color key="value" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="waveHeight">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="UjZ-qK-kZ7" kind="relationship" relationship="viewControllers" id="Xp5-C3-VtF"/>
@@ -906,7 +944,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRV-Jf-ewJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-865" y="-177"/>
+            <point key="canvasLocation" x="-482" y="-183"/>
         </scene>
         <!--Asthma Location-->
         <scene sceneID="D8J-jZ-Who">
@@ -930,7 +968,7 @@
                         <viewLayoutGuide key="safeArea" id="pKX-29-RJ6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Asthma Location" id="6YS-k6-LAm">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle" catalog="system" id="069-UB-LFZ">
+                        <barButtonItem key="leftBarButtonItem" title="Info" image="icon_info" id="069-UB-LFZ">
                             <connections>
                                 <segue destination="NDH-im-hD7" kind="showDetail" id="vP5-Ls-27U"/>
                             </connections>
@@ -942,7 +980,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bU-me-824" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="1294"/>
+            <point key="canvasLocation" x="1902" y="1294"/>
         </scene>
         <!--Record-->
         <scene sceneID="43D-Ck-P7w">
@@ -963,7 +1001,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSy-bI-6JY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1319" y="564"/>
+            <point key="canvasLocation" x="-1266" y="564"/>
         </scene>
         <!--Location-->
         <scene sceneID="Exz-1b-UeA">
@@ -984,7 +1022,73 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAX-av-822" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="564"/>
+            <point key="canvasLocation" x="1902" y="564"/>
+        </scene>
+        <!--Record Filter-->
+        <scene sceneID="xOl-tc-A6b">
+            <objects>
+                <viewController id="aPy-qp-wZF" customClass="FilterViewController" customModule="SmoothBreath_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NDm-np-p3G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="hY6-GY-KcK">
+                                <rect key="frame" x="16" y="141" width="343" height="148.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hY6-GY-KcK" secondAttribute="height" multiplier="125:54" id="eNS-nF-m9t"/>
+                                </constraints>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyE-TS-e1o">
+                                <rect key="frame" x="16" y="104" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="9UO-7g-87b">
+                                <rect key="frame" x="16" y="342.33333333333331" width="343" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9UO-7g-87b" secondAttribute="height" multiplier="125:54" id="8lM-Wu-Ysf"/>
+                                </constraints>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVR-vX-knD">
+                                <rect key="frame" x="16" y="305.33333333333331" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hY6-GY-KcK" firstAttribute="leading" secondItem="9v3-d3-Fkp" secondAttribute="leading" constant="16" id="33S-s5-ffb"/>
+                            <constraint firstItem="9UO-7g-87b" firstAttribute="leading" secondItem="9v3-d3-Fkp" secondAttribute="leading" constant="16" id="ESw-78-7Iq"/>
+                            <constraint firstItem="AVR-vX-knD" firstAttribute="leading" secondItem="9v3-d3-Fkp" secondAttribute="leading" constant="16" id="Ksa-PJ-DSV"/>
+                            <constraint firstItem="UyE-TS-e1o" firstAttribute="top" secondItem="9v3-d3-Fkp" secondAttribute="top" constant="16" id="KuN-Io-Wkp"/>
+                            <constraint firstItem="UyE-TS-e1o" firstAttribute="leading" secondItem="9v3-d3-Fkp" secondAttribute="leading" constant="16" id="NZR-cH-Xzw"/>
+                            <constraint firstItem="AVR-vX-knD" firstAttribute="top" secondItem="hY6-GY-KcK" secondAttribute="bottom" constant="16" id="XNH-MP-gQb"/>
+                            <constraint firstItem="9v3-d3-Fkp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UyE-TS-e1o" secondAttribute="trailing" symbolic="YES" id="azV-Ob-s7R"/>
+                            <constraint firstItem="9UO-7g-87b" firstAttribute="top" secondItem="AVR-vX-knD" secondAttribute="bottom" constant="16" id="iSM-QS-Mz7"/>
+                            <constraint firstAttribute="trailing" secondItem="hY6-GY-KcK" secondAttribute="trailing" constant="16" id="jOg-Jz-f6t"/>
+                            <constraint firstItem="9v3-d3-Fkp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AVR-vX-knD" secondAttribute="trailing" symbolic="YES" id="wcG-XT-zqj"/>
+                            <constraint firstItem="hY6-GY-KcK" firstAttribute="top" secondItem="UyE-TS-e1o" secondAttribute="bottom" constant="16" id="x55-r2-Blu"/>
+                            <constraint firstItem="9v3-d3-Fkp" firstAttribute="trailing" secondItem="9UO-7g-87b" secondAttribute="trailing" constant="16" id="zdh-Er-BVR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9v3-d3-Fkp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Record Filter" id="del-aN-DVK">
+                        <barButtonItem key="rightBarButtonItem" title="Confirm" id="q4N-7J-Sob">
+                            <connections>
+                                <action selector="confirm:" destination="aPy-qp-wZF" id="tUs-yl-PaC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fromDatePicker" destination="hY6-GY-KcK" id="bJr-EA-P6d"/>
+                        <outlet property="toDatePicker" destination="9UO-7g-87b" id="bDq-pD-AvO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vL6-Ru-brS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296.80000000000001" y="2035.7142857142858"/>
         </scene>
         <!--Record Detail-->
         <scene sceneID="47h-6t-7i4">
@@ -1156,7 +1260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLr-xX-oTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="2731"/>
+            <point key="canvasLocation" x="1102" y="2776"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KAX-ca-wG6">
@@ -1166,11 +1270,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
                                 <rect key="frame" x="16" y="16" width="343" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">This statistic shows the asthma attack through a visualization way, and you can track your each record by clicking records.
-</string>
+                                <string key="text">This statistic shows the asthma attack through a visualization way, and you can track your each record by clicking records. 
+1. The monthly distribution records the asthma attack frequency in different month. 
+2. The trigger ranking records the most popular triggers based on the record. 
+3. The information can be used for the asthma diagnosis.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1188,7 +1294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByN-I1-h4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="3459"/>
+            <point key="canvasLocation" x="-481" y="2036"/>
         </scene>
         <!--Counter-->
         <scene sceneID="4le-tM-vlg">
@@ -1207,7 +1313,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDC-Kf-i3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2215" y="564"/>
+            <point key="canvasLocation" x="-2439" y="564"/>
         </scene>
         <!--Statistic-->
         <scene sceneID="PbZ-X1-JIv">
@@ -1226,12 +1332,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fai-KB-heh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="564"/>
+            <point key="canvasLocation" x="297" y="564"/>
         </scene>
     </scenes>
     <resources>
         <image name="counter_inhaler" width="426.66665649414062" height="194.33332824707031"/>
-        <image name="info.circle" catalog="system" width="64" height="62"/>
+        <image name="icon_info" width="33.333332061767578" height="33.333332061767578"/>
         <image name="tab_counter" width="33.333332061767578" height="33.333332061767578"/>
         <image name="tab_location" width="33.333332061767578" height="33.333332061767578"/>
         <image name="tab_record" width="33.333332061767578" height="33.333332061767578"/>

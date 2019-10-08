@@ -2,17 +2,22 @@ PODS:
   - Charts (3.3.0):
     - Charts/Core (= 3.3.0)
   - Charts/Core (3.3.0)
+  - SSCustomTabbar (2.0.1)
 
 DEPENDENCIES:
   - Charts
+  - SSCustomTabbar
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Charts
+  trunk:
+    - SSCustomTabbar
 
 SPEC CHECKSUMS:
   Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
+  SSCustomTabbar: 4ec050d50ada582ba6adf0ac5e086e5ac141df5a
 
-PODFILE CHECKSUM: c226c95580fdde9ab7fae2bdff094d80837ac661
+PODFILE CHECKSUM: a7b16b814ac55dec6f9cf00fad73a0eaadd6f108
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.3
