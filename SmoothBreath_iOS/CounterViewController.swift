@@ -145,6 +145,10 @@ class CounterViewController: UIViewController, ResetInhalerDelegate {
         
         let expectedDate = df.string(from: Calendar.current.date(byAdding: .day, value: expectedLeftDay, to: Date())!)
         expectedDateLabel.text = expectedDate
+        
+        if percentage < 0.1 {
+            displayMessage(title: "Low Remaining Usage", message: "There is less 10% remaining usage, please take another inhaler in advance.")
+        }
     }
     
     func resetInhaler(totalUsage: Int) -> Bool {
@@ -205,5 +209,11 @@ class CounterViewController: UIViewController, ResetInhalerDelegate {
             let destination = segue.destination as! ResetInhalerViewController
             destination.delegate = self
         }
+    }
+    
+    func displayMessage(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
 }
