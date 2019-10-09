@@ -18,10 +18,18 @@ class StatisticViewController: UIViewController {
     var filteredRecords: [Record] = []
     var fromDate: Date?
     var toDate: Date?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        initialisation()
+    }
+    
+    func initialisation() {
         loadData()
 
         if (fromDate != nil) && (toDate != nil) {

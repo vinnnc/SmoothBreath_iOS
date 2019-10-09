@@ -27,6 +27,7 @@ class RecordTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     @IBAction func done(_ sender: Any) {
+        delegate?.initialisation()
         dismiss(animated: true, completion: nil)
     }
     

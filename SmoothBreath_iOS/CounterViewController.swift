@@ -28,15 +28,11 @@ class CounterViewController: UIViewController, ResetInhalerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.distanceFilter = kCLDistanceFilterNone
-        locationManager.startUpdatingLocation()
         
 //        registerKeyboardNotifications()
-        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
-        view.addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+//        view.addGestureRecognizer(tap)
         
         loadData()
         updateView()
@@ -146,9 +142,9 @@ class CounterViewController: UIViewController, ResetInhalerDelegate {
         let expectedDate = df.string(from: Calendar.current.date(byAdding: .day, value: expectedLeftDay, to: Date())!)
         expectedDateLabel.text = expectedDate
         
-        if percentage < 0.1 {
-            displayMessage(title: "Low Remaining Usage", message: "There is less 10% remaining usage, please take another inhaler in advance.")
-        }
+//        if percentage <= 0.1 {
+//            displayMessage(title: "Low Remaining Usage", message: "There is less 10% remaining usage, please take another inhaler in advance.")
+//        }
     }
     
     func resetInhaler(totalUsage: Int) -> Bool {
