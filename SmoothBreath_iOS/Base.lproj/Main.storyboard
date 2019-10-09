@@ -857,7 +857,7 @@
                         </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" title="Records" id="cTq-zq-xKx">
                             <connections>
-                                <segue destination="G9i-Xk-kXV" kind="showDetail" id="ecU-vG-KEX"/>
+                                <segue destination="G9i-Xk-kXV" kind="showDetail" identifier="allRecordsSegue" id="ecU-vG-KEX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

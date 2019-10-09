@@ -18,23 +18,7 @@ class StatisticViewController: UIViewController {
     var filteredRecords: [Record] = []
     var fromDate: Date?
     var toDate: Date?
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//        loadData()
-//
-//        if (fromDate != nil) && (toDate != nil) {
-//            filteredData()
-//        } else {
-//            filteredRecords = allRecords
-//        }
-//
-//        generateMonthDistributionChart()
-//        generateTriggerRankingBarChart()
-//    }
-//
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -61,6 +45,8 @@ class StatisticViewController: UIViewController {
         } catch {
             print("Failed to fetch record data.")
         }
+        
+        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedDescending })
     }
     
     func filteredData() {
@@ -186,6 +172,10 @@ class StatisticViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "filterSegue" {
             let destination = segue.destination as! FilterViewController
+            destination.delegate = self
+        }
+        if segue.identifier == "allRecordsSegue" {
+            let destination = segue.destination as! RecordTableViewController
             destination.delegate = self
         }
     }

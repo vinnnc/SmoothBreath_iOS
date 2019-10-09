@@ -16,11 +16,12 @@ class RecordTableViewController: UITableViewController {
     let CELL_COUNT = "countCell"
     let CELL_RECORD = "recordCell"
     
-    var allRecords = [Record]()
+    var delegate: StatisticViewController?
+    var allRecords: [Record] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        allRecords = delegate!.allRecords
     }
 
     // MARK: - Table view data source
@@ -131,6 +132,11 @@ class RecordTableViewController: UITableViewController {
             let context = appDelegate.persistentContainer.viewContext
             context.delete(allRecords[indexPath.row])
             allRecords.remove(at: indexPath.row)
+            do {
+                try context.save()
+            } catch {
+                print("Error on save deletion")
+            }
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadSections([SECTION_COUNT], with: .automatic)
         }
@@ -146,20 +152,5 @@ class RecordTableViewController: UITableViewController {
             let destination = segue.destination as! RecordDetailViewController
             destination.record = sender as? Record
         }
-    }
-
-    func loadData() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let context = appDelegate.persistentContainer.viewContext
-        
-        do {
-            try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
-        } catch {
-            print("Failed to fetch record data.")
-        }
-        
-        allRecords.sort(by: { $0.attackDate!.compare($1.attackDate! as Date) == ComparisonResult.orderedDescending })
     }
 }
