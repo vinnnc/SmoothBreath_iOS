@@ -19,14 +19,13 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        var current = Date()
+        let current = Date()
         let df1 = DateFormatter()
         df1.dateFormat = "yyyy-MM-dd"
         let dateStr = df1.string(from: current)
         
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm"
-        current = df.date(from: "\(dateStr) 5:00")!
         let sixAm = df.date(from: "\(dateStr) 06:00")!
         let twelvePm = df.date(from: "\(dateStr) 12:00")!
         let sixPm = df.date(from: "\(dateStr) 18:00")!
