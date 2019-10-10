@@ -1,2 +1,2 @@
 # SmoothBreath_iOS
-iOS version of Smooth Breath project. Developed by Road2Help.
+iOS branch of project Smooth Breath. Developed by Road2Help.
