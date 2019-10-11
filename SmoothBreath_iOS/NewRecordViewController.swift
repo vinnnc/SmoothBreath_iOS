@@ -14,7 +14,6 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var dateAndTimeDatePicker: UIDatePicker!
     @IBOutlet weak var attackLevelSlider: UISlider!
-    @IBOutlet weak var currentLocationSwitch: UISwitch!
     @IBOutlet weak var stressSlider: UISlider!
     @IBOutlet weak var exerciseSlider: UISlider!
     @IBOutlet weak var periodSwitch: UISwitch!
@@ -54,6 +53,7 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
     func initialisation() {
         let calandar = Calendar(identifier: .gregorian)
         dateAndTimeDatePicker.maximumDate = calandar.date(byAdding: DateComponents(), to: Date())
+        dateAndTimeDatePicker.date = dateAndTimeDatePicker.maximumDate!
         loadData()
     }
     
@@ -97,27 +97,17 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
             nearby = "There is no other trigger nearby."
         }
         
-        if currentLocationSwitch.isOn {
-            if currentLocation != nil {
-                if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), period: periodSwitch.isOn, nearby: nearby, longitude: Float(currentLocation!.longitude), latitude: Float(currentLocation!.latitude)) {
-                    displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
-                    tabBarController?.selectedIndex = 2
-                    return
-                } else {
-                    displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
-                    return
-                }
-            }
-            else {
-                displayMessage(title: "Location Not Found", message: "The location has not yet been determined.")
+        if currentLocation != nil {
+            if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), period: periodSwitch.isOn, nearby: nearby, longitude: Float(currentLocation!.longitude), latitude: Float(currentLocation!.latitude)) {
+                displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
+                tabBarController?.selectedIndex = 2
+                return
+            } else {
+                displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
                 return
             }
         } else {
-            if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), period: periodSwitch.isOn, nearby: nearby, longitude: Float.zero, latitude: Float.zero) {
-                displayMessage(title: "Save Successfully", message: "New record has been saved in the database.")
-            } else {
-                displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
-            }
+            displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
         }
     }
     

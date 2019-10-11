@@ -39,20 +39,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func tabFirstBlock(_ sender: Any) {
-        guard let url = URL(string: "https://smoothbreath.tk/research.html") else { return }
-        UIApplication.shared.open(url)
-    }
-    
-    @IBAction func tapSecondBlock(_ sender: Any) {
-        guard let url = URL(string: "https://smoothbreath.tk/trigger.html") else { return }
-        UIApplication.shared.open(url)
-    }
-    
-    @IBAction func tapThirdBlock(_ sender: Any) {
-        guard let url = URL(string: "https://smoothbreath.tk") else { return }
-        UIApplication.shared.open(url)
-    }
     /*
     // MARK: - Navigation
 
