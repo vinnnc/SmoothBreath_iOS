@@ -16,18 +16,17 @@ class RecordTableViewController: UITableViewController {
     let CELL_COUNT = "countCell"
     let CELL_RECORD = "recordCell"
     
-    var delegate: StatisticViewController?
+    var delegate: Any?
     var allRecords: [Record] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        allRecords = delegate!.allRecords
+        loadData()
     }
 
     // MARK: - Table view data source
 
     @IBAction func done(_ sender: Any) {
-        delegate?.initialisation()
         dismiss(animated: true, completion: nil)
     }
     
@@ -152,6 +151,19 @@ class RecordTableViewController: UITableViewController {
         if segue.identifier == "recordDetailSegue" {
             let destination = segue.destination as! RecordDetailViewController
             destination.record = sender as? Record
+        }
+    }
+    
+    func loadData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let context = appDelegate.persistentContainer.viewContext
+        
+        do {
+            try allRecords = context.fetch(Record.fetchRequest()) as! [Record]
+        } catch {
+            print("Failed to fetch record data.")
         }
     }
 }

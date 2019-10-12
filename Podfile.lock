@@ -9,9 +9,8 @@ DEPENDENCIES:
   - PTCardTabBar
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Charts
   trunk:
+    - Charts
     - PTCardTabBar
 
 SPEC CHECKSUMS:

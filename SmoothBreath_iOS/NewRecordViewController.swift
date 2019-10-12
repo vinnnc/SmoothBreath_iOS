@@ -73,6 +73,10 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         sender.value = roundf(sender.value)
     }
     
+    @IBAction func list(_ sender: Any) {
+        performSegue(withIdentifier: "recordListSegue", sender: nil)
+    }
+    
     @IBAction func save(_ sender: Any) {
         var nearby = ""
         if fireSwitch.isOn {
@@ -99,15 +103,19 @@ class NewRecordViewController: UIViewController, CLLocationManagerDelegate {
         
         if currentLocation != nil {
             if addRecord(attackDate: dateAndTimeDatePicker!.date, attackLevel: Int(attackLevelSlider!.value), exercise: Int(exerciseSlider!.value), stress: Int(stressSlider!.value), period: periodSwitch.isOn, nearby: nearby, longitude: Float(currentLocation!.longitude), latitude: Float(currentLocation!.latitude)) {
-                displayMessage(title: "Save Secussfully", message: "New record has been saved in the database.")
-                tabBarController?.selectedIndex = 2
+                
+                let alertController = UIAlertController(title: "Save Secussfully", message: "New record has been saved in the database.", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: {_ in
+                    self.performSegue(withIdentifier: "recordListSegue", sender: nil)
+                }))
+                self.present(alertController, animated: true, completion: nil)
                 return
             } else {
                 displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
                 return
             }
         } else {
-            displayMessage(title: "Save Failed", message: "Attack Date and time have alreay existed in database.")
+            displayMessage(title: "Save Failed", message: "Failed to capture the location information.")
         }
     }
     

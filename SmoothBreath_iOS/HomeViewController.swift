@@ -39,6 +39,11 @@ class HomeViewController: UIViewController {
         }
     }
     
+    @IBAction func refWebsiteTap(_ sender: Any) {
+        guard let url = URL(string: "https://www.smoothbreath.tk") else { return }
+        UIApplication.shared.open(url)
+    }
+    
     /*
     // MARK: - Navigation
 

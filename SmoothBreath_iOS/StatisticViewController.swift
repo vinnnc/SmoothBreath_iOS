@@ -25,7 +25,6 @@ class StatisticViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
         initialisation()
     }
     
@@ -180,10 +179,6 @@ class StatisticViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "filterSegue" {
             let destination = segue.destination as! FilterViewController
-            destination.delegate = self
-        }
-        if segue.identifier == "allRecordsSegue" {
-            let destination = segue.destination as! RecordTableViewController
             destination.delegate = self
         }
     }
