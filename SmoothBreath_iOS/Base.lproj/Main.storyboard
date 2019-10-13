@@ -54,12 +54,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_article_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="8a4-6O-2aD">
-                                                <rect key="frame" x="16" y="104.66666666666667" width="343.00000000000023" height="183.66666666666663"/>
+                                                <rect key="frame" x="16" y="104.66666666666667" width="343" height="183.66666666666663"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8a4-6O-2aD" secondAttribute="height" multiplier="239:128" id="2Gk-ZK-Kwg"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzO-9X-wud">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzO-9X-wud">
                                                 <rect key="frame" x="16" y="296.33333333333331" width="343" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -82,7 +82,7 @@
                                                     <constraint firstAttribute="width" secondItem="d7G-sh-7bz" secondAttribute="height" multiplier="15:8" id="2Pq-Up-LaY"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-KU-ZIG">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-KU-ZIG">
                                                 <rect key="frame" x="16" y="732.33333333333337" width="343" height="160"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -201,13 +201,13 @@
                                                     <constraint firstAttribute="width" secondItem="es2-W8-dJa" secondAttribute="height" multiplier="1920:1280" id="X6H-sI-8Kp"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="QM3-9m-vDc">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QM3-9m-vDc">
                                                 <rect key="frame" x="16" y="326" width="343" height="620"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="620" id="Jtk-jU-pfF"/>
                                                 </constraints>
-                                                <mutableString key="text">There are many normal things that we are meeting in our daily life, however, that might be one of the asthma triggers that affect your asthma seriously. Those triggers are listed below.  1. Bushfire
+                                                <string key="text">There are many normal things that we are meeting in our daily life, however, that might be one of the asthma triggers that affect your asthma seriously. Those triggers are listed below.  1. Bushfire
 Especially in the summer, bushfire would occur occasionally in rural Victoria. The smoke of the bushfire can have a negative influence on your asthma disease.
 
 2. Pollen 
@@ -220,7 +220,7 @@ Pets are our best friends, they give us a sense of happiness and always stand on
 Asthma attack more happens during the pollen season since there is a range of pollen sources exist in rural Victoria.
 
 5. Hormone
-During the female menstrual period, the hormone level is higher and that is also a trigger of the asthma attack.</mutableString>
+During the female menstrual period, the hormone level is higher and that is also a trigger of the asthma attack.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -316,18 +316,18 @@ During the female menstrual period, the hormone level is higher and that is also
                                                     <constraint firstAttribute="width" secondItem="Sm8-9B-4nw" secondAttribute="height" multiplier="1920:1280" id="wOd-RP-gk3"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-Kb-qFn">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-Kb-qFn">
                                                 <rect key="frame" x="16" y="296" width="343" height="310"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="310" id="dYJ-hW-1DX"/>
                                                 </constraints>
-                                                <string key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
-a. Minus button means using one dose. 
-b. Plus button means adding back the dose which can withdraw your history. 
-c. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
-d. Last Changed Date tells you when did you change the inhaler last time. 
-e. Expected Changed Date tells you when this inhaler will be expired.</string>
+                                                <mutableString key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
+1. Minus button means using one dose. 
+2. Plus button means adding back the dose which can withdraw your history. 
+3. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
+4. Last Changed Date tells you when did you change the inhaler last time. 
+5. Expected Changed Date tells you when this inhaler will be expired.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1196,13 +1196,13 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">a. It records your asthma attack date and time. 
-b. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
-c. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
-d. The current location will be recorded in the location bar at the bottom.</string>
+                                <mutableString key="text">1. It records your asthma attack date and time. 
+2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
+3. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
+4. The current location will be recorded in the location bar at the bottom.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1252,12 +1252,12 @@ d. The current location will be recorded in the location bar at the bottom.</str
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-IL-Ca7">
                                 <rect key="frame" x="16" y="104.66666666666669" width="343" height="603.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
-a. Minus button means using one dose. 
-b. Plus button means adding back the dose which can withdraw your history. 
-c. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
-d. Last Changed Date tells you when did you change the inhaler last time. 
-e. Expected Changed Date tells you when this inhaler will be expired.</string>
+                                <mutableString key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
+1. Minus button means using one dose. 
+2. Plus button means adding back the dose which can withdraw your history. 
+3. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
+4. Last Changed Date tells you when did you change the inhaler last time. 
+5. Expected Changed Date tells you when this inhaler will be expired.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1428,14 +1428,14 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
-a. Each pinned point is the historical asthma attack location. 
-b. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
-c. Each location point was recorded and generated based on each record "current location". 
-d. All the information is stored in the app, other people cannot access the collecting data.</string>
+                                <mutableString key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
+1. Each pinned point is the historical asthma attack location. 
+2. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
+3. Each location point was recorded and generated based on each record "current location". 
+4. All the information is stored in the app, other people cannot access the collecting data.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2253,13 +2253,13 @@ d. All the information is stored in the app, other people cannot access the coll
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
-a. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
-b. The trigger ranking records the most popular triggers based on the record through the bar chart. 
-c. The information can be used for asthma diagnosis.</string>
+                                <mutableString key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
+1. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
+2. The trigger ranking records the most popular triggers based on the record through the bar chart. 
+3. The information can be used for asthma diagnosis.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2344,16 +2344,16 @@ c. The information can be used for asthma diagnosis.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="bRG-QD-j7k">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRG-QD-j7k">
                                                 <rect key="frame" x="16" y="296" width="343" height="220"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="220" id="B2a-WA-w74"/>
                                                 </constraints>
-                                                <string key="text">a. It records your asthma attack date and time. 
-b. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
-c. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
-d. The current location will be recorded in the location bar at the bottom.</string>
+                                                <mutableString key="text">1. It records your asthma attack date and time. 
+2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
+3. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
+4. The current location will be recorded in the location bar at the bottom.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2451,16 +2451,16 @@ d. The current location will be recorded in the location bar at the bottom.</str
                                                     <constraint firstAttribute="width" secondItem="l3A-Ef-BT6" secondAttribute="height" multiplier="1920:1280" id="DTh-gk-tNa"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="iNo-3L-4nt">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNo-3L-4nt">
                                                 <rect key="frame" x="16" y="296" width="343" height="240"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="B1x-gO-ltW"/>
                                                 </constraints>
-                                                <string key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
-a. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
-b. The trigger ranking records the most popular triggers based on the record through the bar chart. 
-c. The information can be used for asthma diagnosis.</string>
+                                                <mutableString key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
+1. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
+2. The trigger ranking records the most popular triggers based on the record through the bar chart. 
+3. The information can be used for asthma diagnosis.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2551,17 +2551,17 @@ c. The information can be used for asthma diagnosis.</string>
                                                     <constraint firstAttribute="width" secondItem="f9y-pd-ix0" secondAttribute="height" multiplier="1920:1280" id="4Sf-oI-35c"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kDX-qb-XxB">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDX-qb-XxB">
                                                 <rect key="frame" x="16" y="296" width="343" height="310"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="310" id="eRi-0a-m34"/>
                                                 </constraints>
-                                                <string key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
-a. Each pinned point is the historical asthma attack location. 
-b. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
-c. Each location point was recorded and generated based on each record "current location". 
-d. All the information is stored in the app, other people cannot access the collecting data.</string>
+                                                <mutableString key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
+1. Each pinned point is the historical asthma attack location. 
+2. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
+3. Each location point was recorded and generated based on each record "current location". 
+4. All the information is stored in the app, other people cannot access the collecting data.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2646,7 +2646,7 @@ d. All the information is stored in the app, other people cannot access the coll
         <image name="home_statistic" width="1280" height="837"/>
         <image name="home_statistic-1" width="1280" height="837"/>
         <image name="home_trigger" width="5760" height="3840"/>
-        <image name="home_trigger-1" width="8000" height="5342"/>
+        <image name="home_trigger-1" width="1498" height="1000"/>
         <image name="home_website" width="1920" height="1280"/>
         <image name="icon_info" width="33.333332061767578" height="33.333332061767578"/>
         <image name="tab_counter" width="33.333332061767578" height="33.333332061767578"/>
