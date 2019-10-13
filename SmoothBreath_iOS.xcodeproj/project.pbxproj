@@ -30,7 +30,6 @@
 		9BE09FEF234AAD20006B9EDB /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FEB234AAD20006B9EDB /* Record+CoreDataProperties.swift */; };
 		9BE09FF0234AAD20006B9EDB /* Counter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FEC234AAD20006B9EDB /* Counter+CoreDataClass.swift */; };
 		9BE09FF1234AAD20006B9EDB /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FED234AAD20006B9EDB /* Counter+CoreDataProperties.swift */; };
-		9BE09FF5234AB447006B9EDB /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE09FF4234AB447006B9EDB /* FilterViewController.swift */; };
 		9BEBF00B2323EF3200AD8A94 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */; };
 		C9A4FD0E75FF2DBE145FDE1A /* Pods_SmoothBreath_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FFF4324231B91F97B19E55 /* Pods_SmoothBreath_iOS.framework */; };
 		FBB353CE235212E500FDB380 /* ResFemaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB353CD235212E500FDB380 /* ResFemaleViewController.swift */; };
@@ -67,7 +66,6 @@
 		9BE09FEB234AAD20006B9EDB /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9BE09FEC234AAD20006B9EDB /* Counter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9BE09FED234AAD20006B9EDB /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9BE09FF4234AB447006B9EDB /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		B032257BE329DA2A838826B9 /* Pods-SmoothBreath_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.debug.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B549821AD4C8036C23B74CE4 /* Pods-SmoothBreath_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothBreath_iOS.release.xcconfig"; path = "Target Support Files/Pods-SmoothBreath_iOS/Pods-SmoothBreath_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,28 +129,17 @@
 			isa = PBXGroup;
 			children = (
 				9B2A6019231FD91800CF6ED1 /* Info.plist */,
-				9B61B654234738A500151E34 /* Annotation.swift */,
 				9B2A600D231FD91600CF6ED1 /* AppDelegate.swift */,
-				9B41B5BD234CADA4007DD715 /* CounterIntroViewController.swift */,
-				9BAB737D231FDD9400554374 /* CounterViewController.swift */,
 				9B41B5BB234C91FE007DD715 /* CUIView.swift */,
-				9BE09FF4234AB447006B9EDB /* FilterViewController.swift */,
-				9B41B5C5234CBCC7007DD715 /* HomeViewController.swift */,
-				9B41B5C3234CB225007DD715 /* MapIntroViewController.swift */,
-				9BAB737F231FDD9F00554374 /* MapViewController.swift */,
-				9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */,
-				9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */,
-				9B41B5BF234CAEE6007DD715 /* RecordIntroViewController.swift */,
-				9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */,
-				9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */,
-				9B3555712344B243002FD855 /* ResetInhalerViewController.swift */,
-				9B41B5C1234CAFD4007DD715 /* StatisticIntroViewController.swift */,
-				9B617D35232CB10700CB52DA /* StatisticViewController.swift */,
 				9BCA32272330C88500F91088 /* Assets.xcassets */,
 				9BCAF69A2329034600BFC423 /* DataModel */,
 				FBB353CC2352129800FDB380 /* HomeScreen */,
+				FB7D435A23530248000DB54F /* InhalerCounter */,
 				9B2A6016231FD91800CF6ED1 /* LaunchScreen.storyboard */,
+				FB7D435C2353029D000DB54F /* LocationMap */,
 				9B2A6011231FD91600CF6ED1 /* Main.storyboard */,
+				FB7D435B2353026E000DB54F /* Record */,
+				FB7D435D235302B8000DB54F /* Statistic */,
 			);
 			path = SmoothBreath_iOS;
 			sourceTree = "<group>";
@@ -169,6 +156,47 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		FB7D435A23530248000DB54F /* InhalerCounter */ = {
+			isa = PBXGroup;
+			children = (
+				9B41B5BD234CADA4007DD715 /* CounterIntroViewController.swift */,
+				9BAB737D231FDD9400554374 /* CounterViewController.swift */,
+				9B3555712344B243002FD855 /* ResetInhalerViewController.swift */,
+			);
+			path = InhalerCounter;
+			sourceTree = "<group>";
+		};
+		FB7D435B2353026E000DB54F /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				9BA9CEBA2324E28A001D5132 /* NewRecordViewController.swift */,
+				9BA9CEBC2324E29A001D5132 /* RecordDetailViewController.swift */,
+				9B41B5BF234CAEE6007DD715 /* RecordIntroViewController.swift */,
+				9BEBF00A2323EF3200AD8A94 /* RecordTableViewCell.swift */,
+				9BA9CEC22324E388001D5132 /* RecordTableViewController.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		FB7D435C2353029D000DB54F /* LocationMap */ = {
+			isa = PBXGroup;
+			children = (
+				9B61B654234738A500151E34 /* Annotation.swift */,
+				9B41B5C3234CB225007DD715 /* MapIntroViewController.swift */,
+				9BAB737F231FDD9F00554374 /* MapViewController.swift */,
+			);
+			path = LocationMap;
+			sourceTree = "<group>";
+		};
+		FB7D435D235302B8000DB54F /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				9B41B5C1234CAFD4007DD715 /* StatisticIntroViewController.swift */,
+				9B617D35232CB10700CB52DA /* StatisticViewController.swift */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
 		FBB353CC2352129800FDB380 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +204,7 @@
 				FBB353D72352132300FDB380 /* FuncLocationViewController.swift */,
 				FBB353D32352130B00FDB380 /* FuncRecordViewController.swift */,
 				FBB353D52352131B00FDB380 /* FuncStatisticViewController.swift */,
+				9B41B5C5234CBCC7007DD715 /* HomeViewController.swift */,
 				FBB353CD235212E500FDB380 /* ResFemaleViewController.swift */,
 				FBB353CF235212F500FDB380 /* ResTriggerViewController.swift */,
 			);
@@ -316,7 +345,6 @@
 				9BA9CEBB2324E28A001D5132 /* NewRecordViewController.swift in Sources */,
 				9B41B5C0234CAEE6007DD715 /* RecordIntroViewController.swift in Sources */,
 				9B2A600E231FD91600CF6ED1 /* AppDelegate.swift in Sources */,
-				9BE09FF5234AB447006B9EDB /* FilterViewController.swift in Sources */,
 				9BE09FEF234AAD20006B9EDB /* Record+CoreDataProperties.swift in Sources */,
 				FBB353D62352131B00FDB380 /* FuncStatisticViewController.swift in Sources */,
 				9BCAF6B02329070D00BFC423 /* SmoothBreath.xcdatamodeld in Sources */,

@@ -13,7 +13,7 @@ class StatisticViewController: UIViewController {
 
     @IBOutlet weak var monthDistributionLineChartView: LineChartView!
     @IBOutlet weak var triggerRankingBarChartView: HorizontalBarChartView!
-
+    
     var allRecords: [Record] = []
     var filteredRecords: [Record] = []
     var fromDate: Date?
@@ -26,6 +26,44 @@ class StatisticViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         initialisation()
+    }
+    
+    @IBAction func filter(_ sender: Any) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "All Time", style: .default) { _ in
+            let df = DateFormatter()
+            df.dateFormat = "yyyy-MM-dd"
+            self.fromDate = df.date(from: "1970-01-01")
+            self.toDate = Date()
+            self.initialisation()
+        })
+        
+        alert.addAction(UIAlertAction(title: "Last Year", style: .default) { _ in
+            let toDate = Date()
+            self.fromDate = Calendar.current.date(byAdding: .day, value: -365, to: toDate)
+            self.toDate = Date()
+            self.initialisation()
+        })
+        
+        alert.addAction(UIAlertAction(title: "Last Month", style: .default) { _ in
+            let toDate = Date()
+            self.fromDate = Calendar.current.date(byAdding: .day, value: -30, to: toDate)
+            self.toDate = Date()
+            self.initialisation()
+        })
+
+
+        alert.addAction(UIAlertAction(title: "Last Week", style: .default) { _ in
+            let toDate = Date()
+            self.fromDate = Calendar.current.date(byAdding: .day, value: -7, to: toDate)
+            self.toDate = Date()
+            self.initialisation()
+        })
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(alert, animated: true)
     }
     
     func initialisation() {
@@ -174,12 +212,5 @@ class StatisticViewController: UIViewController {
         xAxis.labelPosition = .bottom
         xAxis.drawGridLinesEnabled = false
         xAxis.drawAxisLineEnabled = false
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "filterSegue" {
-            let destination = segue.destination as! FilterViewController
-            destination.delegate = self
-        }
     }
 }

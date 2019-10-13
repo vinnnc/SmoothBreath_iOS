@@ -33,34 +33,34 @@
                                 <rect key="frame" x="0.0" y="54" width="375" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tem-ub-E5t">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="908"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="908.33333333333337"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asthma female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-x1-jAv">
-                                                <rect key="frame" x="32" y="0.0" width="176" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asthma Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-x1-jAv">
+                                                <rect key="frame" x="32" y="0.0" width="181" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in rural Victoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-Ei-YOM">
-                                                <rect key="frame" x="166" y="30" width="177" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in Rural Victoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-Ei-YOM">
+                                                <rect key="frame" x="159" y="30" width="184" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rural/Urban Female Age Distribution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jC-B6-4k9">
-                                                <rect key="frame" x="42" y="76" width="291.33333333333331" height="20.333333333333329"/>
+                                                <rect key="frame" x="42" y="76" width="291" height="20.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_article_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="8a4-6O-2aD">
-                                                <rect key="frame" x="16" y="104.33333333333336" width="343.00000000000023" height="183.66666666666663"/>
+                                                <rect key="frame" x="16" y="104.66666666666667" width="343.00000000000023" height="183.66666666666663"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8a4-6O-2aD" secondAttribute="height" multiplier="239:128" id="2Gk-ZK-Kwg"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzO-9X-wud">
-                                                <rect key="frame" x="16" y="296" width="343" height="200"/>
+                                                <rect key="frame" x="16" y="296.33333333333331" width="343" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="FXm-6z-aRD"/>
@@ -71,19 +71,19 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Different Age Group of Female Asthmatics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBn-96-6RD">
-                                                <rect key="frame" x="19" y="512" width="337" height="21"/>
+                                                <rect key="frame" x="19" y="512.33333333333337" width="337" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_article_1_2" translatesAutoresizingMaskIntoConstraints="NO" id="d7G-sh-7bz">
-                                                <rect key="frame" x="16" y="541" width="343" height="183"/>
+                                                <rect key="frame" x="16" y="541.33333333333337" width="343" height="183"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="d7G-sh-7bz" secondAttribute="height" multiplier="15:8" id="2Pq-Up-LaY"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-KU-ZIG">
-                                                <rect key="frame" x="16" y="732" width="343" height="160"/>
+                                                <rect key="frame" x="16" y="732.33333333333337" width="343" height="160"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="hXO-FN-fUa"/>
@@ -183,14 +183,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIt-Ac-voX">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="704"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What may cause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-vf-bkK">
-                                                <rect key="frame" x="32" y="0.0" width="194" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What may Cause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-vf-bkK">
+                                                <rect key="frame" x="32" y="0.0" width="198" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your asthma attack?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbP-QM-vY0">
-                                                <rect key="frame" x="104" y="30" width="239" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Asthma Attack?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbP-QM-vY0">
+                                                <rect key="frame" x="97" y="30" width="246" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -238,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbu-Ds-ZiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6298" y="1294"/>
+            <point key="canvasLocation" x="-6278" y="1294"/>
         </scene>
         <!--Func Inhaler View Controller-->
         <scene sceneID="7d1-Gq-iLO">
@@ -262,29 +262,35 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-w4-jn0">
-                                <rect key="frame" x="0.0" y="54" width="375" height="704"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FwO-vl-sev">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="704"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track your inhaler status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCe-XU-wI5">
-                                                <rect key="frame" x="44" y="0.0" width="287" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Inhaler Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCe-XU-wI5">
+                                                <rect key="frame" x="41.666666666666657" y="0.0" width="292" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_counter-1" translatesAutoresizingMaskIntoConstraints="NO" id="Sm8-9B-4nw">
+                                                <rect key="frame" x="0.0" y="38" width="375" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Sm8-9B-4nw" secondAttribute="height" multiplier="1920:1280" id="wOd-RP-gk3"/>
+                                                </constraints>
+                                            </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-Kb-qFn">
-                                                <rect key="frame" x="16" y="46" width="343" height="310"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="310"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="310" id="1QE-2t-xjB"/>
+                                                    <constraint firstAttribute="height" constant="310" id="dYJ-hW-1DX"/>
                                                 </constraints>
-                                                <string key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
+                                                <mutableString key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
 a. Minus button means using one dose. 
 b. Plus button means adding back the dose which can withdraw your history. 
 c. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
 d. Last Changed Date tells you when did you change the inhaler last time. 
-e. Expected Changed Date tells you when this inhaler will be expired.</string>
+e. Expected Changed Date tells you when this inhaler will be expired.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -292,21 +298,25 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="xFW-Kb-qFn" firstAttribute="top" secondItem="MCe-XU-wI5" secondAttribute="bottom" constant="16" id="FYk-B8-T1V"/>
-                                            <constraint firstAttribute="trailing" secondItem="xFW-Kb-qFn" secondAttribute="trailing" constant="16" id="Fyy-mq-p6b"/>
-                                            <constraint firstItem="MCe-XU-wI5" firstAttribute="centerX" secondItem="FwO-vl-sev" secondAttribute="centerX" id="Iv4-ca-GPU"/>
-                                            <constraint firstItem="MCe-XU-wI5" firstAttribute="top" secondItem="FwO-vl-sev" secondAttribute="top" id="SgO-tw-yQ9"/>
-                                            <constraint firstItem="xFW-Kb-qFn" firstAttribute="leading" secondItem="FwO-vl-sev" secondAttribute="leading" constant="16" id="Y1R-Ca-qO4"/>
+                                            <constraint firstItem="MCe-XU-wI5" firstAttribute="centerX" secondItem="FwO-vl-sev" secondAttribute="centerX" id="62L-Qz-DVR"/>
+                                            <constraint firstAttribute="bottom" secondItem="xFW-Kb-qFn" secondAttribute="bottom" constant="16" id="C76-vk-LEE"/>
+                                            <constraint firstItem="Sm8-9B-4nw" firstAttribute="leading" secondItem="FwO-vl-sev" secondAttribute="leading" id="JOk-Kw-a1F"/>
+                                            <constraint firstItem="xFW-Kb-qFn" firstAttribute="top" secondItem="Sm8-9B-4nw" secondAttribute="bottom" constant="8" id="KFc-9s-K9r"/>
+                                            <constraint firstAttribute="trailing" secondItem="xFW-Kb-qFn" secondAttribute="trailing" constant="16" id="L60-Gg-jh7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sm8-9B-4nw" secondAttribute="trailing" id="Sba-gv-o90"/>
+                                            <constraint firstItem="MCe-XU-wI5" firstAttribute="top" secondItem="FwO-vl-sev" secondAttribute="top" id="Vth-l7-xZc"/>
+                                            <constraint firstItem="xFW-Kb-qFn" firstAttribute="leading" secondItem="FwO-vl-sev" secondAttribute="leading" constant="16" id="aMQ-WL-k9b"/>
+                                            <constraint firstItem="Sm8-9B-4nw" firstAttribute="top" secondItem="MCe-XU-wI5" secondAttribute="bottom" constant="8" symbolic="YES" id="yhr-2s-dNq"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="FwO-vl-sev" firstAttribute="centerX" secondItem="ckP-w4-jn0" secondAttribute="centerX" id="8gg-mM-H4b"/>
-                                    <constraint firstItem="FwO-vl-sev" firstAttribute="leading" secondItem="ckP-w4-jn0" secondAttribute="leading" id="Btd-XW-ogD"/>
-                                    <constraint firstAttribute="bottom" secondItem="FwO-vl-sev" secondAttribute="bottom" id="HgR-Da-WLK"/>
-                                    <constraint firstItem="FwO-vl-sev" firstAttribute="top" secondItem="EST-Tn-zlR" secondAttribute="top" id="ZDd-YS-cUK"/>
-                                    <constraint firstAttribute="trailing" secondItem="FwO-vl-sev" secondAttribute="trailing" id="bqw-2M-rEC"/>
-                                    <constraint firstItem="FwO-vl-sev" firstAttribute="bottom" secondItem="NSi-VE-xgo" secondAttribute="bottom" id="cCh-lt-dV6"/>
+                                    <constraint firstAttribute="bottom" secondItem="FwO-vl-sev" secondAttribute="bottom" id="5HV-SA-BPk"/>
+                                    <constraint firstItem="FwO-vl-sev" firstAttribute="leading" secondItem="ckP-w4-jn0" secondAttribute="leading" id="8f6-WF-T4F"/>
+                                    <constraint firstItem="FwO-vl-sev" firstAttribute="top" secondItem="ckP-w4-jn0" secondAttribute="top" id="Imj-nA-1nQ"/>
+                                    <constraint firstItem="FwO-vl-sev" firstAttribute="width" secondItem="ckP-w4-jn0" secondAttribute="width" id="SwI-pp-ohw"/>
+                                    <constraint firstAttribute="trailing" secondItem="FwO-vl-sev" secondAttribute="trailing" id="l62-h3-jXD"/>
+                                    <constraint firstItem="FwO-vl-sev" firstAttribute="height" secondItem="ckP-w4-jn0" secondAttribute="height" priority="250" id="u84-st-guX"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="EST-Tn-zlR"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="NSi-VE-xgo"/>
@@ -314,23 +324,24 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="QmA-cx-8xa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bhv-bf-qVM" secondAttribute="trailing" constant="8" symbolic="YES" id="4kG-KK-DRK"/>
-                            <constraint firstItem="bhv-bf-qVM" firstAttribute="leading" secondItem="5ie-4C-tfo" secondAttribute="leading" constant="16" id="5B4-vw-lxW"/>
-                            <constraint firstItem="5ie-4C-tfo" firstAttribute="trailing" secondItem="QmA-cx-8xa" secondAttribute="trailing" constant="16" id="RBk-wK-CWK"/>
-                            <constraint firstItem="bhv-bf-qVM" firstAttribute="top" secondItem="5ie-4C-tfo" secondAttribute="top" constant="16" id="Szk-T5-g84"/>
-                            <constraint firstAttribute="trailing" secondItem="ckP-w4-jn0" secondAttribute="trailing" id="kaU-mV-jAd"/>
-                            <constraint firstItem="ckP-w4-jn0" firstAttribute="top" secondItem="QmA-cx-8xa" secondAttribute="bottom" constant="8" id="laa-m3-vRs"/>
-                            <constraint firstItem="ckP-w4-jn0" firstAttribute="leading" secondItem="Z0L-l9-6EO" secondAttribute="leading" id="nMN-43-esI"/>
-                            <constraint firstAttribute="bottom" secondItem="ckP-w4-jn0" secondAttribute="bottom" id="nPu-gU-o0x"/>
-                            <constraint firstItem="ckP-w4-jn0" firstAttribute="top" secondItem="Z0L-l9-6EO" secondAttribute="top" constant="54" id="pMg-U6-mcd"/>
-                            <constraint firstItem="QmA-cx-8xa" firstAttribute="top" secondItem="5ie-4C-tfo" secondAttribute="top" constant="16" id="seR-5f-s9y"/>
+                            <constraint firstItem="ckP-w4-jn0" firstAttribute="height" secondItem="5ie-4C-tfo" secondAttribute="height" priority="250" id="6OY-vq-wAZ"/>
+                            <constraint firstItem="ckP-w4-jn0" firstAttribute="leading" secondItem="5ie-4C-tfo" secondAttribute="leading" id="7Iu-0N-5Mr"/>
+                            <constraint firstItem="QmA-cx-8xa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bhv-bf-qVM" secondAttribute="trailing" constant="8" symbolic="YES" id="BGa-5N-fLr"/>
+                            <constraint firstItem="bhv-bf-qVM" firstAttribute="top" secondItem="5ie-4C-tfo" secondAttribute="top" constant="16" id="J4K-ZS-HyT"/>
+                            <constraint firstItem="ckP-w4-jn0" firstAttribute="width" secondItem="5ie-4C-tfo" secondAttribute="width" id="Ley-eK-pA4"/>
+                            <constraint firstItem="5ie-4C-tfo" firstAttribute="trailing" secondItem="ckP-w4-jn0" secondAttribute="trailing" id="Ses-gP-vRo"/>
+                            <constraint firstItem="ckP-w4-jn0" firstAttribute="bottom" secondItem="5ie-4C-tfo" secondAttribute="bottom" id="SwM-mB-eNk"/>
+                            <constraint firstItem="bhv-bf-qVM" firstAttribute="leading" secondItem="5ie-4C-tfo" secondAttribute="leading" constant="16" id="hg6-NZ-F2R"/>
+                            <constraint firstAttribute="trailing" secondItem="QmA-cx-8xa" secondAttribute="trailing" constant="16" id="x7V-ar-NkR"/>
+                            <constraint firstItem="ckP-w4-jn0" firstAttribute="top" secondItem="5ie-4C-tfo" secondAttribute="top" constant="54" id="xcz-T3-0bC"/>
+                            <constraint firstItem="QmA-cx-8xa" firstAttribute="top" secondItem="Z0L-l9-6EO" secondAttribute="top" constant="16" id="zlF-XJ-Bd0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5ie-4C-tfo"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMV-Qg-pMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5522" y="1294"/>
+            <point key="canvasLocation" x="-5508" y="1294"/>
         </scene>
         <!--Home-->
         <scene sceneID="QhV-n1-I3V">
@@ -344,7 +355,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygt-Nc-Y7h">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1937.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1969.6666666666667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLJ-1r-bN9">
                                                 <rect key="frame" x="31.999999999999986" y="32" width="230.66666666666663" height="42"/>
@@ -352,47 +363,12 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tly-Te-3Og" userLabel="Res - Female" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tly-Te-3Og" userLabel="Res - Female - BG" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="105.99999999999999" width="343" height="228.66666666666663"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Research" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2I-4P-X5U">
-                                                        <rect key="frame" x="16" y="16" width="69" height="19"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asthma female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTl-Cy-nps">
-                                                        <rect key="frame" x="32" y="79" width="176" height="31"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in rural Victoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-dY-l9W">
-                                                        <rect key="frame" x="134" y="118" width="177" height="31"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                                    </label>
-                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="lCl-dY-l9W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tly-Te-3Og" secondAttribute="leading" constant="20" symbolic="YES" id="1u6-N5-dOO"/>
-                                                    <constraint firstAttribute="trailing" secondItem="lCl-dY-l9W" secondAttribute="trailing" constant="32" id="3C3-kK-rTA"/>
-                                                    <constraint firstItem="z2I-4P-X5U" firstAttribute="top" secondItem="tly-Te-3Og" secondAttribute="top" constant="16" id="6CF-n6-W5F"/>
-                                                    <constraint firstItem="eTl-Cy-nps" firstAttribute="leading" secondItem="tly-Te-3Og" secondAttribute="leading" constant="32" id="RxI-fC-Dxp"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z2I-4P-X5U" secondAttribute="trailing" constant="20" symbolic="YES" id="SHb-tN-wcY"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eTl-Cy-nps" secondAttribute="trailing" constant="20" symbolic="YES" id="Sun-CE-Sd9"/>
-                                                    <constraint firstItem="eTl-Cy-nps" firstAttribute="centerY" secondItem="tly-Te-3Og" secondAttribute="centerY" constant="-20" id="gZL-Qx-hTD"/>
-                                                    <constraint firstItem="z2I-4P-X5U" firstAttribute="leading" secondItem="tly-Te-3Og" secondAttribute="leading" constant="16" id="gda-Im-qhu"/>
                                                     <constraint firstAttribute="width" secondItem="tly-Te-3Og" secondAttribute="height" multiplier="1920:1280" id="jC9-AK-wfc"/>
-                                                    <constraint firstItem="lCl-dY-l9W" firstAttribute="top" secondItem="eTl-Cy-nps" secondAttribute="bottom" constant="8" id="t7r-ZB-Cxl"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -410,53 +386,57 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_research_1"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_female"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="K39-To-TMq" appends="YES" id="7EN-vQ-5Vh"/>
-                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5g-XO-uGu" userLabel="Res - Trigger" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="366.66666666666669" width="343" height="228.66666666666669"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaE-nj-IJR" userLabel="Res - Female">
+                                                <rect key="frame" x="16" y="105.99999999999999" width="343" height="228.66666666666663"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Research" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qi-xM-zo2">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in Rural Victoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-dY-l9W">
+                                                        <rect key="frame" x="127" y="118" width="184" height="31"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asthma Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTl-Cy-nps">
+                                                        <rect key="frame" x="32" y="79" width="181" height="31"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Research" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2I-4P-X5U">
                                                         <rect key="frame" x="16" y="16" width="69" height="19"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What may cause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKI-pJ-jFb">
-                                                        <rect key="frame" x="32" y="79" width="194" height="31"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your asthma attack?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mF-NY-5i4">
-                                                        <rect key="frame" x="72" y="117.99999999999994" width="239" height="31"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4qi-xM-zo2" secondAttribute="trailing" constant="20" symbolic="YES" id="4gf-hT-AMZ"/>
-                                                    <constraint firstItem="uKI-pJ-jFb" firstAttribute="leading" secondItem="H5g-XO-uGu" secondAttribute="leading" constant="32" id="4ym-Y2-tXU"/>
-                                                    <constraint firstAttribute="trailing" secondItem="4mF-NY-5i4" secondAttribute="trailing" constant="32" id="4yr-UC-lHM"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uKI-pJ-jFb" secondAttribute="trailing" constant="20" symbolic="YES" id="5Pe-RI-Yrm"/>
-                                                    <constraint firstItem="4mF-NY-5i4" firstAttribute="top" secondItem="uKI-pJ-jFb" secondAttribute="bottom" constant="8" id="B5i-80-cyt"/>
-                                                    <constraint firstItem="4qi-xM-zo2" firstAttribute="leading" secondItem="H5g-XO-uGu" secondAttribute="leading" constant="16" id="BjD-FH-Xb6"/>
-                                                    <constraint firstItem="uKI-pJ-jFb" firstAttribute="centerY" secondItem="H5g-XO-uGu" secondAttribute="centerY" constant="-20" id="aCT-3h-Ydr"/>
-                                                    <constraint firstItem="4mF-NY-5i4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H5g-XO-uGu" secondAttribute="leading" constant="20" symbolic="YES" id="ahf-Pm-YSZ"/>
-                                                    <constraint firstItem="4qi-xM-zo2" firstAttribute="top" secondItem="H5g-XO-uGu" secondAttribute="top" constant="16" id="m7x-LS-E5A"/>
+                                                    <constraint firstItem="eTl-Cy-nps" firstAttribute="leading" secondItem="xaE-nj-IJR" secondAttribute="leading" constant="32" id="ALp-19-K7d"/>
+                                                    <constraint firstItem="lCl-dY-l9W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xaE-nj-IJR" secondAttribute="leading" constant="20" symbolic="YES" id="Cfi-rp-apl"/>
+                                                    <constraint firstItem="z2I-4P-X5U" firstAttribute="leading" secondItem="xaE-nj-IJR" secondAttribute="leading" constant="16" id="CgA-BI-vAj"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eTl-Cy-nps" secondAttribute="trailing" constant="20" symbolic="YES" id="MjK-Tj-1X5"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z2I-4P-X5U" secondAttribute="trailing" constant="20" symbolic="YES" id="NHG-GY-E96"/>
+                                                    <constraint firstItem="lCl-dY-l9W" firstAttribute="top" secondItem="eTl-Cy-nps" secondAttribute="bottom" constant="8" id="Pjh-RJ-oLe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lCl-dY-l9W" secondAttribute="trailing" constant="32" id="iXv-cd-XBw"/>
+                                                    <constraint firstItem="eTl-Cy-nps" firstAttribute="centerY" secondItem="xaE-nj-IJR" secondAttribute="centerY" constant="-20" id="tbR-P8-KJi"/>
+                                                    <constraint firstItem="z2I-4P-X5U" firstAttribute="top" secondItem="xaE-nj-IJR" secondAttribute="top" constant="16" id="wdS-oq-xHR"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="SI3-tA-G7Z" appends="YES" id="MYj-8y-vyR"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5g-XO-uGu" userLabel="Res - Trigger - BG" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="366.66666666666669" width="343" height="228.66666666666669"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <gestureRecognizers/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="10"/>
@@ -475,23 +455,28 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_trigger"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="Spr-Aa-gCm" appends="YES" id="R6I-cm-2SF"/>
-                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJC-Zh-XVs" userLabel="Func - Inhaler" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="627.33333333333337" width="343" height="228.66666666666663"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLi-WH-zts" userLabel="Res - Trigger">
+                                                <rect key="frame" x="16" y="366.66666666666669" width="343" height="228.66666666666669"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funciton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g8-V4-nIM">
-                                                        <rect key="frame" x="16" y="16" width="64" height="19"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Research" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qi-xM-zo2">
+                                                        <rect key="frame" x="16" y="16" width="69" height="19"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track your inhaler status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FY-um-tQp">
-                                                        <rect key="frame" x="28" y="99" width="287" height="31"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What may Cause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKI-pJ-jFb">
+                                                        <rect key="frame" x="36" y="79" width="198" height="31"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Asthma Attack?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mF-NY-5i4">
+                                                        <rect key="frame" x="77" y="117.99999999999994" width="246" height="31"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -499,15 +484,28 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
                                                 </subviews>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="uKI-pJ-jFb" firstAttribute="leading" secondItem="QLi-WH-zts" secondAttribute="leading" constant="36" id="5gy-yo-FGA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4mF-NY-5i4" secondAttribute="trailing" constant="20" id="8CT-4d-QjM"/>
+                                                    <constraint firstItem="4mF-NY-5i4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QLi-WH-zts" secondAttribute="leading" constant="20" symbolic="YES" id="DZl-cA-BbR"/>
+                                                    <constraint firstItem="4qi-xM-zo2" firstAttribute="top" secondItem="QLi-WH-zts" secondAttribute="top" constant="16" id="HSL-WA-JwP"/>
+                                                    <constraint firstItem="uKI-pJ-jFb" firstAttribute="centerY" secondItem="QLi-WH-zts" secondAttribute="centerY" constant="-20" id="Lbb-QR-Ngz"/>
+                                                    <constraint firstItem="4mF-NY-5i4" firstAttribute="top" secondItem="uKI-pJ-jFb" secondAttribute="bottom" constant="8" id="PWd-wm-F5J"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4qi-xM-zo2" secondAttribute="trailing" constant="20" symbolic="YES" id="VAl-OM-tCH"/>
+                                                    <constraint firstItem="4qi-xM-zo2" firstAttribute="leading" secondItem="QLi-WH-zts" secondAttribute="leading" constant="16" id="Xyc-12-d9V"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uKI-pJ-jFb" secondAttribute="trailing" constant="20" symbolic="YES" id="lQj-eV-b3b"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="fiW-QB-gmi" appends="YES" id="q6t-dh-eT4"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJC-Zh-XVs" userLabel="Func - Inhaler - BG" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="627.33333333333337" width="343" height="228.66666666666663"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fJC-Zh-XVs" secondAttribute="height" multiplier="1920:1280" id="4tO-3b-JbW"/>
-                                                    <constraint firstItem="4FY-um-tQp" firstAttribute="centerX" secondItem="fJC-Zh-XVs" secondAttribute="centerX" id="H5U-MH-Xsw"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5g8-V4-nIM" secondAttribute="trailing" constant="20" symbolic="YES" id="N9h-MD-4ZW"/>
-                                                    <constraint firstItem="5g8-V4-nIM" firstAttribute="top" secondItem="fJC-Zh-XVs" secondAttribute="top" constant="16" id="RI0-a2-G6s"/>
-                                                    <constraint firstItem="5g8-V4-nIM" firstAttribute="leading" secondItem="fJC-Zh-XVs" secondAttribute="leading" constant="16" id="YHx-Oy-ahC"/>
-                                                    <constraint firstItem="4FY-um-tQp" firstAttribute="centerY" secondItem="fJC-Zh-XVs" secondAttribute="centerY" id="jN5-M9-jpJ"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -527,23 +525,20 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_counter"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="O0Q-D3-9TI" appends="YES" id="GES-fD-VLc"/>
-                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oha-Ag-TPz" userLabel="Func - Record" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="888" width="343" height="230.33333333333326"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mX-ox-icj" userLabel="Func - Inhaler">
+                                                <rect key="frame" x="16" y="627.33333333333337" width="343" height="228.66666666666663"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-tD-eIq">
-                                                        <rect key="frame" x="16" y="16" width="65" height="19"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funciton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g8-V4-nIM">
+                                                        <rect key="frame" x="16" y="16" width="64" height="19"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
-                                                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record your asthma attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-9B-kM6">
-                                                        <rect key="frame" x="14.666666666666657" y="99.666666666666742" width="314" height="31"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Inhaler Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FY-um-tQp">
+                                                        <rect key="frame" x="25.666666666666657" y="99" width="292" height="31"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -551,15 +546,24 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
                                                 </subviews>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="5g8-V4-nIM" firstAttribute="leading" secondItem="7mX-ox-icj" secondAttribute="leading" constant="16" id="Ixd-Wh-CED"/>
+                                                    <constraint firstItem="5g8-V4-nIM" firstAttribute="top" secondItem="7mX-ox-icj" secondAttribute="top" constant="16" id="YhU-bk-Luv"/>
+                                                    <constraint firstItem="4FY-um-tQp" firstAttribute="centerY" secondItem="7mX-ox-icj" secondAttribute="centerY" id="cIq-HC-A9M"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5g8-V4-nIM" secondAttribute="trailing" constant="20" symbolic="YES" id="dV2-Cm-tyL"/>
+                                                    <constraint firstItem="4FY-um-tQp" firstAttribute="centerX" secondItem="7mX-ox-icj" secondAttribute="centerX" id="glH-lX-GiM"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Smd-qs-53D" appends="YES" id="Dio-99-ocN"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oha-Ag-TPz" userLabel="Func - Record - BG" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="888" width="343" height="230.33333333333326"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="dwu-9B-kM6" firstAttribute="centerX" secondItem="oha-Ag-TPz" secondAttribute="centerX" id="GNc-Lq-96V"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fXV-tD-eIq" secondAttribute="trailing" constant="20" symbolic="YES" id="O5W-1H-SEo"/>
                                                     <constraint firstAttribute="width" secondItem="oha-Ag-TPz" secondAttribute="height" multiplier="1920:1290" id="WDq-qB-pMj"/>
-                                                    <constraint firstItem="fXV-tD-eIq" firstAttribute="top" secondItem="oha-Ag-TPz" secondAttribute="top" constant="16" id="bim-sF-dgO"/>
-                                                    <constraint firstItem="dwu-9B-kM6" firstAttribute="centerY" secondItem="oha-Ag-TPz" secondAttribute="centerY" id="ceY-zk-nA5"/>
-                                                    <constraint firstItem="fXV-tD-eIq" firstAttribute="leading" secondItem="oha-Ag-TPz" secondAttribute="leading" constant="16" id="mY5-ff-2ra"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -579,14 +583,11 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_record"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="vUt-VP-7rX" appends="YES" id="17d-wH-tq6"/>
-                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hv8-eN-PCc" userLabel="Func - Statistic" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="1150.3333333333333" width="343" height="230.66666666666674"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ga7-Pq-3rn" userLabel="Func - Record">
+                                                <rect key="frame" x="16" y="888" width="343" height="230.33333333333326"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajA-8M-OgI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-tD-eIq">
                                                         <rect key="frame" x="16" y="16" width="65" height="19"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -594,8 +595,8 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                         <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View your personal statistic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh2-jN-Wia">
-                                                        <rect key="frame" x="10" y="100" width="323" height="31"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Your Asthma Attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-9B-kM6">
+                                                        <rect key="frame" x="11" y="99.666666666666742" width="321" height="31"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -603,15 +604,22 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="Gh2-jN-Wia" firstAttribute="centerY" secondItem="Hv8-eN-PCc" secondAttribute="centerY" id="VAd-az-r8F"/>
-                                                    <constraint firstItem="ajA-8M-OgI" firstAttribute="leading" secondItem="Hv8-eN-PCc" secondAttribute="leading" constant="16" id="VXT-8V-IMm"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ajA-8M-OgI" secondAttribute="trailing" constant="20" symbolic="YES" id="eFJ-Pj-zm6"/>
-                                                    <constraint firstItem="Gh2-jN-Wia" firstAttribute="centerX" secondItem="Hv8-eN-PCc" secondAttribute="centerX" id="jU5-Dt-W1i"/>
-                                                    <constraint firstItem="ajA-8M-OgI" firstAttribute="top" secondItem="Hv8-eN-PCc" secondAttribute="top" constant="16" id="xde-JO-eRV"/>
+                                                    <constraint firstItem="fXV-tD-eIq" firstAttribute="top" secondItem="Ga7-Pq-3rn" secondAttribute="top" constant="16" id="l8J-IZ-cOm"/>
+                                                    <constraint firstItem="dwu-9B-kM6" firstAttribute="centerY" secondItem="Ga7-Pq-3rn" secondAttribute="centerY" id="sOV-Xh-UVR"/>
+                                                    <constraint firstItem="fXV-tD-eIq" firstAttribute="leading" secondItem="Ga7-Pq-3rn" secondAttribute="leading" constant="16" id="tWQ-1h-Xug"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fXV-tD-eIq" secondAttribute="trailing" constant="20" symbolic="YES" id="trC-Uj-Sae"/>
+                                                    <constraint firstItem="dwu-9B-kM6" firstAttribute="centerX" secondItem="Ga7-Pq-3rn" secondAttribute="centerX" id="vAF-88-QaS"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="tGH-CU-mvv" appends="YES" id="zVj-ZX-sCn"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hv8-eN-PCc" userLabel="Func - Statistic - BG" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="1150.3333333333333" width="343" height="230.66666666666674"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <gestureRecognizers/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="10"/>
@@ -630,14 +638,11 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_statistic"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="Zl5-pW-wf1" appends="YES" id="CMt-1q-B9G"/>
-                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEj-UL-l2X" userLabel="Func - Location" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="1413" width="343" height="230.33333333333326"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC5-xP-Hoh" userLabel="Func - Statistic">
+                                                <rect key="frame" x="16" y="1150.3333333333333" width="343" height="230.66666666666674"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3W-U2-rBV">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajA-8M-OgI">
                                                         <rect key="frame" x="16" y="16" width="65" height="19"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -645,8 +650,8 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                         <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your asthma location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chd-u1-Vgj">
-                                                        <rect key="frame" x="8.6666666666666572" y="99.666666666666742" width="326" height="31"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Your Personal Statistic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh2-jN-Wia">
+                                                        <rect key="frame" x="8" y="100" width="327" height="31"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -654,15 +659,22 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y3W-U2-rBV" secondAttribute="trailing" constant="20" symbolic="YES" id="BgL-Id-TcM"/>
-                                                    <constraint firstItem="y3W-U2-rBV" firstAttribute="leading" secondItem="tEj-UL-l2X" secondAttribute="leading" constant="16" id="DxQ-fd-4N2"/>
-                                                    <constraint firstItem="y3W-U2-rBV" firstAttribute="top" secondItem="tEj-UL-l2X" secondAttribute="top" constant="16" id="X7V-OF-wrR"/>
-                                                    <constraint firstItem="chd-u1-Vgj" firstAttribute="centerY" secondItem="tEj-UL-l2X" secondAttribute="centerY" id="k85-vL-Dne"/>
-                                                    <constraint firstItem="chd-u1-Vgj" firstAttribute="centerX" secondItem="tEj-UL-l2X" secondAttribute="centerX" id="lbI-nN-HJd"/>
+                                                    <constraint firstItem="ajA-8M-OgI" firstAttribute="top" secondItem="iC5-xP-Hoh" secondAttribute="top" constant="16" id="0Za-lh-ggj"/>
+                                                    <constraint firstItem="ajA-8M-OgI" firstAttribute="leading" secondItem="iC5-xP-Hoh" secondAttribute="leading" constant="16" id="Iab-pf-0e6"/>
+                                                    <constraint firstItem="Gh2-jN-Wia" firstAttribute="centerY" secondItem="iC5-xP-Hoh" secondAttribute="centerY" id="STN-Ij-qc0"/>
+                                                    <constraint firstItem="Gh2-jN-Wia" firstAttribute="centerX" secondItem="iC5-xP-Hoh" secondAttribute="centerX" id="cOD-r6-VCN"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ajA-8M-OgI" secondAttribute="trailing" constant="20" symbolic="YES" id="d0c-O5-BHU"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="4IH-RE-LOc" appends="YES" id="Q7T-xE-41K"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEj-UL-l2X" userLabel="Func - Location - BG" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="1413" width="343" height="230.33333333333326"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <gestureRecognizers/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="10"/>
@@ -681,23 +693,20 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_location"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="7Mh-vY-VDJ" appends="YES" id="0Kl-FC-7P1"/>
-                                                </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-5a-dfJ" userLabel="Ref - Website" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="1675.3333333333333" width="343" height="230.33333333333326"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4K-0T-xCY" userLabel="Func - Location">
+                                                <rect key="frame" x="16" y="1413" width="343" height="230.33333333333326"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjn-0s-vAG">
-                                                        <rect key="frame" x="16" y="16" width="75" height="19"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3W-U2-rBV">
+                                                        <rect key="frame" x="16" y="16" width="65" height="19"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find more on our website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DM-WY-wBh">
-                                                        <rect key="frame" x="25" y="99.666666666666742" width="293" height="31"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Asthma Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chd-u1-Vgj">
+                                                        <rect key="frame" x="3" y="99.666666666666742" width="337" height="31"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -705,15 +714,22 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstItem="Qjn-0s-vAG" firstAttribute="leading" secondItem="GTq-5a-dfJ" secondAttribute="leading" constant="16" id="5Yx-kA-uQi"/>
-                                                    <constraint firstItem="6DM-WY-wBh" firstAttribute="centerX" secondItem="GTq-5a-dfJ" secondAttribute="centerX" id="5zd-kf-gci"/>
-                                                    <constraint firstItem="6DM-WY-wBh" firstAttribute="centerY" secondItem="GTq-5a-dfJ" secondAttribute="centerY" id="SaO-vz-cXl"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qjn-0s-vAG" secondAttribute="trailing" constant="20" symbolic="YES" id="k7e-5L-nvh"/>
-                                                    <constraint firstItem="Qjn-0s-vAG" firstAttribute="top" secondItem="GTq-5a-dfJ" secondAttribute="top" constant="16" id="txi-tJ-iu1"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y3W-U2-rBV" secondAttribute="trailing" constant="20" symbolic="YES" id="0lS-UY-P98"/>
+                                                    <constraint firstItem="y3W-U2-rBV" firstAttribute="leading" secondItem="b4K-0T-xCY" secondAttribute="leading" constant="16" id="1un-ug-soN"/>
+                                                    <constraint firstItem="chd-u1-Vgj" firstAttribute="centerY" secondItem="b4K-0T-xCY" secondAttribute="centerY" id="Qw6-Zf-ZgG"/>
+                                                    <constraint firstItem="chd-u1-Vgj" firstAttribute="centerX" secondItem="b4K-0T-xCY" secondAttribute="centerX" id="cJV-jR-2Hl"/>
+                                                    <constraint firstItem="y3W-U2-rBV" firstAttribute="top" secondItem="b4K-0T-xCY" secondAttribute="top" constant="16" id="w36-6v-lwQ"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="COn-Lj-Mqw" appends="YES" id="SfO-U2-fyl"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-5a-dfJ" userLabel="Ref - Website - BG" customClass="CUIView" customModule="SmoothBreath_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="1675.3333333333333" width="343" height="230.33333333333326"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <gestureRecognizers/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="10"/>
@@ -730,10 +746,39 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="homepage"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="home_website"/>
                                                 </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5B-1l-Sx3" userLabel="Ref - Website">
+                                                <rect key="frame" x="16" y="1675.3333333333333" width="343" height="230.33333333333326"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjn-0s-vAG">
+                                                        <rect key="frame" x="16" y="16" width="75" height="19"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find More on Our Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DM-WY-wBh">
+                                                        <rect key="frame" x="21.666666666666657" y="99.666666666666742" width="300" height="31"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                    </label>
+                                                </subviews>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qjn-0s-vAG" secondAttribute="trailing" constant="20" symbolic="YES" id="DBU-Zu-JlF"/>
+                                                    <constraint firstItem="Qjn-0s-vAG" firstAttribute="top" secondItem="e5B-1l-Sx3" secondAttribute="top" constant="16" id="FEG-1y-MhQ"/>
+                                                    <constraint firstItem="6DM-WY-wBh" firstAttribute="centerX" secondItem="e5B-1l-Sx3" secondAttribute="centerX" id="GKI-IN-8nc"/>
+                                                    <constraint firstItem="Qjn-0s-vAG" firstAttribute="leading" secondItem="e5B-1l-Sx3" secondAttribute="leading" constant="16" id="Ge3-dp-cHG"/>
+                                                    <constraint firstItem="6DM-WY-wBh" firstAttribute="centerY" secondItem="e5B-1l-Sx3" secondAttribute="centerY" id="Nzj-0E-ngz"/>
+                                                </constraints>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="FPk-FG-BE9" appends="YES" id="aYV-aF-BCJ"/>
+                                                    <outletCollection property="gestureRecognizers" destination="eWy-1y-6Vs" appends="YES" id="nMp-eR-a4f"/>
                                                 </connections>
                                             </view>
                                         </subviews>
@@ -741,30 +786,58 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="tEj-UL-l2X" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="16" id="0FF-gL-hpo"/>
+                                            <constraint firstItem="xaE-nj-IJR" firstAttribute="bottom" secondItem="tly-Te-3Og" secondAttribute="bottom" id="2jB-hK-neU"/>
+                                            <constraint firstItem="tEj-UL-l2X" firstAttribute="trailing" secondItem="b4K-0T-xCY" secondAttribute="trailing" id="3sm-Gb-6nE"/>
+                                            <constraint firstItem="7mX-ox-icj" firstAttribute="top" secondItem="fJC-Zh-XVs" secondAttribute="top" id="4MI-Q5-gXv"/>
+                                            <constraint firstItem="xaE-nj-IJR" firstAttribute="trailing" secondItem="tly-Te-3Og" secondAttribute="trailing" id="5iP-m4-cFm"/>
+                                            <constraint firstItem="Hv8-eN-PCc" firstAttribute="bottom" secondItem="iC5-xP-Hoh" secondAttribute="bottom" id="5jG-OT-TC2"/>
+                                            <constraint firstItem="xaE-nj-IJR" firstAttribute="top" secondItem="tly-Te-3Og" secondAttribute="top" id="66b-Nb-pG8"/>
                                             <constraint firstItem="Hv8-eN-PCc" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="16" id="6i2-Ue-9t7"/>
+                                            <constraint firstItem="Ga7-Pq-3rn" firstAttribute="leading" secondItem="oha-Ag-TPz" secondAttribute="leading" id="8RK-La-x5Y"/>
+                                            <constraint firstItem="Hv8-eN-PCc" firstAttribute="top" secondItem="iC5-xP-Hoh" secondAttribute="top" id="8vz-zQ-eN5"/>
+                                            <constraint firstItem="GTq-5a-dfJ" firstAttribute="bottom" secondItem="e5B-1l-Sx3" secondAttribute="bottom" id="9GO-Pp-9YK"/>
+                                            <constraint firstItem="xaE-nj-IJR" firstAttribute="leading" secondItem="tly-Te-3Og" secondAttribute="leading" id="AfL-pp-rhb"/>
+                                            <constraint firstItem="Hv8-eN-PCc" firstAttribute="trailing" secondItem="iC5-xP-Hoh" secondAttribute="trailing" id="CST-xm-udy"/>
+                                            <constraint firstItem="Ga7-Pq-3rn" firstAttribute="trailing" secondItem="oha-Ag-TPz" secondAttribute="trailing" id="Ces-gF-Pcz"/>
+                                            <constraint firstItem="7mX-ox-icj" firstAttribute="bottom" secondItem="fJC-Zh-XVs" secondAttribute="bottom" id="ET2-mb-skq"/>
                                             <constraint firstItem="H5g-XO-uGu" firstAttribute="top" secondItem="tly-Te-3Og" secondAttribute="bottom" constant="32" id="GUh-Nx-eKB"/>
+                                            <constraint firstItem="tEj-UL-l2X" firstAttribute="top" secondItem="b4K-0T-xCY" secondAttribute="top" id="Gay-lH-uDK"/>
                                             <constraint firstItem="oha-Ag-TPz" firstAttribute="top" secondItem="fJC-Zh-XVs" secondAttribute="bottom" constant="32" id="GeP-0a-hwV"/>
                                             <constraint firstItem="fJC-Zh-XVs" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="16" id="HLn-fw-nd2"/>
+                                            <constraint firstItem="QLi-WH-zts" firstAttribute="trailing" secondItem="H5g-XO-uGu" secondAttribute="trailing" id="KEd-VS-4Qs"/>
                                             <constraint firstItem="H5g-XO-uGu" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="16" id="LRu-b6-qFK"/>
-                                            <constraint firstAttribute="bottom" secondItem="GTq-5a-dfJ" secondAttribute="bottom" constant="32" id="Mbi-H5-w8o"/>
+                                            <constraint firstAttribute="bottom" secondItem="GTq-5a-dfJ" secondAttribute="bottom" constant="64" id="Mbi-H5-w8o"/>
                                             <constraint firstItem="BLJ-1r-bN9" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="32" id="NQk-hn-HBJ"/>
                                             <constraint firstItem="Hv8-eN-PCc" firstAttribute="top" secondItem="oha-Ag-TPz" secondAttribute="bottom" constant="32" id="OnB-JG-jH7"/>
+                                            <constraint firstItem="Ga7-Pq-3rn" firstAttribute="top" secondItem="oha-Ag-TPz" secondAttribute="top" id="Or0-YA-ow2"/>
                                             <constraint firstAttribute="trailing" secondItem="tly-Te-3Og" secondAttribute="trailing" constant="16" id="Pyc-q9-hHI"/>
                                             <constraint firstItem="tEj-UL-l2X" firstAttribute="width" secondItem="tEj-UL-l2X" secondAttribute="height" multiplier="1920:1290" id="RJv-HZ-eyB"/>
+                                            <constraint firstItem="QLi-WH-zts" firstAttribute="leading" secondItem="H5g-XO-uGu" secondAttribute="leading" id="SZT-5e-DWf"/>
+                                            <constraint firstItem="GTq-5a-dfJ" firstAttribute="trailing" secondItem="e5B-1l-Sx3" secondAttribute="trailing" id="Wal-HD-PUv"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BLJ-1r-bN9" secondAttribute="trailing" constant="20" symbolic="YES" id="XVL-ls-DeN"/>
                                             <constraint firstItem="tly-Te-3Og" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="16" id="YA0-LE-hvg"/>
+                                            <constraint firstItem="Ga7-Pq-3rn" firstAttribute="bottom" secondItem="oha-Ag-TPz" secondAttribute="bottom" id="aKA-n1-meR"/>
                                             <constraint firstAttribute="trailing" secondItem="fJC-Zh-XVs" secondAttribute="trailing" constant="16" id="anI-3S-1nx"/>
                                             <constraint firstAttribute="trailing" secondItem="oha-Ag-TPz" secondAttribute="trailing" constant="16" id="b7A-D0-44i"/>
+                                            <constraint firstItem="7mX-ox-icj" firstAttribute="leading" secondItem="fJC-Zh-XVs" secondAttribute="leading" id="dUJ-4I-65q"/>
                                             <constraint firstItem="GTq-5a-dfJ" firstAttribute="top" secondItem="tEj-UL-l2X" secondAttribute="bottom" constant="32" id="dXH-1t-MeG"/>
+                                            <constraint firstItem="tEj-UL-l2X" firstAttribute="leading" secondItem="b4K-0T-xCY" secondAttribute="leading" id="eYc-bY-yfc"/>
+                                            <constraint firstItem="Hv8-eN-PCc" firstAttribute="leading" secondItem="iC5-xP-Hoh" secondAttribute="leading" id="ejq-ZH-Fuv"/>
                                             <constraint firstAttribute="trailing" secondItem="H5g-XO-uGu" secondAttribute="trailing" constant="16" id="fbD-VQ-GOO"/>
                                             <constraint firstItem="BLJ-1r-bN9" firstAttribute="top" secondItem="Ygt-Nc-Y7h" secondAttribute="top" constant="32" id="fvk-b3-kis"/>
                                             <constraint firstAttribute="trailing" secondItem="tEj-UL-l2X" secondAttribute="trailing" constant="16" id="heB-Rv-bFN"/>
                                             <constraint firstItem="tly-Te-3Og" firstAttribute="top" secondItem="BLJ-1r-bN9" secondAttribute="bottom" constant="32" id="ic5-HA-Zqo"/>
+                                            <constraint firstItem="GTq-5a-dfJ" firstAttribute="leading" secondItem="e5B-1l-Sx3" secondAttribute="leading" id="kDR-5P-Zge"/>
+                                            <constraint firstItem="tEj-UL-l2X" firstAttribute="bottom" secondItem="b4K-0T-xCY" secondAttribute="bottom" id="kgc-eG-gPp"/>
+                                            <constraint firstItem="GTq-5a-dfJ" firstAttribute="top" secondItem="e5B-1l-Sx3" secondAttribute="top" id="kkX-Ht-ePh"/>
+                                            <constraint firstItem="QLi-WH-zts" firstAttribute="top" secondItem="H5g-XO-uGu" secondAttribute="top" id="mj4-3h-toC"/>
                                             <constraint firstItem="oha-Ag-TPz" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="16" id="mwQ-H7-hFf"/>
                                             <constraint firstAttribute="trailing" secondItem="Hv8-eN-PCc" secondAttribute="trailing" constant="16" id="p7Q-rV-T7l"/>
                                             <constraint firstItem="tEj-UL-l2X" firstAttribute="top" secondItem="Hv8-eN-PCc" secondAttribute="bottom" constant="32" id="sSH-41-TIf"/>
                                             <constraint firstAttribute="trailing" secondItem="GTq-5a-dfJ" secondAttribute="trailing" constant="16" id="t0c-7W-l7X"/>
+                                            <constraint firstItem="QLi-WH-zts" firstAttribute="bottom" secondItem="H5g-XO-uGu" secondAttribute="bottom" id="tef-KK-mLN"/>
                                             <constraint firstItem="fJC-Zh-XVs" firstAttribute="top" secondItem="H5g-XO-uGu" secondAttribute="bottom" constant="32" id="vHM-0D-vdJ"/>
+                                            <constraint firstItem="7mX-ox-icj" firstAttribute="trailing" secondItem="fJC-Zh-XVs" secondAttribute="trailing" id="vj2-BN-9m2"/>
                                             <constraint firstItem="H5g-XO-uGu" firstAttribute="width" secondItem="H5g-XO-uGu" secondAttribute="height" multiplier="1920:1280" id="wS1-eD-Mst"/>
                                             <constraint firstItem="GTq-5a-dfJ" firstAttribute="leading" secondItem="Ygt-Nc-Y7h" secondAttribute="leading" constant="16" id="wf5-JZ-45e"/>
                                             <constraint firstItem="GTq-5a-dfJ" firstAttribute="width" secondItem="GTq-5a-dfJ" secondAttribute="height" multiplier="1920:1290" id="xh7-xU-glE"/>
@@ -799,43 +872,43 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8U-jO-bvO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="K39-To-TMq" userLabel="Res - Female Tap">
+                <tapGestureRecognizer id="SI3-tA-G7Z" userLabel="Res - Female Tap">
                     <connections>
-                        <segue destination="17N-bL-IW7" kind="showDetail" identifier="" id="NMY-Tv-uhT"/>
+                        <segue destination="17N-bL-IW7" kind="showDetail" id="srr-ZY-v4Y"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Spr-Aa-gCm" userLabel="Res - Trigger Tap">
+                <tapGestureRecognizer id="fiW-QB-gmi" userLabel="Res - Trigger Tap">
                     <connections>
-                        <segue destination="cDe-7K-x0O" kind="showDetail" identifier="" id="8SZ-t4-YbU"/>
+                        <segue destination="cDe-7K-x0O" kind="showDetail" id="h77-NG-Scd"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="O0Q-D3-9TI" userLabel="Func - Inhaler Tap">
+                <tapGestureRecognizer id="Smd-qs-53D" userLabel="Func - Inhaler Tap">
                     <connections>
-                        <segue destination="BPs-of-NRQ" kind="showDetail" id="eR2-TP-WBd"/>
+                        <segue destination="BPs-of-NRQ" kind="showDetail" id="8F2-fC-zsN"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="vUt-VP-7rX" userLabel="Func - Record Tap">
+                <tapGestureRecognizer id="tGH-CU-mvv" userLabel="Func - Record Tap">
                     <connections>
-                        <segue destination="hf2-6i-kWL" kind="showDetail" id="fry-Ni-Ukq"/>
+                        <segue destination="hf2-6i-kWL" kind="showDetail" id="wAx-L5-WnS"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Zl5-pW-wf1" userLabel="Func - Statistic Tap">
+                <tapGestureRecognizer id="4IH-RE-LOc" userLabel="Func - Statistic Tap">
                     <connections>
-                        <segue destination="T1m-0a-39D" kind="showDetail" id="ZeA-Hb-f7W"/>
+                        <segue destination="T1m-0a-39D" kind="showDetail" id="sOZ-9i-WZR"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="7Mh-vY-VDJ" userLabel="Func - Location Tap">
+                <tapGestureRecognizer id="COn-Lj-Mqw" userLabel="Func - Location Tap">
                     <connections>
-                        <segue destination="ju7-t3-yIe" kind="showDetail" id="5Lc-FR-Of4"/>
+                        <segue destination="ju7-t3-yIe" kind="showDetail" id="bdk-l6-QlA"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="FPk-FG-BE9" userLabel="Ref - Website Tap">
+                <tapGestureRecognizer id="eWy-1y-6Vs" userLabel="Ref - Website Tap">
                     <connections>
-                        <action selector="refWebsiteTap:" destination="TU7-bi-Jto" id="R31-AI-YBg"/>
+                        <action selector="refWebsiteTap:" destination="TU7-bi-Jto" id="Coc-tX-H1F"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-5113" y="564"/>
+            <point key="canvasLocation" x="-5114.3999999999996" y="563.79310344827593"/>
         </scene>
         <!--Inhaler Counter-->
         <scene sceneID="1Yr-8W-z1e">
@@ -1089,11 +1162,10 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Record your each asthma attack and get the report for your next diagnosis. 
-1. It has asthma attack date and time. 
-2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
-3. The current location will be recorded in the location bar in the buttom.
-</string>
+                                <mutableString key="text">a. It records your asthma attack date and time. 
+b. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
+c. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
+d. The current location will be recorded in the location bar at the bottom.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1143,11 +1215,12 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-IL-Ca7">
                                 <rect key="frame" x="16" y="104.66666666666669" width="343" height="603.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">The inhaler counter tracks the remaining, and the estimated remaining day will be shown on the dashboard 
-1. The plus and minus button are used for adding and reducing the dose 
-2. The process bar provides the percentage of the remaining inhaler 
-3. The last day for changing to this inhaler can be found here 
-4. The expected expire day provides the approximately plan for you</string>
+                                <mutableString key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
+a. Minus button means using one dose. 
+b. Plus button means adding back the dose which can withdraw your history. 
+c. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
+d. Last Changed Date tells you when did you change the inhaler last time. 
+e. Expected Changed Date tells you when this inhaler will be expired.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1321,11 +1394,11 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Each asthma attack locations are pinned in the map. This map can help you to find out where is the most asthma attack location. 
-1. Each pinned point is the asthma attack location. 
-2. With more records, you might find out which place has the high possibility to have asthma attack and you might give the insight from these location. 
-3. Each location point was recorded and generated based on each record "current location". 
-4. All the information is stored on the app, other people cannot access the collecting data.</string>
+                                <mutableString key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
+a. Each pinned point is the historical asthma attack location. 
+b. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
+c. Each location point was recorded and generated based on each record "current location". 
+d. All the information is stored in the app, other people cannot access the collecting data.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1362,7 +1435,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPn-OC-U6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1901.5999999999999" y="2035.7142857142858"/>
+            <point key="canvasLocation" x="1153" y="2024"/>
         </scene>
         <!--Statistic-->
         <scene sceneID="miM-0C-X0H">
@@ -1379,7 +1452,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="643.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Distribution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz4-wy-7Su">
-                                                <rect key="frame" x="32" y="16" width="285.66666666666669" height="36"/>
+                                                <rect key="frame" x="32" y="16" width="285.33333333333331" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1392,7 +1465,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trigger Ranking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGK-HP-zhd">
-                                                <rect key="frame" x="31.999999999999986" y="312" width="220.66666666666663" height="36"/>
+                                                <rect key="frame" x="32.000000000000014" y="312" width="220.33333333333337" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1451,7 +1524,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Filter" id="PpI-CK-eQL">
                             <connections>
-                                <segue destination="aPy-qp-wZF" kind="show" identifier="filterSegue" id="cOL-Rx-Hia"/>
+                                <action selector="filter:" destination="1Vq-pE-obT" id="avE-9H-LiT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1462,7 +1535,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3q-uK-NzC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="1294"/>
+            <point key="canvasLocation" x="334" y="1288"/>
         </scene>
         <!--New Record-->
         <scene sceneID="Qkh-oA-NCc">
@@ -1861,13 +1934,13 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                         <segue destination="TU7-bi-Jto" kind="relationship" relationship="viewControllers" id="ZfC-SB-U6Q"/>
                         <segue destination="UjZ-qK-kZ7" kind="relationship" relationship="viewControllers" id="Xp5-C3-VtF"/>
                         <segue destination="MZi-x5-LcQ" kind="relationship" relationship="viewControllers" id="FkH-9z-OOI"/>
-                        <segue destination="lAI-8w-Z9H" kind="relationship" relationship="viewControllers" id="PLn-Ei-AHY"/>
+                        <segue destination="HL1-Go-j2W" kind="relationship" relationship="viewControllers" id="XID-gI-lSf"/>
                         <segue destination="ToK-ss-OPD" kind="relationship" relationship="viewControllers" id="PnH-ks-8rX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRV-Jf-ewJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2042" y="-180"/>
+            <point key="canvasLocation" x="-2439" y="-174"/>
         </scene>
         <!--Asthma Location-->
         <scene sceneID="D8J-jZ-Who">
@@ -1903,7 +1976,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bU-me-824" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1901.5999999999999" y="1293.8423645320197"/>
+            <point key="canvasLocation" x="1153" y="1282"/>
         </scene>
         <!--Record-->
         <scene sceneID="43D-Ck-P7w">
@@ -1945,103 +2018,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAX-av-822" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1902" y="564"/>
-        </scene>
-        <!--Record Filter-->
-        <scene sceneID="xOl-tc-A6b">
-            <objects>
-                <viewController id="aPy-qp-wZF" customClass="FilterViewController" customModule="SmoothBreath_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NDm-np-p3G">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPf-4I-8j1">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kam-1Q-M1T">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="418.33333333333331"/>
-                                        <subviews>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="hY6-GY-KcK">
-                                                <rect key="frame" x="16" y="53" width="343" height="148.33333333333334"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="hY6-GY-KcK" secondAttribute="height" multiplier="125:54" id="eNS-nF-m9t"/>
-                                                </constraints>
-                                            </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyE-TS-e1o">
-                                                <rect key="frame" x="16" y="16" width="343" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVR-vX-knD">
-                                                <rect key="frame" x="16" y="217.33333333333331" width="343" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="9UO-7g-87b">
-                                                <rect key="frame" x="16" y="254.33333333333331" width="343" height="148"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9UO-7g-87b" secondAttribute="height" multiplier="125:54" id="8lM-Wu-Ysf"/>
-                                                </constraints>
-                                            </datePicker>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="UyE-TS-e1o" firstAttribute="leading" secondItem="kam-1Q-M1T" secondAttribute="leading" constant="16" id="70p-hg-Ylt"/>
-                                            <constraint firstItem="9UO-7g-87b" firstAttribute="top" secondItem="AVR-vX-knD" secondAttribute="bottom" constant="16" id="KP6-RQ-sc1"/>
-                                            <constraint firstAttribute="trailing" secondItem="9UO-7g-87b" secondAttribute="trailing" constant="16" id="RkL-LX-9gs"/>
-                                            <constraint firstAttribute="bottom" secondItem="9UO-7g-87b" secondAttribute="bottom" constant="16" id="Tl2-H7-hhv"/>
-                                            <constraint firstItem="AVR-vX-knD" firstAttribute="leading" secondItem="kam-1Q-M1T" secondAttribute="leading" constant="16" id="WUN-pt-FcD"/>
-                                            <constraint firstItem="hY6-GY-KcK" firstAttribute="leading" secondItem="kam-1Q-M1T" secondAttribute="leading" constant="16" id="XZL-Fd-4Qt"/>
-                                            <constraint firstAttribute="trailing" secondItem="hY6-GY-KcK" secondAttribute="trailing" constant="16" id="cS1-hJ-Y6z"/>
-                                            <constraint firstAttribute="trailing" secondItem="UyE-TS-e1o" secondAttribute="trailing" constant="16" id="gwZ-Rd-iJA"/>
-                                            <constraint firstItem="9UO-7g-87b" firstAttribute="leading" secondItem="kam-1Q-M1T" secondAttribute="leading" constant="16" id="hgC-lh-Xvt"/>
-                                            <constraint firstItem="AVR-vX-knD" firstAttribute="top" secondItem="hY6-GY-KcK" secondAttribute="bottom" constant="16" id="iNc-Vh-Gim"/>
-                                            <constraint firstAttribute="trailing" secondItem="AVR-vX-knD" secondAttribute="trailing" constant="16" id="lbb-LX-wr0"/>
-                                            <constraint firstItem="hY6-GY-KcK" firstAttribute="top" secondItem="UyE-TS-e1o" secondAttribute="bottom" constant="16" id="nDy-zg-w5d"/>
-                                            <constraint firstItem="UyE-TS-e1o" firstAttribute="top" secondItem="kam-1Q-M1T" secondAttribute="top" constant="16" id="yUh-jL-GyB"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="kam-1Q-M1T" firstAttribute="width" secondItem="ZPf-4I-8j1" secondAttribute="width" id="H9m-1p-5lX"/>
-                                    <constraint firstAttribute="trailing" secondItem="kam-1Q-M1T" secondAttribute="trailing" id="RhF-Ut-slL"/>
-                                    <constraint firstItem="kam-1Q-M1T" firstAttribute="leading" secondItem="ZPf-4I-8j1" secondAttribute="leading" id="Wjq-jy-bqP"/>
-                                    <constraint firstAttribute="bottom" secondItem="kam-1Q-M1T" secondAttribute="bottom" id="lCW-Tn-bHf"/>
-                                    <constraint firstItem="kam-1Q-M1T" firstAttribute="height" secondItem="ZPf-4I-8j1" secondAttribute="height" priority="250" id="oe9-PT-KIl"/>
-                                    <constraint firstItem="kam-1Q-M1T" firstAttribute="top" secondItem="ZPf-4I-8j1" secondAttribute="top" id="wFA-Z2-e03"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="ldW-ux-Lj4"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="stW-gL-4ok"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="9v3-d3-Fkp" firstAttribute="bottom" secondItem="ZPf-4I-8j1" secondAttribute="bottom" id="4lf-Ee-mmP"/>
-                            <constraint firstItem="ZPf-4I-8j1" firstAttribute="width" secondItem="9v3-d3-Fkp" secondAttribute="width" id="5OU-kA-O9R"/>
-                            <constraint firstItem="ZPf-4I-8j1" firstAttribute="top" secondItem="9v3-d3-Fkp" secondAttribute="top" id="8nt-a8-U1z"/>
-                            <constraint firstItem="ZPf-4I-8j1" firstAttribute="leading" secondItem="9v3-d3-Fkp" secondAttribute="leading" id="Vm5-II-eH5"/>
-                            <constraint firstItem="ZPf-4I-8j1" firstAttribute="height" secondItem="9v3-d3-Fkp" secondAttribute="height" id="iAS-MB-v0L"/>
-                            <constraint firstItem="9v3-d3-Fkp" firstAttribute="trailing" secondItem="ZPf-4I-8j1" secondAttribute="trailing" id="xa3-uA-KIb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="9v3-d3-Fkp"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Record Filter" id="del-aN-DVK">
-                        <barButtonItem key="rightBarButtonItem" title="Confirm" id="q4N-7J-Sob">
-                            <connections>
-                                <action selector="confirm:" destination="aPy-qp-wZF" id="tUs-yl-PaC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="fromDatePicker" destination="hY6-GY-KcK" id="bJr-EA-P6d"/>
-                        <outlet property="toDatePicker" destination="9UO-7g-87b" id="bDq-pD-AvO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vL6-Ru-brS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1071" y="2036"/>
+            <point key="canvasLocation" x="1153" y="552"/>
         </scene>
         <!--Record Detail-->
         <scene sceneID="47h-6t-7i4">
@@ -2223,7 +2200,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLr-xX-oTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1101.5999999999999" y="2775.3694581280788"/>
+            <point key="canvasLocation" x="-474" y="2755"/>
         </scene>
         <!--Statistic Intro View Controller-->
         <scene sceneID="KAX-ca-wG6">
@@ -2242,10 +2219,10 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">This statistic shows the asthma attack through a visualization way, and you can track your each record by clicking records. 
-1. The monthly distribution records the asthma attack frequency in different month. 
-2. The trigger ranking records the most popular triggers based on the record. 
-3. The information can be used for the asthma diagnosis.</string>
+                                <mutableString key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
+a. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
+b. The trigger ranking records the most popular triggers based on the record through the bar chart. 
+c. The information can be used for asthma diagnosis.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2276,7 +2253,7 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByN-I1-h4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="2036"/>
+            <point key="canvasLocation" x="334" y="2030"/>
         </scene>
         <!--Counter-->
         <scene sceneID="4le-tM-vlg">
@@ -2296,25 +2273,6 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDC-Kf-i3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2439" y="564"/>
-        </scene>
-        <!--Statistic-->
-        <scene sceneID="PbZ-X1-JIv">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lAI-8w-Z9H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Statistic" image="tab_statistic" id="Fwt-Nr-WPh"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="haH-ND-JLI">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="1Vq-pE-obT" kind="relationship" relationship="rootViewController" id="ElP-0a-pcC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fai-KB-heh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="673" y="564"/>
         </scene>
         <!--Func Record View Controller-->
         <scene sceneID="kBq-ot-n2u">
@@ -2338,38 +2296,48 @@ e. Expected Changed Date tells you when this inhaler will be expired.</string>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQo-BY-mZA">
-                                <rect key="frame" x="0.0" y="54" width="375" height="704"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elQ-2X-Y1d">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="704"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="532"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record your asthma attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTR-4q-Ff6">
-                                                <rect key="frame" x="30.666666666666657" y="0.0" width="314" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Your Asthma Attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTR-4q-Ff6">
+                                                <rect key="frame" x="27" y="0.0" width="321" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bRG-QD-j7k">
-                                                <rect key="frame" x="16" y="46" width="343" height="220"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="220"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="220" id="B2a-WA-w74"/>
                                                 </constraints>
-                                                <string key="text">a. It records your asthma attack date and time. 
+                                                <mutableString key="text">a. It records your asthma attack date and time. 
 b. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
 c. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
-d. The current location will be recorded in the location bar at the bottom.</string>
+d. The current location will be recorded in the location bar at the bottom.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_record-1" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-EA-5na">
+                                                <rect key="frame" x="0.0" y="38" width="375" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8NN-EA-5na" secondAttribute="height" multiplier="1920:1280" id="v3s-ko-iE6"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="NTR-4q-Ff6" firstAttribute="top" secondItem="elQ-2X-Y1d" secondAttribute="top" id="0Zb-z5-KRm"/>
+                                            <constraint firstAttribute="bottom" secondItem="bRG-QD-j7k" secondAttribute="bottom" constant="16" id="7mD-sx-gRe"/>
                                             <constraint firstItem="bRG-QD-j7k" firstAttribute="leading" secondItem="elQ-2X-Y1d" secondAttribute="leading" constant="16" id="T40-HO-HyA"/>
-                                            <constraint firstItem="NTR-4q-Ff6" firstAttribute="bottom" secondItem="bRG-QD-j7k" secondAttribute="top" constant="-16" id="hDQ-rb-UqV"/>
+                                            <constraint firstAttribute="trailing" secondItem="8NN-EA-5na" secondAttribute="trailing" id="Vjw-UN-Zgr"/>
+                                            <constraint firstItem="bRG-QD-j7k" firstAttribute="top" secondItem="8NN-EA-5na" secondAttribute="bottom" constant="8" id="a8E-uo-zwv"/>
+                                            <constraint firstItem="8NN-EA-5na" firstAttribute="leading" secondItem="elQ-2X-Y1d" secondAttribute="leading" id="cv1-Ig-2ZA"/>
                                             <constraint firstAttribute="trailing" secondItem="bRG-QD-j7k" secondAttribute="trailing" constant="16" id="mgg-nO-a36"/>
+                                            <constraint firstItem="8NN-EA-5na" firstAttribute="top" secondItem="NTR-4q-Ff6" secondAttribute="bottom" constant="8" id="wVC-sk-PId"/>
                                             <constraint firstItem="NTR-4q-Ff6" firstAttribute="centerX" secondItem="elQ-2X-Y1d" secondAttribute="centerX" id="zi3-Pw-7nP"/>
                                         </constraints>
                                     </view>
@@ -2377,7 +2345,7 @@ d. The current location will be recorded in the location bar at the bottom.</str
                                 <constraints>
                                     <constraint firstItem="elQ-2X-Y1d" firstAttribute="width" secondItem="LQo-BY-mZA" secondAttribute="width" id="2aa-uM-osG"/>
                                     <constraint firstItem="elQ-2X-Y1d" firstAttribute="top" secondItem="LQo-BY-mZA" secondAttribute="top" id="3U1-LH-QSU"/>
-                                    <constraint firstItem="elQ-2X-Y1d" firstAttribute="height" secondItem="LQo-BY-mZA" secondAttribute="height" id="CDp-ET-rSa"/>
+                                    <constraint firstItem="elQ-2X-Y1d" firstAttribute="height" secondItem="LQo-BY-mZA" secondAttribute="height" priority="250" id="CDp-ET-rSa"/>
                                     <constraint firstAttribute="bottom" secondItem="elQ-2X-Y1d" secondAttribute="bottom" id="RAf-DP-1tM"/>
                                     <constraint firstItem="elQ-2X-Y1d" firstAttribute="leading" secondItem="LQo-BY-mZA" secondAttribute="leading" id="Rdt-HR-44I"/>
                                     <constraint firstAttribute="trailing" secondItem="elQ-2X-Y1d" secondAttribute="trailing" id="wFj-4Y-U5e"/>
@@ -2390,7 +2358,7 @@ d. The current location will be recorded in the location bar at the bottom.</str
                         <constraints>
                             <constraint firstItem="LQo-BY-mZA" firstAttribute="top" secondItem="Fge-V8-lTG" secondAttribute="top" constant="54" id="1FE-Ii-ZAH"/>
                             <constraint firstItem="Fge-V8-lTG" firstAttribute="trailing" secondItem="EeF-23-A71" secondAttribute="trailing" constant="16" id="4HZ-uT-ok9"/>
-                            <constraint firstItem="LQo-BY-mZA" firstAttribute="bottom" secondItem="Fge-V8-lTG" secondAttribute="bottom" constant="34" id="95Q-DM-AqR"/>
+                            <constraint firstItem="LQo-BY-mZA" firstAttribute="bottom" secondItem="Fge-V8-lTG" secondAttribute="bottom" id="95Q-DM-AqR"/>
                             <constraint firstItem="Fge-V8-lTG" firstAttribute="trailing" secondItem="LQo-BY-mZA" secondAttribute="trailing" id="CzT-xf-fgb"/>
                             <constraint firstItem="jWa-rm-u35" firstAttribute="top" secondItem="Fge-V8-lTG" secondAttribute="top" constant="16" id="Tmf-7Q-GsT"/>
                             <constraint firstItem="EeF-23-A71" firstAttribute="top" secondItem="Fge-V8-lTG" secondAttribute="top" constant="16" id="a2R-49-jyG"/>
@@ -2429,27 +2397,33 @@ d. The current location will be recorded in the location bar at the bottom.</str
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ki-uf-YTZ">
-                                <rect key="frame" x="0.0" y="54" width="375" height="704"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfA-6u-vnQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="704"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View your personal statistic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsR-bL-7IF">
-                                                <rect key="frame" x="26" y="0.0" width="323" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Your Personal Statistic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsR-bL-7IF">
+                                                <rect key="frame" x="24" y="0.0" width="327" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_statistic-1" translatesAutoresizingMaskIntoConstraints="NO" id="l3A-Ef-BT6">
+                                                <rect key="frame" x="0.0" y="38" width="375" height="250.00000000000023"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="l3A-Ef-BT6" secondAttribute="height" multiplier="1920:1280" id="DTh-gk-tNa"/>
+                                                </constraints>
+                                            </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iNo-3L-4nt">
-                                                <rect key="frame" x="16" y="46" width="343" height="250"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="240"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="250" id="0Db-5e-LUg"/>
+                                                    <constraint firstAttribute="height" constant="240" id="B1x-gO-ltW"/>
                                                 </constraints>
-                                                <string key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
+                                                <mutableString key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
 a. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
 b. The trigger ranking records the most popular triggers based on the record through the bar chart. 
-c. The information can be used for asthma diagnosis.</string>
+c. The information can be used for asthma diagnosis.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2457,21 +2431,25 @@ c. The information can be used for asthma diagnosis.</string>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="iNo-3L-4nt" secondAttribute="trailing" constant="16" id="BFY-Fu-92r"/>
-                                            <constraint firstItem="RsR-bL-7IF" firstAttribute="top" secondItem="NfA-6u-vnQ" secondAttribute="top" id="JgI-hz-rWm"/>
-                                            <constraint firstItem="iNo-3L-4nt" firstAttribute="leading" secondItem="NfA-6u-vnQ" secondAttribute="leading" constant="16" id="ddX-LV-ekB"/>
-                                            <constraint firstItem="RsR-bL-7IF" firstAttribute="centerX" secondItem="NfA-6u-vnQ" secondAttribute="centerX" id="mGv-eZ-yrq"/>
-                                            <constraint firstItem="iNo-3L-4nt" firstAttribute="top" secondItem="RsR-bL-7IF" secondAttribute="bottom" constant="16" id="wiC-Xa-Viz"/>
+                                            <constraint firstItem="iNo-3L-4nt" firstAttribute="leading" secondItem="NfA-6u-vnQ" secondAttribute="leading" constant="16" id="BlL-GS-Pm7"/>
+                                            <constraint firstAttribute="trailing" secondItem="l3A-Ef-BT6" secondAttribute="trailing" id="LHq-IY-Xca"/>
+                                            <constraint firstItem="iNo-3L-4nt" firstAttribute="top" secondItem="l3A-Ef-BT6" secondAttribute="bottom" constant="8" id="PL6-mE-oKk"/>
+                                            <constraint firstItem="l3A-Ef-BT6" firstAttribute="top" secondItem="RsR-bL-7IF" secondAttribute="bottom" constant="8" id="THc-SL-rzT"/>
+                                            <constraint firstItem="RsR-bL-7IF" firstAttribute="centerX" secondItem="NfA-6u-vnQ" secondAttribute="centerX" id="YTP-6n-HCK"/>
+                                            <constraint firstItem="l3A-Ef-BT6" firstAttribute="leading" secondItem="NfA-6u-vnQ" secondAttribute="leading" id="c7d-CR-mS1"/>
+                                            <constraint firstAttribute="trailing" secondItem="iNo-3L-4nt" secondAttribute="trailing" constant="16" id="hlj-Xc-dpg"/>
+                                            <constraint firstItem="RsR-bL-7IF" firstAttribute="top" secondItem="NfA-6u-vnQ" secondAttribute="top" id="oK1-mw-tuO"/>
+                                            <constraint firstAttribute="bottom" secondItem="iNo-3L-4nt" secondAttribute="bottom" constant="16" id="wzu-4a-gbl"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="top" secondItem="SgK-8E-EvK" secondAttribute="top" id="9Zg-ok-3MG"/>
-                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="bottom" secondItem="qxx-cc-v3G" secondAttribute="bottom" id="RMh-LG-HGH"/>
-                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="leading" secondItem="3ki-uf-YTZ" secondAttribute="leading" id="WKo-R1-dsh"/>
-                                    <constraint firstAttribute="bottom" secondItem="NfA-6u-vnQ" secondAttribute="bottom" id="lrq-oT-CLv"/>
-                                    <constraint firstAttribute="trailing" secondItem="NfA-6u-vnQ" secondAttribute="trailing" id="mzg-5Z-eSQ"/>
-                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="centerX" secondItem="3ki-uf-YTZ" secondAttribute="centerX" id="ugd-ma-mOD"/>
+                                    <constraint firstAttribute="trailing" secondItem="NfA-6u-vnQ" secondAttribute="trailing" id="0LT-T0-SL2"/>
+                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="leading" secondItem="3ki-uf-YTZ" secondAttribute="leading" id="Jft-Gg-l2X"/>
+                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="height" secondItem="3ki-uf-YTZ" secondAttribute="height" priority="250" id="MQF-Pz-6ru"/>
+                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="top" secondItem="3ki-uf-YTZ" secondAttribute="top" id="h8f-pj-PDc"/>
+                                    <constraint firstItem="NfA-6u-vnQ" firstAttribute="width" secondItem="3ki-uf-YTZ" secondAttribute="width" id="nvy-Ug-PIN"/>
+                                    <constraint firstAttribute="bottom" secondItem="NfA-6u-vnQ" secondAttribute="bottom" id="woj-Te-3Xo"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="SgK-8E-EvK"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qxx-cc-v3G"/>
@@ -2479,23 +2457,23 @@ c. The information can be used for asthma diagnosis.</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dZ9-ZQ-vvi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wxh-HY-2gj" secondAttribute="trailing" constant="8" symbolic="YES" id="0hU-J7-kQE"/>
-                            <constraint firstAttribute="trailing" secondItem="3ki-uf-YTZ" secondAttribute="trailing" id="2IC-bA-5T8"/>
-                            <constraint firstItem="3ki-uf-YTZ" firstAttribute="top" secondItem="EWr-di-AwJ" secondAttribute="top" constant="54" id="8x1-2B-Dg8"/>
-                            <constraint firstItem="3ki-uf-YTZ" firstAttribute="leading" secondItem="EWr-di-AwJ" secondAttribute="leading" id="D91-N2-VmN"/>
-                            <constraint firstItem="wxh-HY-2gj" firstAttribute="leading" secondItem="1ka-wT-C4m" secondAttribute="leading" constant="16" id="GdU-Wf-dLo"/>
-                            <constraint firstItem="dZ9-ZQ-vvi" firstAttribute="top" secondItem="1ka-wT-C4m" secondAttribute="top" constant="16" id="WAu-nU-IwO"/>
-                            <constraint firstAttribute="bottom" secondItem="3ki-uf-YTZ" secondAttribute="bottom" id="WNl-Gc-d3A"/>
-                            <constraint firstItem="1ka-wT-C4m" firstAttribute="trailing" secondItem="dZ9-ZQ-vvi" secondAttribute="trailing" constant="16" id="e7S-La-Gv8"/>
-                            <constraint firstItem="3ki-uf-YTZ" firstAttribute="top" secondItem="dZ9-ZQ-vvi" secondAttribute="bottom" constant="8" id="h3m-at-wHI"/>
-                            <constraint firstItem="wxh-HY-2gj" firstAttribute="top" secondItem="1ka-wT-C4m" secondAttribute="top" constant="16" id="wrK-eV-d8m"/>
+                            <constraint firstItem="dZ9-ZQ-vvi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wxh-HY-2gj" secondAttribute="trailing" constant="8" symbolic="YES" id="Adf-Bl-88n"/>
+                            <constraint firstItem="1ka-wT-C4m" firstAttribute="trailing" secondItem="3ki-uf-YTZ" secondAttribute="trailing" id="GSk-rB-tAC"/>
+                            <constraint firstItem="3ki-uf-YTZ" firstAttribute="bottom" secondItem="1ka-wT-C4m" secondAttribute="bottom" id="I7F-rD-Qob"/>
+                            <constraint firstItem="3ki-uf-YTZ" firstAttribute="top" secondItem="dZ9-ZQ-vvi" secondAttribute="bottom" constant="8" id="Nvq-lk-JMx"/>
+                            <constraint firstItem="dZ9-ZQ-vvi" firstAttribute="top" secondItem="1ka-wT-C4m" secondAttribute="top" constant="16" id="Tp9-Rr-5Jk"/>
+                            <constraint firstItem="3ki-uf-YTZ" firstAttribute="leading" secondItem="1ka-wT-C4m" secondAttribute="leading" id="Un7-9M-C5j"/>
+                            <constraint firstItem="wxh-HY-2gj" firstAttribute="leading" secondItem="1ka-wT-C4m" secondAttribute="leading" constant="16" id="hy4-3t-Ci3"/>
+                            <constraint firstItem="wxh-HY-2gj" firstAttribute="top" secondItem="1ka-wT-C4m" secondAttribute="top" constant="16" id="meL-J4-I5b"/>
+                            <constraint firstItem="1ka-wT-C4m" firstAttribute="trailing" secondItem="dZ9-ZQ-vvi" secondAttribute="trailing" constant="16" id="nFL-Hd-Yri"/>
+                            <constraint firstItem="3ki-uf-YTZ" firstAttribute="top" secondItem="1ka-wT-C4m" secondAttribute="top" constant="54" id="zaK-DT-1so"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1ka-wT-C4m"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITH-cm-pzk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3959" y="1294"/>
+            <point key="canvasLocation" x="-3959.1999999999998" y="1293.8423645320197"/>
         </scene>
         <!--Func Location View Controller-->
         <scene sceneID="oMF-21-5pI">
@@ -2511,7 +2489,7 @@ c. The information can be used for asthma diagnosis.</string>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYf-X4-7PN">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYf-X4-7PN">
                                 <rect key="frame" x="322" y="16" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
@@ -2519,28 +2497,34 @@ c. The information can be used for asthma diagnosis.</string>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYF-Zu-baD">
-                                <rect key="frame" x="0.0" y="54" width="375" height="704"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aD9-C2-4b2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="704"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your asthma location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx2-dl-gQc">
-                                                <rect key="frame" x="24.666666666666657" y="0.0" width="326" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Asthma Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx2-dl-gQc">
+                                                <rect key="frame" x="19" y="0.0" width="337" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_location-1" translatesAutoresizingMaskIntoConstraints="NO" id="f9y-pd-ix0">
+                                                <rect key="frame" x="0.0" y="38" width="375" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="f9y-pd-ix0" secondAttribute="height" multiplier="1920:1280" id="4Sf-oI-35c"/>
+                                                </constraints>
+                                            </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kDX-qb-XxB">
-                                                <rect key="frame" x="16" y="46" width="343" height="310"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="310"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="310" id="a9N-Zh-t0e"/>
+                                                    <constraint firstAttribute="height" constant="310" id="eRi-0a-m34"/>
                                                 </constraints>
-                                                <string key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
+                                                <mutableString key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
 a. Each pinned point is the historical asthma attack location. 
 b. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
 c. Each location point was recorded and generated based on each record "current location". 
-d. All the information is stored in the app, other people cannot access the collecting data.</string>
+d. All the information is stored in the app, other people cannot access the collecting data.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2548,21 +2532,25 @@ d. All the information is stored in the app, other people cannot access the coll
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="lx2-dl-gQc" firstAttribute="centerX" secondItem="aD9-C2-4b2" secondAttribute="centerX" id="Nyi-dZ-kZA"/>
-                                            <constraint firstItem="kDX-qb-XxB" firstAttribute="leading" secondItem="aD9-C2-4b2" secondAttribute="leading" constant="16" id="em6-Te-YVa"/>
-                                            <constraint firstAttribute="trailing" secondItem="kDX-qb-XxB" secondAttribute="trailing" constant="16" id="hTw-0Y-Gbb"/>
-                                            <constraint firstItem="lx2-dl-gQc" firstAttribute="top" secondItem="aD9-C2-4b2" secondAttribute="top" id="o6j-YU-tg5"/>
-                                            <constraint firstItem="kDX-qb-XxB" firstAttribute="top" secondItem="lx2-dl-gQc" secondAttribute="bottom" constant="16" id="pEY-tS-ie8"/>
+                                            <constraint firstAttribute="trailing" secondItem="f9y-pd-ix0" secondAttribute="trailing" id="2Qr-UZ-swQ"/>
+                                            <constraint firstItem="kDX-qb-XxB" firstAttribute="leading" secondItem="aD9-C2-4b2" secondAttribute="leading" constant="16" id="EgV-9Z-kb4"/>
+                                            <constraint firstItem="f9y-pd-ix0" firstAttribute="leading" secondItem="aD9-C2-4b2" secondAttribute="leading" id="Fld-aN-Q56"/>
+                                            <constraint firstItem="lx2-dl-gQc" firstAttribute="centerX" secondItem="aD9-C2-4b2" secondAttribute="centerX" id="R8M-aM-xnF"/>
+                                            <constraint firstItem="lx2-dl-gQc" firstAttribute="top" secondItem="aD9-C2-4b2" secondAttribute="top" id="RkF-Ee-Fmu"/>
+                                            <constraint firstAttribute="bottom" secondItem="kDX-qb-XxB" secondAttribute="bottom" constant="16" id="V9F-fU-yq1"/>
+                                            <constraint firstItem="f9y-pd-ix0" firstAttribute="top" secondItem="lx2-dl-gQc" secondAttribute="bottom" constant="8" id="cp0-9c-8V1"/>
+                                            <constraint firstAttribute="trailing" secondItem="kDX-qb-XxB" secondAttribute="trailing" constant="16" id="eDb-Vm-A4B"/>
+                                            <constraint firstItem="kDX-qb-XxB" firstAttribute="top" secondItem="f9y-pd-ix0" secondAttribute="bottom" constant="8" id="iXe-V0-D4o"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="leading" secondItem="HYF-Zu-baD" secondAttribute="leading" id="28Y-Zc-M9j"/>
-                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="centerX" secondItem="HYF-Zu-baD" secondAttribute="centerX" id="4J5-q4-z2A"/>
-                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="bottom" secondItem="7O6-rN-Lm2" secondAttribute="bottom" id="6Gg-9q-0D4"/>
-                                    <constraint firstAttribute="bottom" secondItem="aD9-C2-4b2" secondAttribute="bottom" id="7qo-TJ-8mb"/>
-                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="top" secondItem="RCY-pE-6ch" secondAttribute="top" id="Yhq-3o-IvY"/>
-                                    <constraint firstAttribute="trailing" secondItem="aD9-C2-4b2" secondAttribute="trailing" id="icf-P9-hXQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="aD9-C2-4b2" secondAttribute="bottom" id="KWq-B3-c9S"/>
+                                    <constraint firstAttribute="trailing" secondItem="aD9-C2-4b2" secondAttribute="trailing" id="Mg7-FD-dxO"/>
+                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="leading" secondItem="HYF-Zu-baD" secondAttribute="leading" id="kM9-59-Zab"/>
+                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="top" secondItem="HYF-Zu-baD" secondAttribute="top" id="rHh-4H-TRC"/>
+                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="width" secondItem="HYF-Zu-baD" secondAttribute="width" id="uJ7-ro-A1D"/>
+                                    <constraint firstItem="aD9-C2-4b2" firstAttribute="height" secondItem="HYF-Zu-baD" secondAttribute="height" priority="250" id="wZA-aq-6W3"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="RCY-pE-6ch"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="7O6-rN-Lm2"/>
@@ -2570,36 +2558,58 @@ d. All the information is stored in the app, other people cannot access the coll
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="MYf-X4-7PN" firstAttribute="top" secondItem="EIT-KK-pEn" secondAttribute="top" constant="16" id="GcS-tn-rls"/>
-                            <constraint firstItem="HYF-Zu-baD" firstAttribute="leading" secondItem="t83-HN-kgI" secondAttribute="leading" id="IMK-38-u5V"/>
-                            <constraint firstItem="HYF-Zu-baD" firstAttribute="top" secondItem="MYf-X4-7PN" secondAttribute="bottom" constant="8" id="RmE-5c-yvs"/>
-                            <constraint firstAttribute="trailing" secondItem="HYF-Zu-baD" secondAttribute="trailing" id="VaD-W6-bbb"/>
-                            <constraint firstItem="EIT-KK-pEn" firstAttribute="trailing" secondItem="MYf-X4-7PN" secondAttribute="trailing" constant="16" id="bbx-8w-gix"/>
-                            <constraint firstAttribute="bottom" secondItem="HYF-Zu-baD" secondAttribute="bottom" id="fDF-UK-cLd"/>
-                            <constraint firstItem="2jv-aK-p2C" firstAttribute="top" secondItem="EIT-KK-pEn" secondAttribute="top" constant="16" id="fMR-iE-wEY"/>
-                            <constraint firstItem="2jv-aK-p2C" firstAttribute="leading" secondItem="EIT-KK-pEn" secondAttribute="leading" constant="16" id="hPS-cW-BVC"/>
-                            <constraint firstItem="MYf-X4-7PN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2jv-aK-p2C" secondAttribute="trailing" constant="8" symbolic="YES" id="ltE-d3-fIs"/>
-                            <constraint firstItem="HYF-Zu-baD" firstAttribute="top" secondItem="t83-HN-kgI" secondAttribute="top" constant="54" id="pdn-zb-SDb"/>
+                            <constraint firstItem="EIT-KK-pEn" firstAttribute="trailing" secondItem="HYF-Zu-baD" secondAttribute="trailing" id="6ig-9g-9zF"/>
+                            <constraint firstItem="EIT-KK-pEn" firstAttribute="trailing" secondItem="MYf-X4-7PN" secondAttribute="trailing" constant="16" id="UHd-U9-hJb"/>
+                            <constraint firstItem="MYf-X4-7PN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2jv-aK-p2C" secondAttribute="trailing" constant="8" symbolic="YES" id="XDe-t7-gyk"/>
+                            <constraint firstItem="EIT-KK-pEn" firstAttribute="bottom" secondItem="HYF-Zu-baD" secondAttribute="bottom" id="Xuq-Gq-PU1"/>
+                            <constraint firstItem="MYf-X4-7PN" firstAttribute="top" secondItem="EIT-KK-pEn" secondAttribute="top" constant="16" id="edp-of-ijT"/>
+                            <constraint firstItem="2jv-aK-p2C" firstAttribute="leading" secondItem="EIT-KK-pEn" secondAttribute="leading" constant="16" id="fSL-uu-9IQ"/>
+                            <constraint firstItem="HYF-Zu-baD" firstAttribute="leading" secondItem="EIT-KK-pEn" secondAttribute="leading" id="giN-lh-m8X"/>
+                            <constraint firstItem="2jv-aK-p2C" firstAttribute="top" secondItem="EIT-KK-pEn" secondAttribute="top" constant="16" id="hea-xG-1cd"/>
+                            <constraint firstItem="HYF-Zu-baD" firstAttribute="top" secondItem="MYf-X4-7PN" secondAttribute="bottom" constant="8" id="rGV-Ts-EVJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EIT-KK-pEn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VL2-tl-Wi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3198" y="1294"/>
+            <point key="canvasLocation" x="-3199.1999999999998" y="1293.8423645320197"/>
+        </scene>
+        <!--Statistic-->
+        <scene sceneID="wXq-yI-V8S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HL1-Go-j2W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Statistic" image="tab_statistic" id="UQv-kg-4qO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i7D-pk-psH">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Vq-pE-obT" kind="relationship" relationship="rootViewController" id="1Kl-Fv-uWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qee-aq-sCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="558"/>
         </scene>
     </scenes>
     <resources>
-        <image name="counter_inhaler" width="426.66665649414062" height="194.33332824707031"/>
+        <image name="counter_inhaler" width="1280" height="583"/>
         <image name="home_article_1_1" width="1259" height="698"/>
         <image name="home_article_1_2" width="1241" height="698"/>
         <image name="home_counter" width="1500" height="1000"/>
+        <image name="home_counter-1" width="1500" height="1000"/>
+        <image name="home_female" width="1280" height="960"/>
         <image name="home_location" width="1560" height="1000"/>
+        <image name="home_location-1" width="1560" height="1000"/>
         <image name="home_record" width="1500" height="1000"/>
-        <image name="home_research_1" width="1280" height="960"/>
+        <image name="home_record-1" width="1500" height="1000"/>
         <image name="home_statistic" width="1280" height="837"/>
+        <image name="home_statistic-1" width="1280" height="837"/>
         <image name="home_trigger" width="5760" height="3840"/>
-        <image name="homepage" width="1920" height="1280"/>
+        <image name="home_website" width="1920" height="1280"/>
         <image name="icon_info" width="33.333332061767578" height="33.333332061767578"/>
         <image name="tab_counter" width="33.333332061767578" height="33.333332061767578"/>
         <image name="tab_home" width="33.333332061767578" height="33.333332061767578"/>
