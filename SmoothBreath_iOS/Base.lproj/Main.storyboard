@@ -181,7 +181,7 @@
                                 <rect key="frame" x="0.0" y="54" width="375" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIt-Ac-voX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="962"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="972"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What may Cause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-vf-bkK">
                                                 <rect key="frame" x="32" y="0.0" width="198" height="30"/>
@@ -202,12 +202,12 @@
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QM3-9m-vDc">
-                                                <rect key="frame" x="16" y="326" width="343" height="620"/>
+                                                <rect key="frame" x="16" y="326" width="343" height="630"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="620" id="Jtk-jU-pfF"/>
+                                                    <constraint firstAttribute="height" constant="630" id="Jtk-jU-pfF"/>
                                                 </constraints>
-                                                <string key="text">There are many normal things that we are meeting in our daily life, however, that might be one of the asthma triggers that affect your asthma seriously. Those triggers are listed below.  1. Bushfire
+                                                <mutableString key="text">There are many normal things that we are meeting in our daily life, however, that might be one of the asthma triggers that affect your asthma seriously. Those triggers are listed below.  1. Bushfire
 Especially in the summer, bushfire would occur occasionally in rural Victoria. The smoke of the bushfire can have a negative influence on your asthma disease.
 
 2. Pollen 
@@ -220,7 +220,7 @@ Pets are our best friends, they give us a sense of happiness and always stand on
 Asthma attack more happens during the pollen season since there is a range of pollen sources exist in rural Victoria.
 
 5. Hormone
-During the female menstrual period, the hormone level is higher and that is also a trigger of the asthma attack.</string>
+During the female menstrual period, the hormone level is higher and that is also a trigger of the asthma attack.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -322,12 +322,12 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="310" id="dYJ-hW-1DX"/>
                                                 </constraints>
-                                                <mutableString key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
+                                                <string key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
 1. Minus button means using one dose. 
 2. Plus button means adding back the dose which can withdraw your history. 
 3. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
 4. Last Changed Date tells you when did you change the inhaler last time. 
-5. Expected Changed Date tells you when this inhaler will be expired.</mutableString>
+5. Expected Changed Date tells you when this inhaler will be expired.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -566,8 +566,8 @@ During the female menstrual period, the hormone level is higher and that is also
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mX-ox-icj" userLabel="Func - Inhaler">
                                                 <rect key="frame" x="16" y="627.33333333333337" width="343" height="228.66666666666663"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funciton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g8-V4-nIM">
-                                                        <rect key="frame" x="16" y="16" width="64" height="19"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g8-V4-nIM">
+                                                        <rect key="frame" x="16" y="16" width="65" height="19"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1199,10 +1199,10 @@ During the female menstrual period, the hormone level is higher and that is also
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">1. It records your asthma attack date and time. 
+                                <string key="text">1. It records your asthma attack date and time. 
 2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
 3. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
-4. The current location will be recorded in the location bar at the bottom.</mutableString>
+4. The current location will be recorded in the location bar at the bottom.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1252,12 +1252,12 @@ During the female menstrual period, the hormone level is higher and that is also
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-IL-Ca7">
                                 <rect key="frame" x="16" y="104.66666666666669" width="343" height="603.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
+                                <string key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
 1. Minus button means using one dose. 
 2. Plus button means adding back the dose which can withdraw your history. 
 3. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
 4. Last Changed Date tells you when did you change the inhaler last time. 
-5. Expected Changed Date tells you when this inhaler will be expired.</mutableString>
+5. Expected Changed Date tells you when this inhaler will be expired.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1431,11 +1431,11 @@ During the female menstrual period, the hormone level is higher and that is also
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
+                                <string key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
 1. Each pinned point is the historical asthma attack location. 
 2. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
 3. Each location point was recorded and generated based on each record "current location". 
-4. All the information is stored in the app, other people cannot access the collecting data.</mutableString>
+4. All the information is stored in the app, other people cannot access the collecting data.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2256,10 +2256,10 @@ During the female menstrual period, the hormone level is higher and that is also
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
+                                <string key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
 1. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
 2. The trigger ranking records the most popular triggers based on the record through the bar chart. 
-3. The information can be used for asthma diagnosis.</mutableString>
+3. The information can be used for asthma diagnosis.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2350,10 +2350,10 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="220" id="B2a-WA-w74"/>
                                                 </constraints>
-                                                <mutableString key="text">1. It records your asthma attack date and time. 
+                                                <string key="text">1. It records your asthma attack date and time. 
 2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
 3. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
-4. The current location will be recorded in the location bar at the bottom.</mutableString>
+4. The current location will be recorded in the location bar at the bottom.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2446,7 +2446,7 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_statistic-1" translatesAutoresizingMaskIntoConstraints="NO" id="l3A-Ef-BT6">
-                                                <rect key="frame" x="0.0" y="38" width="375" height="250.00000000000023"/>
+                                                <rect key="frame" x="0.0" y="38" width="375" height="250"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="l3A-Ef-BT6" secondAttribute="height" multiplier="1920:1280" id="DTh-gk-tNa"/>
                                                 </constraints>
@@ -2457,10 +2457,10 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="B1x-gO-ltW"/>
                                                 </constraints>
-                                                <mutableString key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
+                                                <string key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
 1. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
 2. The trigger ranking records the most popular triggers based on the record through the bar chart. 
-3. The information can be used for asthma diagnosis.</mutableString>
+3. The information can be used for asthma diagnosis.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2557,11 +2557,11 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="310" id="eRi-0a-m34"/>
                                                 </constraints>
-                                                <mutableString key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
+                                                <string key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
 1. Each pinned point is the historical asthma attack location. 
 2. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
 3. Each location point was recorded and generated based on each record "current location". 
-4. All the information is stored in the app, other people cannot access the collecting data.</mutableString>
+4. All the information is stored in the app, other people cannot access the collecting data.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
