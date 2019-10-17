@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="54" width="375" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tem-ub-E5t">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="908.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="998.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asthma Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-x1-jAv">
                                                 <rect key="frame" x="32" y="0.0" width="181" height="30"/>
@@ -54,41 +54,48 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_article_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="8a4-6O-2aD">
-                                                <rect key="frame" x="16" y="104.66666666666667" width="343" height="183.66666666666663"/>
+                                                <rect key="frame" x="16" y="104.66666666666667" width="343.00000000000023" height="183.66666666666663"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8a4-6O-2aD" secondAttribute="height" multiplier="239:128" id="2Gk-ZK-Kwg"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzO-9X-wud">
-                                                <rect key="frame" x="16" y="296.33333333333331" width="343" height="200"/>
+                                                <rect key="frame" x="16" y="296.33333333333331" width="343" height="239.99999999999994"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="FXm-6z-aRD"/>
+                                                    <constraint firstAttribute="height" constant="240" id="FXm-6z-aRD"/>
                                                 </constraints>
-                                                <string key="text">As one of the chronic diseases, many females have asthma. However, the incidence of asthma is varying from different locations and age groups. The bar chart shows the incidence of female asthmatic in both rural Victoria area and urban Victoria. The red bar represents Rural area whereas the dark blue bar is for the urban. In all age groups, the incidence of asthma in the rural area are higher than urban, especially in the age of 25 to 34.</string>
+                                                <string key="text">Asthma is one of the most common chronic diseases in Australia. According to Australian Bureau of Statistics 2018; National Health Survey: around 2.7 million Australians have asthma.
+
+While the incidence of asthma varies between location and age groups, in adults, asthma is more common in women. In all age groups, the incidence of asthma is higher for women in rural Victoria area than urban areas, especially in the age of 25 to 34
+</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Different Age Group of Female Asthmatics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBn-96-6RD">
-                                                <rect key="frame" x="19" y="512.33333333333337" width="337" height="21"/>
+                                                <rect key="frame" x="19" y="552.33333333333337" width="337" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_article_1_2" translatesAutoresizingMaskIntoConstraints="NO" id="d7G-sh-7bz">
-                                                <rect key="frame" x="16" y="541.33333333333337" width="343" height="183"/>
+                                                <rect key="frame" x="16" y="581.33333333333337" width="343" height="183"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="d7G-sh-7bz" secondAttribute="height" multiplier="15:8" id="2Pq-Up-LaY"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-KU-ZIG">
-                                                <rect key="frame" x="16" y="732.33333333333337" width="343" height="160"/>
+                                                <rect key="frame" x="16" y="772.33333333333337" width="343" height="210"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="160" id="hXO-FN-fUa"/>
+                                                    <constraint firstAttribute="height" constant="210" id="hXO-FN-fUa"/>
                                                 </constraints>
-                                                <string key="text">In Rural Victoria area, there is approximately 11,000 female adult asthmatic who is under 65 years old. In age 25 to 34, there are almost 30,000 patients. Followed by females aged in 45 to 54 years old, which have around 20,000 patients. Compared to these two age groups, the people aged in 18 to 24 years old seems to have the least incidence of asthma.</string>
+                                                <string key="text">In Rural Victoria area, there are approximately 110,000 female adult asthmatics under 65 years old.
+
+Of those, the largest affected age group is women aged 25 to 34, with almost 30,000 patients.
+
+They are followed by females aged 45 to 54 years old, with around 20,000 patients. </string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -181,7 +188,7 @@
                                 <rect key="frame" x="0.0" y="54" width="375" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIt-Ac-voX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="972"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="842"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What may Cause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-vf-bkK">
                                                 <rect key="frame" x="32" y="0.0" width="198" height="30"/>
@@ -202,25 +209,24 @@
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QM3-9m-vDc">
-                                                <rect key="frame" x="16" y="326" width="343" height="630"/>
+                                                <rect key="frame" x="16" y="326" width="343" height="500"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="630" id="Jtk-jU-pfF"/>
+                                                    <constraint firstAttribute="height" constant="500" id="Jtk-jU-pfF"/>
                                                 </constraints>
-                                                <mutableString key="text">There are many normal things that we are meeting in our daily life, however, that might be one of the asthma triggers that affect your asthma seriously. Those triggers are listed below.  1. Bushfire
-Especially in the summer, bushfire would occur occasionally in rural Victoria. The smoke of the bushfire can have a negative influence on your asthma disease.
+                                                <mutableString key="text">For asthmatics, everyday encounters with your environment and your lifestyle can affect your asthma seriously. Some of these triggers are listed below.
+
+1. Bushfires
+Especially in the summer, bushfires are common in rural Victoria. The smoke from bushfires can aggravate your asthma.
 
 2. Pollen 
-Asthma attack more happens during the pollen season since there is a range of pollen sources exist in rural Victoria. Pollen can trigger hay fever and these are the triggers of asthma.
+Asthma attacks increase during spring and summer when pollen-producing plants are at their most active in rural Victoria. Pollen can trigger hay fever and asthma.
 
 3. Pets
-Pets are our best friends, they give us a sense of happiness and always stand on your side. However, pet's dander is also one of the triggers affect your asthma.
+We love pets, but their hair and dander can cause asthma. We recommend pets that have minimal hair loss for asthma sufferers.
 
-4. Pollen
-Asthma attack more happens during the pollen season since there is a range of pollen sources exist in rural Victoria.
-
-5. Hormone
-During the female menstrual period, the hormone level is higher and that is also a trigger of the asthma attack.</mutableString>
+4. Hormones
+For menstruating women, fluctuating hormones can trigger asthma attacks.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -302,7 +308,7 @@ During the female menstrual period, the hormone level is higher and that is also
                                 <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FwO-vl-sev">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="742"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Inhaler Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCe-XU-wI5">
                                                 <rect key="frame" x="41.666666666666657" y="0.0" width="292" height="30"/>
@@ -317,17 +323,28 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-Kb-qFn">
-                                                <rect key="frame" x="16" y="296" width="343" height="310"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="430"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="310" id="dYJ-hW-1DX"/>
+                                                    <constraint firstAttribute="height" constant="430" id="dYJ-hW-1DX"/>
                                                 </constraints>
-                                                <string key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
-1. Minus button means using one dose. 
-2. Plus button means adding back the dose which can withdraw your history. 
-3. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
-4. Last Changed Date tells you when did you change the inhaler last time. 
-5. Expected Changed Date tells you when this inhaler will be expired.</string>
+                                                <mutableString key="text">With the Inhaler Counter, you can track your usage and check the remaining uses every day. 
+
+
+1. The Minus [ - ] button means using one dose.
+
+
+2. The Plus [ + ] button can add back a dose if you tap one too many times.
+
+
+3. The Reset on the right top corner is used for resetting the default number of uses when you start a new inhaler.
+
+
+4. Last Changed Date tells you when you last changed your inhaler.
+
+
+5. Expected Changed Date tells you when this inhaler will run out of puffs.
+</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1717,8 +1734,8 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period within a Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRm-6R-BCy">
-                                                <rect key="frame" x="16" y="610.66666666666663" width="167" height="31"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period due within a Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRm-6R-BCy">
+                                                <rect key="frame" x="16" y="610.66666666666663" width="201" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2336,7 +2353,7 @@ During the female menstrual period, the hormone level is higher and that is also
                                 <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elQ-2X-Y1d">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="532"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="632"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Your Asthma Attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTR-4q-Ff6">
                                                 <rect key="frame" x="27" y="0.0" width="321" height="30"/>
@@ -2345,15 +2362,22 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRG-QD-j7k">
-                                                <rect key="frame" x="16" y="296" width="343" height="220"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="320"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="220" id="B2a-WA-w74"/>
+                                                    <constraint firstAttribute="height" constant="320" id="B2a-WA-w74"/>
                                                 </constraints>
-                                                <string key="text">1. It records your asthma attack date and time. 
-2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
-3. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
-4. The current location will be recorded in the location bar at the bottom.</string>
+                                                <mutableString key="text">Record the conditions surrounding your asthma attack, including
+
+1. Date and time.
+
+2. Physical conditions such as attack severity, stress level, exercise and for women if the menstrual cycle is due within a week.
+
+
+3. Environment conditions such as fire, animal, heavy wind, pollen source and dust.
+
+
+4. Current location so you can see if location plays a factor in your attacks.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2437,7 +2461,7 @@ During the female menstrual period, the hormone level is higher and that is also
                                 <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfA-6u-vnQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="562"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Your Personal Statistic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsR-bL-7IF">
                                                 <rect key="frame" x="24" y="0.0" width="327" height="30"/>
@@ -2446,21 +2470,27 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_statistic-1" translatesAutoresizingMaskIntoConstraints="NO" id="l3A-Ef-BT6">
-                                                <rect key="frame" x="0.0" y="38" width="375" height="250"/>
+                                                <rect key="frame" x="0.0" y="38" width="375" height="250.00000000000023"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="l3A-Ef-BT6" secondAttribute="height" multiplier="1920:1280" id="DTh-gk-tNa"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNo-3L-4nt">
-                                                <rect key="frame" x="16" y="296" width="343" height="240"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="250"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="B1x-gO-ltW"/>
+                                                    <constraint firstAttribute="height" constant="250" id="B1x-gO-ltW"/>
                                                 </constraints>
-                                                <string key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
-1. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
-2. The trigger ranking records the most popular triggers based on the record through the bar chart. 
-3. The information can be used for asthma diagnosis.</string>
+                                                <mutableString key="text">Understand your triggers over a period of time and work with your health professionals using this simple visualisation, including;
+
+
+1. Monthly distribution of asthma attack frequency.
+
+
+2. Ranking of triggers based on frequency.
+
+
+3. See a history of your asthma attacks by clicking records on the top right-hand corner.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2537,7 +2567,7 @@ During the female menstrual period, the hormone level is higher and that is also
                                 <rect key="frame" x="0.0" y="54" width="375" height="670"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aD9-C2-4b2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="512"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Asthma Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx2-dl-gQc">
                                                 <rect key="frame" x="19" y="0.0" width="337" height="30"/>
@@ -2552,16 +2582,17 @@ During the female menstrual period, the hormone level is higher and that is also
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDX-qb-XxB">
-                                                <rect key="frame" x="16" y="296" width="343" height="310"/>
+                                                <rect key="frame" x="16" y="296" width="343" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="310" id="eRi-0a-m34"/>
+                                                    <constraint firstAttribute="height" constant="200" id="eRi-0a-m34"/>
                                                 </constraints>
-                                                <string key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
-1. Each pinned point is the historical asthma attack location. 
-2. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
-3. Each location point was recorded and generated based on each record "current location". 
-4. All the information is stored in the app, other people cannot access the collecting data.</string>
+                                                <mutableString key="text">When you record and attack, a location point is generated based "current location".
+
+As your records grow, this map can give you insights as to whether there are common locations when your asthma attacks occur.
+
+
+All the information is stored in the app, other people cannot access the collecting data.</mutableString>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
