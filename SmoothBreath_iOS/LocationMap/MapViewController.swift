@@ -34,7 +34,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate{
         
         locationManager.startUpdatingLocation()
         if let userLocation = locationManager.location?.coordinate {
-            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 2000, longitudinalMeters: 2000)
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 500, longitudinalMeters: 500)
             mapView.setRegion(viewRegion, animated: false)
         }
         

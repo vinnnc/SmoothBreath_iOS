@@ -39,14 +39,14 @@ class StatisticViewController: UIViewController {
             self.initialisation()
         })
         
-        alert.addAction(UIAlertAction(title: "Last Year", style: .default) { _ in
+        alert.addAction(UIAlertAction(title: "Last 365 Days", style: .default) { _ in
             let toDate = Date()
             self.fromDate = Calendar.current.date(byAdding: .day, value: -365, to: toDate)
             self.toDate = Date()
             self.initialisation()
         })
         
-        alert.addAction(UIAlertAction(title: "Last Month", style: .default) { _ in
+        alert.addAction(UIAlertAction(title: "Last 30 Days", style: .default) { _ in
             let toDate = Date()
             self.fromDate = Calendar.current.date(byAdding: .day, value: -30, to: toDate)
             self.toDate = Date()
@@ -54,7 +54,7 @@ class StatisticViewController: UIViewController {
         })
 
 
-        alert.addAction(UIAlertAction(title: "Last Week", style: .default) { _ in
+        alert.addAction(UIAlertAction(title: "Last 7 Days", style: .default) { _ in
             let toDate = Date()
             self.fromDate = Calendar.current.date(byAdding: .day, value: -7, to: toDate)
             self.toDate = Date()
@@ -122,7 +122,7 @@ class StatisticViewController: UIViewController {
             dataEntries.append(dataEntry)
         }
         
-        let lineChartDataSet = LineChartDataSet(entries: dataEntries, label: "Asthma Attack Amount")
+        let lineChartDataSet = LineChartDataSet(entries: dataEntries, label: "Asthma Attack")
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
         lineChartDataSet.drawCirclesEnabled = false
         lineChartDataSet.lineWidth = 3.0
@@ -184,7 +184,7 @@ class StatisticViewController: UIViewController {
             dataEntries.append(dataEntry)
         }
         
-        let barChartDataSet = BarChartDataSet(entries: dataEntries, label: "Tigger occur times")
+        let barChartDataSet = BarChartDataSet(entries: dataEntries, label: "Tigger Occur")
         let barChartData = BarChartData(dataSet: barChartDataSet)
         barChartDataSet.setColor(UIColor.orange)
         
