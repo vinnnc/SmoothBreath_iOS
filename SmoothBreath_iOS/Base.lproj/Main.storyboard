@@ -214,7 +214,7 @@ They are followed by females aged 45 to 54 years old, with around 20,000 patient
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="500" id="Jtk-jU-pfF"/>
                                                 </constraints>
-                                                <mutableString key="text">For asthmatics, everyday encounters with your environment and your lifestyle can affect your asthma seriously. Some of these triggers are listed below.
+                                                <string key="text">For asthmatics, everyday encounters with your environment and your lifestyle can affect your asthma seriously. Some of these triggers are listed below.
 
 1. Bushfires
 Especially in the summer, bushfires are common in rural Victoria. The smoke from bushfires can aggravate your asthma.
@@ -226,7 +226,7 @@ Asthma attacks increase during spring and summer when pollen-producing plants ar
 We love pets, but their hair and dander can cause asthma. We recommend pets that have minimal hair loss for asthma sufferers.
 
 4. Hormones
-For menstruating women, fluctuating hormones can trigger asthma attacks.</mutableString>
+For menstruating women, fluctuating hormones can trigger asthma attacks.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -328,7 +328,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="430" id="dYJ-hW-1DX"/>
                                                 </constraints>
-                                                <mutableString key="text">With the Inhaler Counter, you can track your usage and check the remaining uses every day. 
+                                                <string key="text">With the Inhaler Counter, you can track your usage and check the remaining uses every day. 
 
 
 1. The Minus [ - ] button means using one dose.
@@ -344,7 +344,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
 
 
 5. Expected Changed Date tells you when this inhaler will run out of puffs.
-</mutableString>
+</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1216,10 +1216,17 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">1. It records your asthma attack date and time. 
-2. The record details include attack level, stress level, exercise level and if the menstrual cycle is coming soon. 
-3. The environment condition includes fire, animal, heavy wind, pollen source and dust. 
-4. The current location will be recorded in the location bar at the bottom.</string>
+                                <mutableString key="text">Record the conditions surrounding your asthma attack, including
+
+1. Date and time.
+
+2. Physical conditions such as attack severity, stress level, exercise and for women if the menstrual cycle is due within a week.
+
+
+3. Environment conditions such as fire, animal, heavy wind, pollen source and dust.
+
+
+4. Current location so you can see if location plays a factor in your attacks.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1269,12 +1276,23 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-IL-Ca7">
                                 <rect key="frame" x="16" y="104.66666666666669" width="343" height="603.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">In the Inhaler Counter, you can check the inhaler remaining usage every day.  
-1. Minus button means using one dose. 
-2. Plus button means adding back the dose which can withdraw your history. 
-3. Reset on the right top corner is used for resetting the default remaining for the inhaler. 
-4. Last Changed Date tells you when did you change the inhaler last time. 
-5. Expected Changed Date tells you when this inhaler will be expired.</string>
+                                <mutableString key="text">With the Inhaler Counter, you can track your usage and check the remaining uses every day. 
+
+
+1. The Minus [ - ] button means using one dose.
+
+
+2. The Plus [ + ] button can add back a dose if you tap one too many times.
+
+
+3. The Reset on the right top corner is used for resetting the default number of uses when you start a new inhaler.
+
+
+4. Last Changed Date tells you when you last changed your inhaler.
+
+
+5. Expected Changed Date tells you when this inhaler will run out of puffs.
+</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1448,11 +1466,12 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Each asthma attack location is pinned on the map. This map can help you to find out where is the most asthma attack location. 
-1. Each pinned point is the historical asthma attack location. 
-2. With more records, you might find out which place has the high possibility to have an asthma attack and you might give insight from these locations. 
-3. Each location point was recorded and generated based on each record "current location". 
-4. All the information is stored in the app, other people cannot access the collecting data.</string>
+                                <mutableString key="text">When you record and attack, a location point is generated based "current location".
+
+As your records grow, this map can give you insights as to whether there are common locations when your asthma attacks occur.
+
+
+All the information is stored in the app, other people cannot access the collecting data.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2273,10 +2292,16 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">This statistic shows the asthma attack through a visualisation way, and you can track your asthma attacks by clicking records on the right top. 
-1. The monthly distribution records the asthma attack frequency in the different month through the line chart. 
-2. The trigger ranking records the most popular triggers based on the record through the bar chart. 
-3. The information can be used for asthma diagnosis.</string>
+                                <mutableString key="text">Understand your triggers over a period of time and work with your health professionals using this simple visualisation, including;
+
+
+1. Monthly distribution of asthma attack frequency.
+
+
+2. Ranking of triggers based on frequency.
+
+
+3. See a history of your asthma attacks by clicking records on the top right-hand corner.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2367,7 +2392,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="320" id="B2a-WA-w74"/>
                                                 </constraints>
-                                                <mutableString key="text">Record the conditions surrounding your asthma attack, including
+                                                <string key="text">Record the conditions surrounding your asthma attack, including
 
 1. Date and time.
 
@@ -2377,7 +2402,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
 3. Environment conditions such as fire, animal, heavy wind, pollen source and dust.
 
 
-4. Current location so you can see if location plays a factor in your attacks.</mutableString>
+4. Current location so you can see if location plays a factor in your attacks.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2481,7 +2506,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="B1x-gO-ltW"/>
                                                 </constraints>
-                                                <mutableString key="text">Understand your triggers over a period of time and work with your health professionals using this simple visualisation, including;
+                                                <string key="text">Understand your triggers over a period of time and work with your health professionals using this simple visualisation, including;
 
 
 1. Monthly distribution of asthma attack frequency.
@@ -2490,7 +2515,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
 2. Ranking of triggers based on frequency.
 
 
-3. See a history of your asthma attacks by clicking records on the top right-hand corner.</mutableString>
+3. See a history of your asthma attacks by clicking records on the top right-hand corner.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2587,12 +2612,12 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</mutabl
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="eRi-0a-m34"/>
                                                 </constraints>
-                                                <mutableString key="text">When you record and attack, a location point is generated based "current location".
+                                                <string key="text">When you record and attack, a location point is generated based "current location".
 
 As your records grow, this map can give you insights as to whether there are common locations when your asthma attacks occur.
 
 
-All the information is stored in the app, other people cannot access the collecting data.</mutableString>
+All the information is stored in the app, other people cannot access the collecting data.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
