@@ -1216,7 +1216,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</string
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-h4-UEq">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Record the conditions surrounding your asthma attack, including
+                                <string key="text">Record the conditions surrounding your asthma attack, including
 
 1. Date and time.
 
@@ -1226,7 +1226,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</string
 3. Environment conditions such as fire, animal, heavy wind, pollen source and dust.
 
 
-4. Current location so you can see if location plays a factor in your attacks.</mutableString>
+4. Current location so you can see if location plays a factor in your attacks.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1276,7 +1276,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</string
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-IL-Ca7">
                                 <rect key="frame" x="16" y="104.66666666666669" width="343" height="603.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">With the Inhaler Counter, you can track your usage and check the remaining uses every day. 
+                                <string key="text">With the Inhaler Counter, you can track your usage and check the remaining uses every day. 
 
 
 1. The Minus [ - ] button means using one dose.
@@ -1292,7 +1292,7 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</string
 
 
 5. Expected Changed Date tells you when this inhaler will run out of puffs.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1466,12 +1466,12 @@ For menstruating women, fluctuating hormones can trigger asthma attacks.</string
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F04-l6-BvE">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">When you record and attack, a location point is generated based "current location".
+                                <string key="text">When you record and attack, a location point is generated based "current location".
 
 As your records grow, this map can give you insights as to whether there are common locations when your asthma attacks occur.
 
 
-All the information is stored in the app, other people cannot access the collecting data.</mutableString>
+All the information is stored in the app, other people cannot access the collecting data.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2292,7 +2292,7 @@ All the information is stored in the app, other people cannot access the collect
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guz-UM-u3n">
                                 <rect key="frame" x="16" y="102" width="343" height="606"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Understand your triggers over a period of time and work with your health professionals using this simple visualisation, including;
+                                <string key="text">Understand your triggers over a period of time and work with your health professionals using this simple visualisation, including;
 
 
 1. Monthly distribution of asthma attack frequency.
@@ -2301,7 +2301,7 @@ All the information is stored in the app, other people cannot access the collect
 2. Ranking of triggers based on frequency.
 
 
-3. See a history of your asthma attacks by clicking records on the top right-hand corner.</mutableString>
+3. See a history of your asthma attacks by clicking records on the top right-hand corner.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
